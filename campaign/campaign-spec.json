@@ -1,0 +1,186 @@
+{
+  "_comment": "Machine-readable spec for the Spiceto Biryani Whole Spices Meta campaign. Values marked {{...}} must be filled before this can be used to create the campaign. Nothing here has been created in the ad account yet.",
+
+  "account": {
+    "platform": "meta_ads",
+    "ad_account_id": "387266110719612",
+    "ad_account_name": "I DO Designs Ad account",
+    "facebook_page_id": "{{FB_PAGE_ID}}",
+    "instagram_account_id": "{{IG_ACCOUNT_ID}}",
+    "currency": "INR",
+    "country": "IN"
+  },
+
+  "product": {
+    "brand": "Spiceto",
+    "name": "Biryani Whole Spices - Khada Garam Masala",
+    "format": "whole spices, ready to grind",
+    "item_count": "12+",
+    "asin": "B0H6TP1DNS",
+    "raw_url": "https://www.amazon.in/dp/B0H6TP1DNS",
+    "price_inr": "{{PRICE}}",
+    "pack_size": "{{PACK_SIZE}}",
+    "seller": "Spiceto Trading Company, Ernakulam, Kerala 682306",
+    "fssai_licence": "11325999D0868"
+  },
+
+  "campaign": {
+    "name": "SPICETO | Traffic | Prospecting | IN-Metro",
+    "objective": "OUTCOME_TRAFFIC",
+    "buying_type": "AUCTION",
+    "status": "PAUSED",
+    "special_ad_categories": [],
+    "budget": {
+      "type": "campaign_budget_optimization",
+      "daily_budget_inr": 500,
+      "bid_strategy": "LOWEST_COST_WITHOUT_CAP"
+    }
+  },
+
+  "shared_targeting": {
+    "geo_locations": {
+      "location_types": ["home"],
+      "custom_locations": [
+        { "city": "Hyderabad",  "state": "Telangana",      "radius_km": 25, "distance_unit": "kilometer" },
+        { "city": "Delhi",      "state": "Delhi",          "radius_km": 30, "distance_unit": "kilometer", "note": "covers Gurugram, Noida, Ghaziabad, Faridabad - do not add separately" },
+        { "city": "Mumbai",     "state": "Maharashtra",    "radius_km": 25, "distance_unit": "kilometer" },
+        { "city": "Bengaluru",  "state": "Karnataka",      "radius_km": 20, "distance_unit": "kilometer" },
+        { "city": "Kolkata",    "state": "West Bengal",    "radius_km": 20, "distance_unit": "kilometer" },
+        { "city": "Lucknow",    "state": "Uttar Pradesh",  "radius_km": 15, "distance_unit": "kilometer" },
+        { "city": "Pune",       "state": "Maharashtra",    "radius_km": 15, "distance_unit": "kilometer" },
+        { "city": "Kochi",      "state": "Kerala",         "radius_km": 12, "distance_unit": "kilometer", "note": "radius picker may snap to nearest preset" },
+        { "city": "Jaipur",     "state": "Rajasthan",      "radius_km": 15, "distance_unit": "kilometer" },
+        { "city": "Chennai",    "state": "Tamil Nadu",     "radius_km": 15, "distance_unit": "kilometer" },
+        { "city": "Indore",     "state": "Madhya Pradesh", "radius_km": 12, "distance_unit": "kilometer", "note": "radius picker may snap to nearest preset" },
+        { "city": "Ahmedabad",  "state": "Gujarat",        "radius_km": 15, "distance_unit": "kilometer" }
+      ]
+    },
+    "age_min": 25,
+    "age_max": 54,
+    "genders": "all",
+    "_gender_rationale": "All genders for the first 7 days, then narrow on the Ads Manager gender breakdown. See targeting.md for the full reasoning.",
+    "locales": []
+  },
+
+  "ad_sets": [
+    {
+      "name": "Metro Spice Buyers | 25-54 | All | LPV",
+      "status": "PAUSED",
+      "optimization_goal": "LANDING_PAGE_VIEWS",
+      "billing_event": "IMPRESSIONS",
+      "destination_type": "WEBSITE",
+      "attribution_spec": { "click_through_days": 7, "view_through_days": 1 },
+      "placements": "advantage_plus_automatic",
+      "targeting": {
+        "inherits": "shared_targeting",
+        "advantage_detailed_targeting": true,
+        "flexible_spec": [
+          {
+            "_layer": "1 - cooking and cuisine interest (ANY)",
+            "interests": [
+              "Cooking",
+              "Indian cuisine",
+              "Biryani",
+              "Recipe",
+              "Food and drink",
+              "Cooking shows",
+              "MasterChef India",
+              "Vegetarian cuisine",
+              "Garam masala",
+              "Spice",
+              "Herbs and spices",
+              "Masala"
+            ],
+            "_note": "Verify each name in the Ads Manager picker - Meta's interest catalogue changes and some spice-specific entries may not exist."
+          },
+          {
+            "_layer": "2 - NARROW: must also match ANY of",
+            "interests": ["Online shopping", "Amazon.in", "Amazon.com"],
+            "behaviors": ["Engaged Shoppers"]
+          }
+        ]
+      }
+    },
+    {
+      "name": "Broad | 25-54 | All | LPV",
+      "status": "PAUSED",
+      "optimization_goal": "LANDING_PAGE_VIEWS",
+      "billing_event": "IMPRESSIONS",
+      "destination_type": "WEBSITE",
+      "attribution_spec": { "click_through_days": 7, "view_through_days": 1 },
+      "placements": "advantage_plus_automatic",
+      "targeting": {
+        "inherits": "shared_targeting",
+        "advantage_plus_audience": true,
+        "audience_suggestions": ["Cooking", "Indian cuisine", "Biryani", "Spice"],
+        "flexible_spec": []
+      }
+    }
+  ],
+
+  "ads": [
+    {
+      "id": "A1",
+      "name": "Video | Aroma | {aspect} | EN | v1",
+      "angle": "aroma - ground spice loses its oils, restaurants grind fresh",
+      "format": "video",
+      "duration_seconds": 15,
+      "aspects": ["9:16", "4:5", "1:1"],
+      "call_to_action": "SHOP_NOW",
+      "primary_text_ref": "ad-copy.md > Ad A1 > English",
+      "headline": "Grind It Fresh. Taste The Difference.",
+      "description": "12+ whole spices",
+      "destination_url": "{{ATTRIBUTION_URL_A1}}",
+      "in_ad_sets": ["Metro Spice Buyers | 25-54 | All | LPV", "Broad | 25-54 | All | LPV"]
+    },
+    {
+      "id": "A2",
+      "name": "Static | Whats Inside | {aspect} | EN | v1",
+      "angle": "ingredient transparency - name the spices, name what is absent",
+      "format": "image",
+      "aspects": ["9:16", "4:5", "1:1"],
+      "call_to_action": "SHOP_NOW",
+      "primary_text_ref": "ad-copy.md > Ad A2 > English",
+      "headline": "12+ Whole Spices. Nothing Else.",
+      "description": "Ready to grind",
+      "destination_url": "{{ATTRIBUTION_URL_A2}}",
+      "in_ad_sets": ["Metro Spice Buyers | 25-54 | All | LPV", "Broad | 25-54 | All | LPV"]
+    },
+    {
+      "id": "A3",
+      "name": "Static | Kerala Origin | {aspect} | EN | v1",
+      "angle": "provenance - Kerala spice country, Ernakulam based",
+      "format": "image",
+      "aspects": ["9:16", "4:5", "1:1"],
+      "call_to_action": "SHOP_NOW",
+      "primary_text_ref": "ad-copy.md > Ad A3 > English",
+      "headline": "Kerala Spices. Whole, Not Ground.",
+      "description": "From Ernakulam",
+      "destination_url": "{{ATTRIBUTION_URL_A3}}",
+      "in_ad_sets": ["Metro Spice Buyers | 25-54 | All | LPV", "Broad | 25-54 | All | LPV"]
+    }
+  ],
+
+  "custom_audiences_to_create": [
+    { "name": "Spiceto | Video Viewers 50% | 365d", "source": "video", "threshold": "50_percent", "retention_days": 365 },
+    { "name": "Spiceto | Video Viewers 3s | 365d",  "source": "video", "threshold": "3_seconds", "retention_days": 365 },
+    { "name": "Spiceto | IG Engagers | 365d",       "source": "instagram_account", "retention_days": 365 },
+    { "name": "Spiceto | FB Page Engagers | 365d",  "source": "facebook_page", "retention_days": 365 },
+    { "name": "Spiceto | Site Visitors | 180d",     "source": "pixel", "domain": "spiceto.in", "retention_days": 180, "requires": "pixel installed on spiceto.in" }
+  ],
+
+  "review_schedule": {
+    "day_3":  "delivery and rejection check only - no optimisation, learning phase",
+    "day_7":  "CPLPV by ad, ad set, gender, age, city. Pause dead ads. Make the gender call.",
+    "day_14": "Meta + first Amazon Attribution data. Cut bottom cities. Pick winning angle.",
+    "day_21": "Attributed sales and CPA vs break-even. Scale, restructure, or stop."
+  },
+
+  "blockers_before_launch": [
+    "{{PRICE}} and {{PACK_SIZE}} unknown",
+    "{{FB_PAGE_ID}} and {{IG_ACCOUNT_ID}} not supplied",
+    "Amazon Attribution tags not created - requires Brand Registry",
+    "Creative assets not produced (9 files: see creative-brief.md)",
+    "Amazon listing not yet audited against launch-checklist.md"
+  ]
+}
