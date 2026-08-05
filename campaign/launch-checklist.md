@@ -26,6 +26,20 @@ Open `amazon.in/dp/B0H6TP1DNS` on a phone, logged out, and check:
 Honest guidance: if the listing has fewer than 10 reviews and no A+ Content, fixing those
 two things will return more than the first ₹15,000 of Meta spend will.
 
+## Measurement — do at least one of these, or you are spending blind
+
+Ranked by how much they tell you. See `measurement.md` for detail.
+
+- [ ] **Baseline the ASIN before launch.** Seller Central → Reports → Business Reports →
+      Detail Page Sales and Traffic by Child ASIN. Export 14 days of daily sessions and
+      units for `B0H6TP1DNS`. **This cannot be reconstructed after you start spending.**
+      Ten minutes, free, no Brand Registry needed.
+- [ ] **Create a Meta-only promo code** in Seller Central and put it in the ad copy.
+      Redemptions are countable Meta-driven sales. A floor, not a total — but real.
+- [ ] **Amazon Attribution** if Brand Registry is active (below) — the only complete answer.
+- [ ] Understand that **UTM parameters measure nothing on an Amazon destination.** They're
+      configured correctly in the spec so they work later, not because they work now.
+
 ## Amazon Attribution
 
 - [ ] Brand Registry confirmed for Spiceto

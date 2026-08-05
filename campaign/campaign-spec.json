@@ -34,7 +34,9 @@
       "type": "campaign_budget_optimization",
       "daily_budget_inr": 500,
       "bid_strategy": "LOWEST_COST_WITHOUT_CAP"
-    }
+    },
+    "url_tags": "utm_source=meta&utm_medium=paid&utm_campaign={{campaign.name}}&utm_content={{ad.name}}&utm_term={{adset.name}}&utm_placement={{placement}}&utm_site={{site_source_name}}",
+    "_url_tags_note": "Meta dynamic URL parameters — they fill in per ad and per placement instead of being hardcoded. Passed via the tool's `url_tags` argument, appended to the landing page URL on every click. IMPORTANT: Amazon does not report UTM values anywhere in Seller Central, so these measure NOTHING while the destination is Amazon. They are set up correctly now so they work the day traffic is routed through spiceto.in. Real measurement options are ranked in measurement.md."
   },
 
   "shared_targeting": {
@@ -135,7 +137,8 @@
       "primary_text_ref": "ad-copy.md > Ad A1 > English",
       "headline": "Grind It Fresh. Taste The Difference.",
       "description": "12+ whole spices",
-      "destination_url": "{{ATTRIBUTION_URL_A1}}",
+      "destination_url": "https://www.amazon.in/dp/B0H6TP1DNS?th=1",
+      "_destination_note": "Swap for the Amazon Attribution URL for ad A1 once Brand Registry is in place. UTMs are carried by campaign.url_tags, not hardcoded here.",
       "in_ad_sets": ["Metro Spice Buyers | 25-54 | All | LPV", "Broad | 25-54 | All | LPV"]
     },
     {
@@ -148,7 +151,8 @@
       "primary_text_ref": "ad-copy.md > Ad A2 > English",
       "headline": "12+ Whole Spices. Nothing Else.",
       "description": "Ready to grind",
-      "destination_url": "{{ATTRIBUTION_URL_A2}}",
+      "destination_url": "https://www.amazon.in/dp/B0H6TP1DNS?th=1",
+      "_destination_note": "Swap for the Amazon Attribution URL for ad A2 once Brand Registry is in place.",
       "in_ad_sets": ["Metro Spice Buyers | 25-54 | All | LPV", "Broad | 25-54 | All | LPV"]
     },
     {
@@ -161,7 +165,8 @@
       "primary_text_ref": "ad-copy.md > Ad A3 > English",
       "headline": "Kerala Spices. Whole, Not Ground.",
       "description": "From Ernakulam",
-      "destination_url": "{{ATTRIBUTION_URL_A3}}",
+      "destination_url": "https://www.amazon.in/dp/B0H6TP1DNS?th=1",
+      "_destination_note": "Swap for the Amazon Attribution URL for ad A3 once Brand Registry is in place.",
       "in_ad_sets": ["Metro Spice Buyers | 25-54 | All | LPV", "Broad | 25-54 | All | LPV"]
     }
   ],

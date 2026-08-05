@@ -1,5 +1,87 @@
 # Measurement
 
+## UTM parameters — read this first
+
+A URL like this one is a reasonable instinct and it does not do what it looks like it does:
+
+```
+https://www.amazon.in/dp/B0H6TP1DNS?th=1&utm_source=meta&utm_medium=paid&utm_campaign=biryani_mix&utm_content=facebook_feed&utm_term=biryani_spice
+```
+
+**Amazon does not report UTM parameters.** There is no UTM breakdown in Seller Central, no
+source/medium report, nothing in Business Reports that segments by query string. UTM tags
+are a Google Analytics convention — they work because *your* analytics tool reads them off
+*your* page. Amazon runs its own analytics and does not expose that layer to sellers.
+
+What actually happens: Amazon ignores the unknown parameters and serves the page normally.
+Nothing breaks. `th=1` is a legitimate Amazon parameter (variation selector) and is fine
+to keep. But the five `utm_*` values go into a void. You'd be running the campaign
+believing you have attribution while having none.
+
+Two further problems with the static version above, which apply the moment you *do* have
+somewhere to read them:
+
+- `utm_content=facebook_feed` is hardcoded. Every ad and every placement reports as
+  "facebook_feed" — including Reels, Stories and Instagram. You lose exactly the
+  granularity the parameter exists to give you.
+- `utm_campaign=biryani_mix` is hardcoded too, so a second campaign needs a hand-edited URL.
+
+### Set the tags up properly anyway
+
+Use Meta's **dynamic URL parameters** so the values fill themselves in per ad and per
+placement. Put the clean URL in the destination field and this in the ad's
+**URL parameters** box (Meta's `url_tags`), not in the URL itself:
+
+```
+utm_source=meta&utm_medium=paid&utm_campaign={{campaign.name}}&utm_content={{ad.name}}&utm_term={{adset.name}}&utm_placement={{placement}}&utm_site={{site_source_name}}
+```
+
+Destination URL: `https://www.amazon.in/dp/B0H6TP1DNS?th=1`
+
+This costs nothing, keeps the URL readable, and means that the day you route traffic
+through spiceto.in (see below) the tags are already correct and per-ad. It still tells you
+nothing while the destination is Amazon.
+
+## What actually measures sales
+
+In order of how much they tell you:
+
+### 1. Amazon Attribution — the real answer
+
+The only mechanism that reports off-Amazon traffic through to detail page views, add to
+carts and purchases. Requires **Brand Registry**. Full setup below.
+
+### 2. A unique promo code — works today, no Brand Registry needed
+
+Create a percentage-off or amount-off promotion in Seller Central with a code you advertise
+**only in the Meta ads**. Every redemption is a sale you know came from Meta. It isn't
+complete attribution — plenty of people will buy without using the code — so treat
+redemptions as a floor on Meta-driven sales, not a total. But it's a real, countable number
+and you can have it running this week.
+
+It also gives the ads something to say. "Use SPICETO10 at checkout" is a stronger CTA than
+"Shop Now" on its own.
+
+### 3. Before/after lift on the ASIN — crude, free, immediately available
+
+Seller Central → **Reports → Business Reports → Detail Page Sales and Traffic by Child ASIN**.
+Gives daily **sessions**, **unit session percentage** and **units ordered** for
+`B0H6TP1DNS`. No source segmentation at all — but if you pull a 14-day baseline before
+launch and compare against 14 days of ads, the delta in daily sessions is your Meta traffic,
+give or take organic drift.
+
+Do this regardless. It takes ten minutes and it's the only number you'll have in week 1.
+**Pull the baseline before you launch** — you cannot reconstruct it afterwards.
+
+### 4. spiceto.in as an intermediate landing page — the structural fix
+
+Route ads to a page on your own domain that carries the Meta pixel, then link to Amazon
+from there. You get: working UTMs, real retargeting audiences, and eventually the ability
+to run the Sales objective and optimise on a conversion event instead of a click.
+
+Cost: 10–20% of clicks drop off at the extra step. Worth it above roughly ₹2,000/day, or
+sooner if you want retargeting badly. Below that, the lost visitors outweigh the insight.
+
 ## The problem in one paragraph
 
 Meta will report clicks, landing page views, CPM and CTR. It will not report a single
