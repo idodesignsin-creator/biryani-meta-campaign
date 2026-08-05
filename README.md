@@ -56,4 +56,22 @@ breakdown at day 7 alongside gender.
 
 ## Status
 
-Planning artefacts only. **Nothing has been created in the ad account yet.**
+**Nothing has been created in the ad account.** Planning artefacts plus live-resolved
+targeting IDs.
+
+Done:
+- Connection to ad account `387266110719612` verified
+- 9 of 12 Meta location keys resolved live
+- All interest and behaviour IDs resolved live (see the "what doesn't exist" note in
+  `campaign/targeting.md` — there is no Biryani or Spice interest in Meta's catalogue)
+- Ad-account asset library inspected: 1,417 images, 884 videos, across several clients
+
+Blocked on:
+1. **A creative image.** No Spiceto asset could be identified in the shared agency ad
+   account, and the asset thumbnail URLs aren't reachable from this environment. Needs a
+   public image URL or a specific `image_hash`.
+2. **Adspirer API quota** — 15/15 free calls used on 2026-08-05, resets 2026-09-04.
+3. Chennai, Indore and Ahmedabad location keys still unresolved.
+
+The exact creation sequence is recorded in `campaign/campaign-spec.json` under
+`creation_sequence`.

@@ -5,20 +5,27 @@
 Set as **"People living in this location"**, not "recently in this location". Travellers
 and visitors don't stock a home kitchen.
 
-| # | City | State | Radius | Coverage |
-| --- | --- | --- | --- | --- |
-| 1 | Hyderabad | Telangana | 25 km | City + suburbs |
-| 2 | Delhi NCR (pin on Delhi) | Delhi | 30 km | Delhi + Gurugram + Noida + Ghaziabad |
-| 3 | Mumbai | Maharashtra | 25 km | Mumbai + suburbs (incl. Thane, Navi Mumbai) |
-| 4 | Bengaluru | Karnataka | 20 km | City + surrounding areas |
-| 5 | Kolkata | West Bengal | 20 km | City + suburbs |
-| 6 | Lucknow | Uttar Pradesh | 15 km | City proper |
-| 7 | Pune | Maharashtra | 15 km | City + nearby areas |
-| 8 | Kochi | Kerala | 12 km | City proper |
-| 9 | Jaipur | Rajasthan | 15 km | City + suburbs |
-| 10 | Chennai | Tamil Nadu | 15 km | City + nearby areas |
-| 11 | Indore | Madhya Pradesh | 12 km | City proper |
-| 12 | Ahmedabad | Gujarat | 15 km | City + suburbs |
+Meta location keys resolved live against the ad account on 2026-08-05.
+
+| # | City | State | Radius | Meta key | Coverage |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Hyderabad | Telangana | 25 km | `1027234` | City + suburbs |
+| 2 | Delhi NCR (pin on Delhi) | Delhi | 30 km | `1023040` | Delhi + Gurugram + Noida + Ghaziabad |
+| 3 | Mumbai | Maharashtra | 25 km | `1035921` | Mumbai + suburbs (incl. Thane, Navi Mumbai) |
+| 4 | Bangalore | Karnataka | 20 km | `1017930` | City + surrounding areas |
+| 5 | Kolkata | West Bengal | 20 km | `1020734` | City + suburbs |
+| 6 | Lucknow | Uttar Pradesh | 15 km | `1033376` | City proper |
+| 7 | Pune | Maharashtra | 15 km | `1039952` | City + nearby areas |
+| 8 | Kochi | Kerala | 12 km | `1031366` | City proper |
+| 9 | Jaipur | Rajasthan | 15 km | `1027633` | City + suburbs |
+| 10 | Chennai | Tamil Nadu | 15 km | *unresolved* | City + nearby areas |
+| 11 | Indore | Madhya Pradesh | 12 km | *unresolved* | City proper |
+| 12 | Ahmedabad | Gujarat | 15 km | *unresolved* | City + suburbs |
+
+Note that Meta lists Bengaluru as **"Bangalore"** — search the old name or you won't find
+it. The last three keys are unresolved because the Adspirer API quota ran out mid-lookup;
+resolve them with `search_meta_targeting` before creating the campaign rather than
+guessing, since a wrong key silently targets the wrong place.
 
 ### How to enter these
 
@@ -106,25 +113,43 @@ that way you keep the volume and gain the control.
 
 **Detailed targeting — Layer 1, include ANY of:**
 
-*Cooking & cuisine*
-- Cooking
-- Indian cuisine
-- Biryani
-- Recipe
-- Food and drink
-- Cooking shows / MasterChef India
-- Vegetarian cuisine
+These IDs were resolved live against the ad account on 2026-08-05, so they're real and
+current — not guesses from the picker.
 
-*Spice-specific (check availability in the picker — Meta's catalogue shifts)*
-- Garam masala
-- Spice
-- Herbs and spices
-- Masala
+| Interest | ID | Global audience |
+| --- | --- | --- |
+| Cooking | `6003659420716` | ~753M |
+| Recipes | `6003385609165` | ~481M |
+| Indian cuisine | `6003494675627` | ~92M |
+| Cookbook | `6003144146766` | ~49M |
+| Cooking At Home | `6003188266578` | ~5.3M |
+| Celebrity chef | `6003107442035` | ~3.6M |
+| Cooking shows | `6854223362938` | ~0.9M |
 
 **Layer 2 — NARROW by (must ALSO match ANY of):**
-- Online shopping
-- Amazon.in / Amazon.com
-- Engaged Shoppers (behaviour)
+
+| Option | ID | Type | Global audience |
+| --- | --- | --- | --- |
+| Online shopping | `6003346592981` | interest | ~1.35B |
+| Amazon.com | `6003002193982` | interest | ~338M |
+| Engaged Shoppers | `6071631541183` | behaviour | ~1.13B |
+
+### What doesn't exist — worth knowing before you go looking
+
+Searching Meta's live targeting catalogue returned **zero results** for every one of
+these: `Biryani`, `Garam masala`, `Masala`, `Spice`, `Herbs and spices`. There is no
+biryani interest and no spice interest to target. `Amazon.in` doesn't exist either —
+Indian users are tagged under `Amazon.com`.
+
+This matters more than it sounds. It means **you cannot buy category intent on Meta for
+this product.** Nobody can — not you, not your competitors. The closest available proxy
+is general cooking interest narrowed by online-shopping behaviour, which is exactly what
+Ad Set A does, and it is a genuinely loose proxy.
+
+It's also the strongest argument for Ad Set B. When the interest catalogue can't express
+your category, Meta's delivery system working from creative signal and conversion
+behaviour often beats hand-picked interests outright. Take Ad Set B seriously as the
+likely winner rather than as a control.
 
 The narrowing is the whole point. Layer 1 alone is enormous and full of people who watch
 food reels but have never bought a spice online. Layer 2 alone is full of people buying

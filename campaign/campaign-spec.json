@@ -38,21 +38,22 @@
   },
 
   "shared_targeting": {
+    "_geo_note": "Meta location keys below were resolved live via search_meta_targeting against the real ad account on 2026-08-05. Pass each as {key, type, radius, distance_unit} in the `locations` array. Three keys are still unresolved - the Adspirer quota ran out mid-lookup. Resolve them with search_meta_targeting before creating the campaign; do NOT guess a key.",
     "geo_locations": {
       "location_types": ["home"],
       "custom_locations": [
-        { "city": "Hyderabad",  "state": "Telangana",      "radius_km": 25, "distance_unit": "kilometer" },
-        { "city": "Delhi",      "state": "Delhi",          "radius_km": 30, "distance_unit": "kilometer", "note": "covers Gurugram, Noida, Ghaziabad, Faridabad - do not add separately" },
-        { "city": "Mumbai",     "state": "Maharashtra",    "radius_km": 25, "distance_unit": "kilometer" },
-        { "city": "Bengaluru",  "state": "Karnataka",      "radius_km": 20, "distance_unit": "kilometer" },
-        { "city": "Kolkata",    "state": "West Bengal",    "radius_km": 20, "distance_unit": "kilometer" },
-        { "city": "Lucknow",    "state": "Uttar Pradesh",  "radius_km": 15, "distance_unit": "kilometer" },
-        { "city": "Pune",       "state": "Maharashtra",    "radius_km": 15, "distance_unit": "kilometer" },
-        { "city": "Kochi",      "state": "Kerala",         "radius_km": 12, "distance_unit": "kilometer", "note": "radius picker may snap to nearest preset" },
-        { "city": "Jaipur",     "state": "Rajasthan",      "radius_km": 15, "distance_unit": "kilometer" },
-        { "city": "Chennai",    "state": "Tamil Nadu",     "radius_km": 15, "distance_unit": "kilometer" },
-        { "city": "Indore",     "state": "Madhya Pradesh", "radius_km": 12, "distance_unit": "kilometer", "note": "radius picker may snap to nearest preset" },
-        { "city": "Ahmedabad",  "state": "Gujarat",        "radius_km": 15, "distance_unit": "kilometer" }
+        { "key": "1027234", "type": "city", "city": "Hyderabad",  "state": "Telangana",      "radius": 25, "distance_unit": "kilometer" },
+        { "key": "1023040", "type": "city", "city": "Delhi",      "state": "Delhi",          "radius": 30, "distance_unit": "kilometer", "note": "covers Gurugram, Noida, Ghaziabad, Faridabad - do not add separately" },
+        { "key": "1035921", "type": "city", "city": "Mumbai",     "state": "Maharashtra",    "radius": 25, "distance_unit": "kilometer" },
+        { "key": "1017930", "type": "city", "city": "Bangalore",  "state": "Karnataka",      "radius": 20, "distance_unit": "kilometer", "note": "Meta lists this as 'Bangalore', not 'Bengaluru'" },
+        { "key": "1020734", "type": "city", "city": "Kolkata",    "state": "West Bengal",    "radius": 20, "distance_unit": "kilometer" },
+        { "key": "1033376", "type": "city", "city": "Lucknow",    "state": "Uttar Pradesh",  "radius": 15, "distance_unit": "kilometer" },
+        { "key": "1039952", "type": "city", "city": "Pune",       "state": "Maharashtra",    "radius": 15, "distance_unit": "kilometer" },
+        { "key": "1031366", "type": "city", "city": "Kochi",      "state": "Kerala",         "radius": 12, "distance_unit": "kilometer" },
+        { "key": "1027633", "type": "city", "city": "Jaipur",     "state": "Rajasthan",      "radius": 15, "distance_unit": "kilometer" },
+        { "key": "UNRESOLVED", "type": "city", "city": "Chennai",   "state": "Tamil Nadu",     "radius": 15, "distance_unit": "kilometer" },
+        { "key": "UNRESOLVED", "type": "city", "city": "Indore",    "state": "Madhya Pradesh", "radius": 12, "distance_unit": "kilometer" },
+        { "key": "UNRESOLVED", "type": "city", "city": "Ahmedabad", "state": "Gujarat",        "radius": 15, "distance_unit": "kilometer" }
       ]
     },
     "age_min": 25,
@@ -74,29 +75,29 @@
       "targeting": {
         "inherits": "shared_targeting",
         "advantage_detailed_targeting": true,
+        "_interest_note": "All IDs below were resolved live against the real ad account on 2026-08-05. Searches for 'Biryani', 'Garam masala', 'Masala', 'Spice' and 'Herbs and spices' returned ZERO results - those interests do not exist in Meta's catalogue, so the stack leans on general cooking/cuisine interests instead. 'Amazon.in' also does not exist; 'Amazon.com' does and is what Indian users are tagged with.",
         "flexible_spec": [
           {
             "_layer": "1 - cooking and cuisine interest (ANY)",
             "interests": [
-              "Cooking",
-              "Indian cuisine",
-              "Biryani",
-              "Recipe",
-              "Food and drink",
-              "Cooking shows",
-              "MasterChef India",
-              "Vegetarian cuisine",
-              "Garam masala",
-              "Spice",
-              "Herbs and spices",
-              "Masala"
-            ],
-            "_note": "Verify each name in the Ads Manager picker - Meta's interest catalogue changes and some spice-specific entries may not exist."
+              { "id": "6003659420716", "name": "Cooking",         "audience_lower": 752634277 },
+              { "id": "6003385609165", "name": "Recipes",          "audience_lower": 480500399 },
+              { "id": "6003494675627", "name": "Indian cuisine",   "audience_lower": 91538323 },
+              { "id": "6003144146766", "name": "Cookbook",         "audience_lower": 48788639 },
+              { "id": "6003188266578", "name": "Cooking At Home",  "audience_lower": 5332266 },
+              { "id": "6003107442035", "name": "Celebrity chef",   "audience_lower": 3608358 },
+              { "id": "6854223362938", "name": "Cooking shows",    "audience_lower": 850340 }
+            ]
           },
           {
             "_layer": "2 - NARROW: must also match ANY of",
-            "interests": ["Online shopping", "Amazon.in", "Amazon.com"],
-            "behaviors": ["Engaged Shoppers"]
+            "interests": [
+              { "id": "6003346592981", "name": "Online shopping", "audience_lower": 1347410025 },
+              { "id": "6003002193982", "name": "Amazon.com",      "audience_lower": 338243562 }
+            ],
+            "behaviors": [
+              { "id": "6071631541183", "name": "Engaged Shoppers", "path": "Purchase behavior > Engaged Shoppers", "audience_lower": 1132240509 }
+            ]
           }
         ]
       }
@@ -112,7 +113,11 @@
       "targeting": {
         "inherits": "shared_targeting",
         "advantage_plus_audience": true,
-        "audience_suggestions": ["Cooking", "Indian cuisine", "Biryani", "Spice"],
+        "audience_suggestions": [
+          { "id": "6003659420716", "name": "Cooking" },
+          { "id": "6003494675627", "name": "Indian cuisine" },
+          { "id": "6003385609165", "name": "Recipes" }
+        ],
         "flexible_spec": []
       }
     }
@@ -177,10 +182,21 @@
   },
 
   "blockers_before_launch": [
-    "{{PRICE}} and {{PACK_SIZE}} unknown",
-    "{{FB_PAGE_ID}} and {{IG_ACCOUNT_ID}} not supplied",
+    "CREATIVE IMAGE: no Spiceto asset identified. The ad account holds 1417 images and 884 videos across multiple clients (scire.co.in, FOREST and others); the Spiceto pack shot could not be identified from metadata alone, and the fbcdn thumbnail URLs are unreachable from this environment. Needs either a public image URL or the specific image_hash.",
+    "ADSPIRER QUOTA: 15/15 free calls used as of 2026-08-05. Resets 2026-09-04. Campaign creation cannot proceed until quota is available.",
+    "3 unresolved Meta location keys: Chennai, Indore, Ahmedabad",
+    "{{PRICE}} and {{PACK_SIZE}} unknown - amazon.in and spiceto.in both returned HTTP 403 from this environment",
+    "{{IG_ACCOUNT_ID}} not supplied (facebook_page_id auto-detects from the connected account)",
     "Amazon Attribution tags not created - requires Brand Registry",
     "Creative assets not produced (9 files: see creative-brief.md)",
     "Amazon listing not yet audited against launch-checklist.md"
+  ],
+
+  "creation_sequence": [
+    "1. create_meta_image_campaign - creates campaign + ad set A + ad A1 in one call. Pass campaign_budget_optimization=true, budget_daily=500, objective=OUTCOME_TRAFFIC, call_to_action=SHOP_NOW, locations=<the 12 objects above>, location_types=['home'], age_min=25, age_max=54, genders=null (all), interests/behaviors=<layer 1 + 2>, advantage_audience=true.",
+    "2. add_meta_ad_set - ad set B (Broad). Pass campaign_budget_optimization=true, NO budget_daily, same locations, no interests, advantage_audience=true.",
+    "3. add_meta_ad x4 - ads A2 and A3 into each of the two ad sets.",
+    "NOTE: never call create_meta_image_campaign twice - each call creates a SEPARATE campaign.",
+    "Everything is created PAUSED by default."
   ]
 }
