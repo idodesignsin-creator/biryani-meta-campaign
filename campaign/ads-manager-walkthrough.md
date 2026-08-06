@@ -87,6 +87,36 @@ two separate boxes with **"AND must also match"** between them, not one long lis
 Don't narrow any further. At ₹500/day you'll reach a small fraction of this audience
 regardless, and over-narrowing raises CPM and slows the learning phase for no benefit.
 
+### Confirmed built — 2026-08-06
+
+Saved audience `claude Spiceto Biriyani Tire 1.0` built in Ads Manager and verified
+against the plan:
+
+| Setting | Value |
+| --- | --- |
+| Locations | 12 cities, radii as planned (Ahmedabad/Chennai snapped to 17 km) |
+| Location expansion | Unchecked |
+| Age | 25–54 |
+| Gender | All |
+| Include | Cooking (food & drink), Recipes (food & drink), Indian cuisine (food & drink) |
+| And must also match | Engaged shoppers, Amazon.com (retailer), Online shopping (retail) |
+| Languages | Blank |
+| Custom audiences | None included, none excluded |
+
+**Audience estimate: 41,300,000 – 48,600,000**, down from 101,000,000 – 118,800,000
+before the narrow layer. Record this — it's the baseline to compare any future targeting
+change against.
+
+### A note on Meta's "Apply" suggestions
+
+Ads Manager surfaces inline suggestions like *"6.7% lower cost per result — based on our
+experiment"* with an Apply button. Read what each one proposes before accepting.
+
+The common one here re-enables location expansion. Decline it: a cheaper click from
+someone outside your delivery radius is not a cheaper customer. Meta's suggestion engine
+optimises for the metric it can see (cost per result), not for whether the parcel can
+physically arrive.
+
 ---
 
 ## Saved Audience 2 — "Spiceto | Broad | 25-54"
