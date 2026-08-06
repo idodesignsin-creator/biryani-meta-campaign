@@ -1,207 +1,227 @@
 # Ad Copy
 
-## The core angle
+## Verified product facts
 
-Spiceto Biryani Whole Spices is **not** a masala powder. It's 12+ whole spices you grind
-yourself. That's the entire pitch, and it's a genuinely strong one:
+Everything below is from the live listing (`amazon.in/dp/B0H6TP1DNS`, checked 2026-08-06).
+**Only claim what's on this list.**
 
-> Ground masala starts dying the moment it's ground. The volatile oils that carry aroma
-> evaporate — in a sealed packet on a shelf for eight months, most of what you paid for
-> has already left. Whole spices hold their oils until you break them. Grind them the
-> morning you cook and your kitchen smells like the restaurant, because that's exactly
-> what the restaurant does.
+| Fact | Value |
+| --- | --- |
+| Product | Spiceto Premium Whole Garam Masala — Biryani Whole Spices, Khada Garam Masala |
+| Pack | 90 g (also 180 g) |
+| Price | ₹199 for 90 g (MRP ₹425) · ₹299 for 180 g |
+| Servings | 50+ per 90 g pack → **under ₹4 per biryani** |
+| Spice count | **12** hand-weighed spices |
+| The 12 | Cardamom, Black Pepper, Cinnamon, Cloves, Bay Leaf, Nutmeg, Mace (Javithri), Star Anise, Poppy Seeds (Khus Khus), Jeerakam, Sha Jeerakam, Perumjeerakam |
+| Origin | Idukki, Kerala |
+| Ratio | Developed with biryani experts (Moosakka, Biryani Expert, Kerala) |
+| Packing | Hand-weighed, not machine-mixed. Small spices in a separate sachet. |
+| Additives | Zero additives, no preservatives |
+| Format | Ready to grind — usable whole **or** ground |
+| Rating | 5.0 from **3 ratings** |
+| Delivery | Free, Amazon-fulfilled. Non-returnable. |
 
-Every ad below is a different way into that one idea. Don't dilute it by also trying to
-sell convenience — convenience is what the powder brands own, and you'd lose that fight.
-You're selling the opposite of convenience, on purpose, to people who'll pay for it.
+## The angle
+
+Not "powder is dead" — that's a weaker pitch than the truth. The real one:
+
+> Anyone can buy whole spices at a shop. Almost nobody knows the ratio. Too much star
+> anise turns a biryani bitter; too little mace leaves it flat. Spiceto's value isn't the
+> spices — it's the **proportions**, hand-weighed to a ratio developed with biryani
+> experts, so you're not guessing. And because they arrive whole, you choose the form:
+> throw them into the dum as they are, or grind them fresh.
+
+Three things carry the whole campaign: **the ratio is the recipe**, **you keep control of
+the form**, and **nothing has been added**.
 
 **Character discipline:** primary text truncates around 125 characters on mobile feed.
-The hook has to land in line one. Headlines cap at 40 characters, link descriptions at 30
-(and are hidden entirely on several placements — never put essential information there).
-
-**CTA button:** `Shop Now` on every ad. `Learn More` under-performs when the destination
-is a page the user can buy from immediately.
+Headlines cap at 40 characters, descriptions at 30 (and are hidden on several placements).
+**CTA on every ad: `Shop Now`.**
 
 ---
 
-## Ad A1 — "Aroma" (video, lead creative)
-
-Opens on the problem, not the product.
+## Ad A1 — "The Ratio" (lead creative)
 
 ### English
 
 > **Primary text**
-> Your biryani masala died in the packet.
+> Anyone can buy whole spices. Almost nobody gets the ratio right.
 >
-> Ground spice loses its oils within weeks — that's the aroma you paid for, gone before
-> you opened it. Restaurants don't use powder. They grind whole spices the morning
-> they cook.
+> Too much star anise and your biryani turns bitter. Too little mace and it falls flat.
+> Spiceto's 12 spices are hand-weighed to a ratio developed with biryani experts in
+> Kerala — so you're not guessing at the one thing that decides how it tastes.
 >
-> Spiceto Biryani Whole Spices: 12+ whole spices from Kerala. Grind a spoonful. Your
-> whole house will know.
+> Use them whole in the dum. Or grind them fresh into powder. Your kitchen, your call.
 >
-> On Amazon — {{PRICE}} for {{PACK_SIZE}}
+> No preservatives. No additives. Nothing machine-mixed.
 >
-> **Headline:** Grind It Fresh. Taste The Difference.
-> **Description:** 12+ whole spices
+> ₹199 for 90g — over 50 servings. On Amazon.
+>
+> **Headline:** The Ratio Is The Recipe
+> **Description:** 12 hand-weighed spices
 > **CTA:** Shop Now
 
 ### Hinglish
 
 > **Primary text**
-> Packet wala masala kab ka mar chuka hai. 💀
+> Sabut masale toh koi bhi kharid le. Ratio kisi ko nahi pata.
 >
-> Pisa hua masala hafton mein apna tel kho deta hai — woh khushboo jiske liye paise diye,
-> packet kholne se pehle hi gayab. Restaurant powder nahi use karte. Woh subah sabut
-> masala peeste hain.
+> Chakra phool zyada — biryani kadvi. Javitri kam — swaad pheeka. Spiceto ke 12 masale
+> haath se taule gaye hain, Kerala ke biryani experts ke bataye ratio par. Ab andaza
+> lagane ki zaroorat nahi.
 >
-> Spiceto Biryani Whole Spices — Kerala ke 12+ sabut masale. Ek chammach peeso. Poora
-> ghar jaan jayega.
+> Sabut daalo dum mein, ya taza peeso. Aapki marzi.
 >
-> Amazon par — {{PRICE}} / {{PACK_SIZE}}
+> Na preservative, na additive, na machine mixing.
 >
-> **Headline:** Taza Piso. Farak Suno.
-> **Description:** 12+ sabut masale
+> ₹199 / 90g — 50+ servings. Amazon par.
+>
+> **Headline:** Ratio Hi Asli Recipe Hai
+> **Description:** 12 masale, haath se taule
 > **CTA:** Shop Now
 
 ---
 
-## Ad A2 — "What's Inside" (static, 4:5)
+## Ad A2 — "Whole or Ground"
 
-For the label-reader. Specificity is the persuasion — naming spices beats adjectives, and
-your pack shot already shows them laid out.
+Leads on the choice. This is the thing competitors' powder can't offer.
 
 ### English
 
 > **Primary text**
-> Open it and count: green cardamom, black cardamom, cinnamon bark, cloves, star anise,
-> mace, nutmeg, bay leaf, black peppercorn, shahi jeera, fennel, stone flower — and more.
+> Whole or ground — you decide.
 >
-> Whole. Unground. Sorted by hand in Ernakulam, Kerala.
+> Spiceto Biryani Whole Spices arrives ready to grind. But nothing says you have to.
+> Drop them in whole for a slow, layered aroma through the dum. Or grind a spoonful fresh
+> when you want it deeper and fuller.
 >
-> No powder. No filler. No anti-caking agent. Nothing to hide behind.
+> 12 spices from Idukki, Kerala. Hand-weighed to a ratio designed by biryani experts. The
+> small spices come in their own sachet, so the ratio survives the journey to your kitchen.
 >
-> Spiceto Biryani Whole Spices — {{PRICE}} for {{PACK_SIZE}} on Amazon.
+> No preservatives. No fillers.
 >
-> **Headline:** 12+ Whole Spices. Nothing Else.
+> ₹199 / 90g · 50+ servings
+>
+> **Headline:** Use Whole. Or Grind Fresh.
 > **Description:** Ready to grind
 > **CTA:** Shop Now
 
 ### Hinglish
 
 > **Primary text**
-> Kholo aur gino: choti elaichi, badi elaichi, dalchini, laung, chakra phool, javitri,
-> jaiphal, tej patta, kali mirch, shahi jeera, saunf, dagad phool — aur bhi.
+> Sabut rakho ya peeso — faisla aapka.
 >
-> Sabut. Bina pisa. Ernakulam, Kerala mein haath se chuna hua.
+> Spiceto Biryani Whole Spices ready to grind aata hai. Par zaroori nahi. Sabut daal do
+> dum mein — khushboo dheere-dheere khulegi. Ya ek chammach taza peeso — swaad gehra
+> ho jayega.
 >
-> Na powder, na filler, na anti-caking agent.
+> Idukki, Kerala ke 12 masale. Biryani experts ke ratio par haath se taule. Chhote masale
+> alag sachet mein — taaki ratio waisa hi pahunche.
 >
-> Amazon par {{PRICE}} / {{PACK_SIZE}}.
+> Na preservative, na filler.
 >
-> **Headline:** 12+ Sabut Masale. Bas.
+> ₹199 / 90g · 50+ servings
+>
+> **Headline:** Sabut Rakho Ya Peeso
 > **Description:** Ready to grind
 > **CTA:** Shop Now
 
 ---
 
-## Ad A3 — "Kerala Origin" (static, 1:1)
+## Ad A3 — "Under ₹4 a Biryani"
 
-Leans on provenance. Kerala is the credible origin story for cardamom, pepper, cinnamon
-and clove — it's the reason the spice trade came to India in the first place, and Spiceto
-is genuinely based there. Use it.
+The value framing. Answers the "₹199 for masala?" objection before it forms.
 
 ### English
 
 > **Primary text**
-> Cardamom from the Idukki hills. Pepper from the Malabar coast. Cinnamon and clove from
-> the same soil that brought the world here five hundred years ago.
+> ₹199. Over 50 biryanis. Under ₹4 a pot.
 >
-> Spiceto is a Kerala spice company. We send you the whole spices — you grind them the
-> day you cook, the way it was done before anyone invented the packet.
+> Cardamom, black pepper, cinnamon, cloves, bay leaf, nutmeg, mace, star anise, khus khus,
+> jeerakam, sha jeerakam, perumjeerakam. Twelve spices from Idukki, Kerala — hand-weighed,
+> never machine-mixed, in a ratio developed with biryani experts.
 >
-> Biryani Whole Spices · {{PRICE}} for {{PACK_SIZE}} · Amazon
+> Grind them or use them whole. No preservatives, no additives.
 >
-> **Headline:** Kerala Spices. Whole, Not Ground.
-> **Description:** From Ernakulam
+> Spiceto Premium Whole Garam Masala, 90g. On Amazon.
+>
+> **Headline:** Under ₹4 Per Biryani
+> **Description:** 90g · 50+ servings
 > **CTA:** Shop Now
 
 ### Hinglish
 
 > **Primary text**
-> Idukki ki pahadiyon ki elaichi. Malabar ki kali mirch. Dalchini aur laung usi mitti se
-> jiske liye duniya paanch sau saal pehle yahan aayi thi.
+> ₹199. 50 se zyada biryani. Ek handi ₹4 se bhi kam.
 >
-> Spiceto ek Kerala spice company hai. Hum sabut masale bhejte hain — aap jis din pakao
-> us din peeso. Jaise packet ke aane se pehle hota tha.
+> Elaichi, kali mirch, dalchini, laung, tej patta, jaiphal, javitri, chakra phool,
+> khus khus, jeerakam, sha jeerakam, perumjeerakam. Idukki, Kerala ke 12 masale — haath
+> se taule, machine se nahi mile, biryani experts ke ratio par.
 >
-> Amazon par {{PRICE}} / {{PACK_SIZE}}.
+> Peeso ya sabut daalo. Na preservative, na additive.
 >
-> **Headline:** Kerala Se. Sabut, Pisa Nahi.
-> **Description:** Ernakulam se
+> 90g, Amazon par.
+>
+> **Headline:** ₹4 Se Kam Mein Ek Biryani
+> **Description:** 90g · 50+ servings
 > **CTA:** Shop Now
 
 ---
 
-## Ad A4 — "Social Proof" (hold until you have reviews)
+## Ad A4 — Social proof: HOLD
 
-Only run this once the listing has real ratings. **Do not fabricate reviews or star
-counts** — Meta and Amazon both enforce this, and a screenshot of a rating you don't have
-is a fast way to lose the ad account.
+**Do not run this yet.** The listing has **3 ratings**. A "5.0 stars!" ad that lands on a
+page showing 3 reviews reads as manufactured and damages trust more than the star rating
+helps. Revisit at ~25 reviews.
 
-> **Primary text**
-> {{REVIEW_COUNT}} reviews, {{STAR_RATING}} stars. The line that keeps coming up:
->
-> "{{REVIEW_QUOTE}}" — {{REVIEWER_NAME}}, verified purchase
->
-> Spiceto Biryani Whole Spices · {{PRICE}} for {{PACK_SIZE}}
->
-> **Headline:** {{STAR_RATING}}★ on Amazon
-> **Description:** {{REVIEW_COUNT}} verified reviews
-> **CTA:** Shop Now
+Never fabricate a review count or quote a review that doesn't exist — Meta and Amazon both
+enforce this, and it's a fast route to losing the ad account.
 
 ---
 
 ## Retargeting copy (Phase 2)
 
-For people who watched 50%+ of a video and didn't buy. Shorter, assumes familiarity.
-
 > Still thinking about it?
 >
-> One pack of Spiceto whole spices grinds down to enough masala for
-> {{SERVINGS}} biryanis. Works out to about ₹{{PER_SERVING}} a pot — less than the ghee
-> you'll put in it.
+> ₹199 gets you 50+ biryanis' worth of masala — under ₹4 a pot. Less than the ghee.
 >
-> **Headline:** Grind Once. Cook All Month.
+> **Headline:** Under ₹4 Per Biryani
 > **CTA:** Shop Now
 
 ---
 
-## Compliance — read before writing your own
-
-Meta's ad policies and FSSAI labelling rules both apply. These get ads rejected, and
-repeat rejections put the ad account at risk:
+## Compliance
 
 | Don't say | Say instead |
 | --- | --- |
-| "Boosts immunity", "aids digestion", "anti-inflammatory", "medicinal" | Nothing health-related at all. Talk about aroma and taste. |
-| "100% chemical-free", "no chemicals" | "No filler, no anti-caking agent, no added colour" |
-| "Organic" — unless you hold Jaivik Bharat / NPOP certification | "Single-origin", "hand-sorted", "small batch" |
-| "Best biryani masala in India", "No. 1" | "Restaurant-style biryani at home" |
-| "Pure" as an unqualified absolute claim | "Whole spices, nothing added" |
-| Any before/after or weight-loss framing | Omit entirely |
+| "Boosts immunity", "aids digestion", "medicinal" | Nothing health-related. Taste and aroma only. |
+| "100% chemical-free", "no chemicals" | "No preservatives, no additives" (both are true and on-listing) |
+| "Organic" — unless Jaivik Bharat / NPOP certified | "Hand-weighed", "single-origin", "from Idukki" |
+| "Best biryani masala in India", "No. 1" | "Ratio developed with biryani experts" |
+| "18 spices" or any count other than **12** | The listing says 12. Say 12. |
+| "100+ servings" | The title says **50+**. Use 50+. |
 
-**Trademark:** don't put Amazon's logo, the Amazon smile, or Prime branding in creative.
-Writing "Available on Amazon" or "On Amazon" in text is fine. Your own FSSAI number and
-the ™ on the Spiceto mark are fine to show — they're yours.
+**Trademark:** no Amazon logo, smile mark or Prime badge in creative. "On Amazon" as text
+is fine.
+
+**On the 53% discount:** the listing shows ₹199 against an MRP of ₹425. Leading with
+"53% off" in ad copy is risky if that price is effectively permanent — inflated-MRP
+claims draw ASCI scrutiny in India and Meta can reject the ad. Lead with the absolute
+price and the per-serving maths instead; both are stronger anyway.
+
+## Listing inconsistency worth fixing
+
+The **title says "50+ Servings"** but the **A+ content says "100+ servings of authentic
+biryani (in powder format)"**. Pick one and make it consistent — a buyer who notices will
+trust the rest of the page less. All copy above uses 50+, the more conservative claim.
 
 ## Testing sequence
 
-Test one variable per round. Two changes at once tells you nothing about either.
+One variable per round.
 
-| Round | Weeks | What varies | Everything else held constant |
+| Round | Weeks | Varies | Held constant |
 | --- | --- | --- | --- |
-| 1 | 1–2 | Angle: A1 vs A2 vs A3 | Language, format, audience |
-| 2 | 3–4 | Language: English vs Hinglish on the winning angle | Angle, format |
-| 3 | 5–6 | Hook / first 3 seconds: 3 variants of the winner | Angle, language |
-| 4 | 7+ | Format: UGC, recipe carousel, testimonial | Winning angle + language |
+| 1 | 1–2 | Angle: A1 (Ratio) vs A2 (Whole or Ground) vs A3 (Value) | Language, format, audience |
+| 2 | 3–4 | English vs Hinglish on the winning angle | Angle, format |
+| 3 | 5–6 | Three hook variants of the winner | Angle, language |
+| 4 | 7+ | Format: UGC, carousel, testimonial | Winning angle + language |

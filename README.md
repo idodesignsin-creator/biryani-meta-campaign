@@ -9,16 +9,22 @@ Meta (Facebook/Instagram) traffic campaign driving to the Amazon.in detail page 
 | --- | --- |
 | Brand | Spiceto — Premium Kerala Spices Online |
 | Product | Biryani Whole Spices · Khada Garam Masala |
-| Format | **Whole spices, ready to grind** — 12+ items |
+| Format | **Whole spices, ready to grind** — usable whole or ground |
+| Spices | **12**, hand-weighed: cardamom, black pepper, cinnamon, cloves, bay leaf, nutmeg, mace, star anise, khus khus, jeerakam, sha jeerakam, perumjeerakam |
+| Ratio | Developed with biryani experts in Kerala |
+| Origin | Idukki, Kerala |
+| Price | **₹199 / 90 g** (MRP ₹425) · ₹299 / 180 g |
+| Servings | 50+ per pack → **under ₹4 per biryani** |
+| Rating | 5.0 from 3 ratings |
 | ASIN | `B0H6TP1DNS` |
-| Landing page | https://www.amazon.in/dp/B0H6TP1DNS |
+| Landing page | https://www.amazon.in/dp/B0H6TP1DNS?th=1 |
 | Seller | Spiceto Trading Company, Ernakulam, Kerala 682306 |
 | FSSAI | Lic. 11325999D0868 |
-| Site | www.spiceto.in |
+| Facebook Page / Instagram | Spiceto.in / spiceto.in |
 | Ad account | I DO Designs Ad account (`387266110719612`) |
 
-Still needed before launch: `{{PRICE}}`, `{{PACK_SIZE}}`, `{{FB_PAGE_ID}}`,
-`{{IG_ACCOUNT_ID}}`, and an Amazon Attribution URL (see `campaign/measurement.md`).
+Still needed before launch: creative assets, and an Amazon Attribution URL
+(see `campaign/measurement.md`).
 
 ## What's here
 

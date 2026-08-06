@@ -1,6 +1,5 @@
 {
-  "_comment": "Machine-readable spec for the Spiceto Biryani Whole Spices Meta campaign. Values marked {{...}} must be filled before this can be used to create the campaign. Nothing here has been created in the ad account yet.",
-
+  "_comment": "Machine-readable spec for the Spiceto Meta campaign. Product facts verified against the live Amazon listing on 2026-08-06. Campaign is being built manually in Ads Manager; this file is the source of truth for settings.",
   "account": {
     "platform": "meta_ads",
     "ad_account_id": "387266110719612",
@@ -8,22 +7,49 @@
     "facebook_page_id": "{{FB_PAGE_ID}}",
     "instagram_account_id": "{{IG_ACCOUNT_ID}}",
     "currency": "INR",
-    "country": "IN"
+    "country": "IN",
+    "facebook_page": "Spiceto.in",
+    "instagram_account": "spiceto.in"
   },
-
   "product": {
     "brand": "Spiceto",
-    "name": "Biryani Whole Spices - Khada Garam Masala",
-    "format": "whole spices, ready to grind",
-    "item_count": "12+",
+    "name": "Spiceto Premium Whole Garam Masala - Biryani Whole Spices, Khada Garam Masala",
+    "format": "whole spices, ready to grind - usable whole or ground",
+    "item_count": 12,
     "asin": "B0H6TP1DNS",
     "raw_url": "https://www.amazon.in/dp/B0H6TP1DNS",
-    "price_inr": "{{PRICE}}",
-    "pack_size": "{{PACK_SIZE}}",
+    "price_inr": 199,
+    "pack_size": "90 g",
     "seller": "Spiceto Trading Company, Ernakulam, Kerala 682306",
-    "fssai_licence": "11325999D0868"
+    "fssai_licence": "11325999D0868",
+    "spices": [
+      "Cardamom",
+      "Black Pepper",
+      "Cinnamon",
+      "Cloves",
+      "Bay Leaf",
+      "Nutmeg",
+      "Mace (Javithri)",
+      "Star Anise",
+      "Poppy Seeds (Khus Khus)",
+      "Jeerakam",
+      "Sha Jeerakam",
+      "Perumjeerakam"
+    ],
+    "ratio_provenance": "developed with biryani experts in Kerala",
+    "origin": "Idukki, Kerala",
+    "mrp_inr": 425,
+    "alt_pack": {
+      "pack_size": "180 g",
+      "price_inr": 299
+    },
+    "servings": "50+",
+    "cost_per_serving_inr": "under 4",
+    "rating": 5.0,
+    "rating_count": 3,
+    "additives": "zero additives, no preservatives",
+    "packing": "hand-weighed, not machine-mixed; small spices in a separate sachet"
   },
-
   "campaign": {
     "name": "SPICETO | Traffic | Prospecting | IN-Metro",
     "objective": "OUTCOME_TRAFFIC",
@@ -38,24 +64,111 @@
     "url_tags": "utm_source=meta&utm_medium=paid&utm_campaign={{campaign.name}}&utm_content={{ad.name}}&utm_term={{adset.name}}&utm_placement={{placement}}&utm_site={{site_source_name}}",
     "_url_tags_note": "Meta dynamic URL parameters — they fill in per ad and per placement instead of being hardcoded. Passed via the tool's `url_tags` argument, appended to the landing page URL on every click. IMPORTANT: Amazon does not report UTM values anywhere in Seller Central, so these measure NOTHING while the destination is Amazon. They are set up correctly now so they work the day traffic is routed through spiceto.in. Real measurement options are ranked in measurement.md."
   },
-
   "shared_targeting": {
     "_geo_note": "Meta location keys below were resolved live via search_meta_targeting against the real ad account on 2026-08-05. Pass each as {key, type, radius, distance_unit} in the `locations` array. Three keys are still unresolved - the Adspirer quota ran out mid-lookup. Resolve them with search_meta_targeting before creating the campaign; do NOT guess a key.",
     "geo_locations": {
-      "location_types": ["home"],
+      "location_types": [
+        "home"
+      ],
       "custom_locations": [
-        { "key": "1027234", "type": "city", "city": "Hyderabad",  "state": "Telangana",      "radius": 25, "distance_unit": "kilometer" },
-        { "key": "1023040", "type": "city", "city": "Delhi",      "state": "Delhi",          "radius": 30, "distance_unit": "kilometer", "note": "covers Gurugram, Noida, Ghaziabad, Faridabad - do not add separately" },
-        { "key": "1035921", "type": "city", "city": "Mumbai",     "state": "Maharashtra",    "radius": 25, "distance_unit": "kilometer" },
-        { "key": "1017930", "type": "city", "city": "Bangalore",  "state": "Karnataka",      "radius": 20, "distance_unit": "kilometer", "note": "Meta lists this as 'Bangalore', not 'Bengaluru'" },
-        { "key": "1020734", "type": "city", "city": "Kolkata",    "state": "West Bengal",    "radius": 20, "distance_unit": "kilometer" },
-        { "key": "1033376", "type": "city", "city": "Lucknow",    "state": "Uttar Pradesh",  "radius": 15, "distance_unit": "kilometer" },
-        { "key": "1039952", "type": "city", "city": "Pune",       "state": "Maharashtra",    "radius": 15, "distance_unit": "kilometer" },
-        { "key": "1031366", "type": "city", "city": "Kochi",      "state": "Kerala",         "radius": 12, "distance_unit": "kilometer" },
-        { "key": "1027633", "type": "city", "city": "Jaipur",     "state": "Rajasthan",      "radius": 15, "distance_unit": "kilometer" },
-        { "key": "UNRESOLVED", "type": "city", "city": "Chennai",   "state": "Tamil Nadu",     "radius": 15, "distance_unit": "kilometer" },
-        { "key": "UNRESOLVED", "type": "city", "city": "Indore",    "state": "Madhya Pradesh", "radius": 12, "distance_unit": "kilometer" },
-        { "key": "UNRESOLVED", "type": "city", "city": "Ahmedabad", "state": "Gujarat",        "radius": 15, "distance_unit": "kilometer" }
+        {
+          "key": "1027234",
+          "type": "city",
+          "city": "Hyderabad",
+          "state": "Telangana",
+          "radius": 25,
+          "distance_unit": "kilometer"
+        },
+        {
+          "key": "1023040",
+          "type": "city",
+          "city": "Delhi",
+          "state": "Delhi",
+          "radius": 30,
+          "distance_unit": "kilometer",
+          "note": "covers Gurugram, Noida, Ghaziabad, Faridabad - do not add separately"
+        },
+        {
+          "key": "1035921",
+          "type": "city",
+          "city": "Mumbai",
+          "state": "Maharashtra",
+          "radius": 25,
+          "distance_unit": "kilometer"
+        },
+        {
+          "key": "1017930",
+          "type": "city",
+          "city": "Bangalore",
+          "state": "Karnataka",
+          "radius": 20,
+          "distance_unit": "kilometer",
+          "note": "Meta lists this as 'Bangalore', not 'Bengaluru'"
+        },
+        {
+          "key": "1020734",
+          "type": "city",
+          "city": "Kolkata",
+          "state": "West Bengal",
+          "radius": 20,
+          "distance_unit": "kilometer"
+        },
+        {
+          "key": "1033376",
+          "type": "city",
+          "city": "Lucknow",
+          "state": "Uttar Pradesh",
+          "radius": 15,
+          "distance_unit": "kilometer"
+        },
+        {
+          "key": "1039952",
+          "type": "city",
+          "city": "Pune",
+          "state": "Maharashtra",
+          "radius": 15,
+          "distance_unit": "kilometer"
+        },
+        {
+          "key": "1031366",
+          "type": "city",
+          "city": "Kochi",
+          "state": "Kerala",
+          "radius": 12,
+          "distance_unit": "kilometer"
+        },
+        {
+          "key": "1027633",
+          "type": "city",
+          "city": "Jaipur",
+          "state": "Rajasthan",
+          "radius": 15,
+          "distance_unit": "kilometer"
+        },
+        {
+          "key": "UNRESOLVED",
+          "type": "city",
+          "city": "Chennai",
+          "state": "Tamil Nadu",
+          "radius": 15,
+          "distance_unit": "kilometer"
+        },
+        {
+          "key": "UNRESOLVED",
+          "type": "city",
+          "city": "Indore",
+          "state": "Madhya Pradesh",
+          "radius": 12,
+          "distance_unit": "kilometer"
+        },
+        {
+          "key": "UNRESOLVED",
+          "type": "city",
+          "city": "Ahmedabad",
+          "state": "Gujarat",
+          "radius": 15,
+          "distance_unit": "kilometer"
+        }
       ]
     },
     "age_min": 25,
@@ -64,7 +177,6 @@
     "_gender_rationale": "All genders for the first 7 days, then narrow on the Ads Manager gender breakdown. See targeting.md for the full reasoning.",
     "locales": []
   },
-
   "ad_sets": [
     {
       "name": "Metro Spice Buyers | 25-54 | All | LPV",
@@ -72,7 +184,10 @@
       "optimization_goal": "LANDING_PAGE_VIEWS",
       "billing_event": "IMPRESSIONS",
       "destination_type": "WEBSITE",
-      "attribution_spec": { "click_through_days": 7, "view_through_days": 1 },
+      "attribution_spec": {
+        "click_through_days": 7,
+        "view_through_days": 1
+      },
       "placements": "advantage_plus_automatic",
       "targeting": {
         "inherits": "shared_targeting",
@@ -82,23 +197,64 @@
           {
             "_layer": "1 - cooking and cuisine interest (ANY)",
             "interests": [
-              { "id": "6003659420716", "name": "Cooking",         "audience_lower": 752634277 },
-              { "id": "6003385609165", "name": "Recipes",          "audience_lower": 480500399 },
-              { "id": "6003494675627", "name": "Indian cuisine",   "audience_lower": 91538323 },
-              { "id": "6003144146766", "name": "Cookbook",         "audience_lower": 48788639 },
-              { "id": "6003188266578", "name": "Cooking At Home",  "audience_lower": 5332266 },
-              { "id": "6003107442035", "name": "Celebrity chef",   "audience_lower": 3608358 },
-              { "id": "6854223362938", "name": "Cooking shows",    "audience_lower": 850340 }
+              {
+                "id": "6003659420716",
+                "name": "Cooking",
+                "audience_lower": 752634277
+              },
+              {
+                "id": "6003385609165",
+                "name": "Recipes",
+                "audience_lower": 480500399
+              },
+              {
+                "id": "6003494675627",
+                "name": "Indian cuisine",
+                "audience_lower": 91538323
+              },
+              {
+                "id": "6003144146766",
+                "name": "Cookbook",
+                "audience_lower": 48788639
+              },
+              {
+                "id": "6003188266578",
+                "name": "Cooking At Home",
+                "audience_lower": 5332266
+              },
+              {
+                "id": "6003107442035",
+                "name": "Celebrity chef",
+                "audience_lower": 3608358
+              },
+              {
+                "id": "6854223362938",
+                "name": "Cooking shows",
+                "audience_lower": 850340
+              }
             ]
           },
           {
             "_layer": "2 - NARROW: must also match ANY of",
             "interests": [
-              { "id": "6003346592981", "name": "Online shopping", "audience_lower": 1347410025 },
-              { "id": "6003002193982", "name": "Amazon.com",      "audience_lower": 338243562 }
+              {
+                "id": "6003346592981",
+                "name": "Online shopping",
+                "audience_lower": 1347410025
+              },
+              {
+                "id": "6003002193982",
+                "name": "Amazon.com",
+                "audience_lower": 338243562
+              }
             ],
             "behaviors": [
-              { "id": "6071631541183", "name": "Engaged Shoppers", "path": "Purchase behavior > Engaged Shoppers", "audience_lower": 1132240509 }
+              {
+                "id": "6071631541183",
+                "name": "Engaged Shoppers",
+                "path": "Purchase behavior > Engaged Shoppers",
+                "audience_lower": 1132240509
+              }
             ]
           }
         ]
@@ -110,93 +266,142 @@
       "optimization_goal": "LANDING_PAGE_VIEWS",
       "billing_event": "IMPRESSIONS",
       "destination_type": "WEBSITE",
-      "attribution_spec": { "click_through_days": 7, "view_through_days": 1 },
+      "attribution_spec": {
+        "click_through_days": 7,
+        "view_through_days": 1
+      },
       "placements": "advantage_plus_automatic",
       "targeting": {
         "inherits": "shared_targeting",
         "advantage_plus_audience": true,
         "audience_suggestions": [
-          { "id": "6003659420716", "name": "Cooking" },
-          { "id": "6003494675627", "name": "Indian cuisine" },
-          { "id": "6003385609165", "name": "Recipes" }
+          {
+            "id": "6003659420716",
+            "name": "Cooking"
+          },
+          {
+            "id": "6003494675627",
+            "name": "Indian cuisine"
+          },
+          {
+            "id": "6003385609165",
+            "name": "Recipes"
+          }
         ],
         "flexible_spec": []
       }
     }
   ],
-
   "ads": [
     {
       "id": "A1",
-      "name": "Video | Aroma | {aspect} | EN | v1",
-      "angle": "aroma - ground spice loses its oils, restaurants grind fresh",
+      "name": "Static | The Ratio | {aspect} | EN | v1",
+      "angle": "the ratio is the recipe - anyone can buy whole spices, almost nobody gets the proportions right",
       "format": "video",
       "duration_seconds": 15,
-      "aspects": ["9:16", "4:5", "1:1"],
+      "aspects": [
+        "9:16",
+        "4:5",
+        "1:1"
+      ],
       "call_to_action": "SHOP_NOW",
       "primary_text_ref": "ad-copy.md > Ad A1 > English",
-      "headline": "Grind It Fresh. Taste The Difference.",
-      "description": "12+ whole spices",
+      "headline": "The Ratio Is The Recipe",
+      "description": "12 hand-weighed spices",
       "destination_url": "https://www.amazon.in/dp/B0H6TP1DNS?th=1",
       "_destination_note": "Swap for the Amazon Attribution URL for ad A1 once Brand Registry is in place. UTMs are carried by campaign.url_tags, not hardcoded here.",
-      "in_ad_sets": ["Metro Spice Buyers | 25-54 | All | LPV", "Broad | 25-54 | All | LPV"]
+      "in_ad_sets": [
+        "Metro Spice Buyers | 25-54 | All | LPV",
+        "Broad | 25-54 | All | LPV"
+      ]
     },
     {
       "id": "A2",
-      "name": "Static | Whats Inside | {aspect} | EN | v1",
-      "angle": "ingredient transparency - name the spices, name what is absent",
+      "name": "Static | Whole or Ground | {aspect} | EN | v1",
+      "angle": "you choose the form - use whole in the dum or grind fresh",
       "format": "image",
-      "aspects": ["9:16", "4:5", "1:1"],
+      "aspects": [
+        "9:16",
+        "4:5",
+        "1:1"
+      ],
       "call_to_action": "SHOP_NOW",
       "primary_text_ref": "ad-copy.md > Ad A2 > English",
-      "headline": "12+ Whole Spices. Nothing Else.",
+      "headline": "Use Whole. Or Grind Fresh.",
       "description": "Ready to grind",
       "destination_url": "https://www.amazon.in/dp/B0H6TP1DNS?th=1",
       "_destination_note": "Swap for the Amazon Attribution URL for ad A2 once Brand Registry is in place.",
-      "in_ad_sets": ["Metro Spice Buyers | 25-54 | All | LPV", "Broad | 25-54 | All | LPV"]
+      "in_ad_sets": [
+        "Metro Spice Buyers | 25-54 | All | LPV",
+        "Broad | 25-54 | All | LPV"
+      ]
     },
     {
       "id": "A3",
-      "name": "Static | Kerala Origin | {aspect} | EN | v1",
-      "angle": "provenance - Kerala spice country, Ernakulam based",
+      "name": "Static | Under Rs 4 a Biryani | {aspect} | EN | v1",
+      "angle": "value framing - Rs 199 for 50+ servings",
       "format": "image",
-      "aspects": ["9:16", "4:5", "1:1"],
+      "aspects": [
+        "9:16",
+        "4:5",
+        "1:1"
+      ],
       "call_to_action": "SHOP_NOW",
       "primary_text_ref": "ad-copy.md > Ad A3 > English",
-      "headline": "Kerala Spices. Whole, Not Ground.",
-      "description": "From Ernakulam",
+      "headline": "Under Rs 4 Per Biryani",
+      "description": "90g - 50+ servings",
       "destination_url": "https://www.amazon.in/dp/B0H6TP1DNS?th=1",
       "_destination_note": "Swap for the Amazon Attribution URL for ad A3 once Brand Registry is in place.",
-      "in_ad_sets": ["Metro Spice Buyers | 25-54 | All | LPV", "Broad | 25-54 | All | LPV"]
+      "in_ad_sets": [
+        "Metro Spice Buyers | 25-54 | All | LPV",
+        "Broad | 25-54 | All | LPV"
+      ]
     }
   ],
-
   "custom_audiences_to_create": [
-    { "name": "Spiceto | Video Viewers 50% | 365d", "source": "video", "threshold": "50_percent", "retention_days": 365 },
-    { "name": "Spiceto | Video Viewers 3s | 365d",  "source": "video", "threshold": "3_seconds", "retention_days": 365 },
-    { "name": "Spiceto | IG Engagers | 365d",       "source": "instagram_account", "retention_days": 365 },
-    { "name": "Spiceto | FB Page Engagers | 365d",  "source": "facebook_page", "retention_days": 365 },
-    { "name": "Spiceto | Site Visitors | 180d",     "source": "pixel", "domain": "spiceto.in", "retention_days": 180, "requires": "pixel installed on spiceto.in" }
+    {
+      "name": "Spiceto | Video Viewers 50% | 365d",
+      "source": "video",
+      "threshold": "50_percent",
+      "retention_days": 365
+    },
+    {
+      "name": "Spiceto | Video Viewers 3s | 365d",
+      "source": "video",
+      "threshold": "3_seconds",
+      "retention_days": 365
+    },
+    {
+      "name": "Spiceto | IG Engagers | 365d",
+      "source": "instagram_account",
+      "retention_days": 365
+    },
+    {
+      "name": "Spiceto | FB Page Engagers | 365d",
+      "source": "facebook_page",
+      "retention_days": 365
+    },
+    {
+      "name": "Spiceto | Site Visitors | 180d",
+      "source": "pixel",
+      "domain": "spiceto.in",
+      "retention_days": 180,
+      "requires": "pixel installed on spiceto.in"
+    }
   ],
-
   "review_schedule": {
-    "day_3":  "delivery and rejection check only - no optimisation, learning phase",
-    "day_7":  "CPLPV by ad, ad set, gender, age, city. Pause dead ads. Make the gender call.",
+    "day_3": "delivery and rejection check only - no optimisation, learning phase",
+    "day_7": "CPLPV by ad, ad set, gender, age, city. Pause dead ads. Make the gender call.",
     "day_14": "Meta + first Amazon Attribution data. Cut bottom cities. Pick winning angle.",
     "day_21": "Attributed sales and CPA vs break-even. Scale, restructure, or stop."
   },
-
   "blockers_before_launch": [
-    "CREATIVE IMAGE: no Spiceto asset identified. The ad account holds 1417 images and 884 videos across multiple clients (scire.co.in, FOREST and others); the Spiceto pack shot could not be identified from metadata alone, and the fbcdn thumbnail URLs are unreachable from this environment. Needs either a public image URL or the specific image_hash.",
-    "ADSPIRER QUOTA: 15/15 free calls used as of 2026-08-05. Resets 2026-09-04. Campaign creation cannot proceed until quota is available.",
-    "3 unresolved Meta location keys: Chennai, Indore, Ahmedabad",
-    "{{PRICE}} and {{PACK_SIZE}} unknown - amazon.in and spiceto.in both returned HTTP 403 from this environment",
-    "{{IG_ACCOUNT_ID}} not supplied (facebook_page_id auto-detects from the connected account)",
+    "Creative assets not produced (see creative-brief.md). Listing images are a usable starting point.",
     "Amazon Attribution tags not created - requires Brand Registry",
-    "Creative assets not produced (9 files: see creative-brief.md)",
-    "Amazon listing not yet audited against launch-checklist.md"
+    "Baseline the ASIN in Seller Central Business Reports BEFORE launch - cannot be reconstructed after",
+    "Social proof ad (A4) held until the listing has ~25 reviews; currently 3",
+    "Listing inconsistency: title says 50+ servings, A+ content says 100+. Pick one."
   ],
-
   "creation_sequence": [
     "1. create_meta_image_campaign - creates campaign + ad set A + ad A1 in one call. Pass campaign_budget_optimization=true, budget_daily=500, objective=OUTCOME_TRAFFIC, call_to_action=SHOP_NOW, locations=<the 12 objects above>, location_types=['home'], age_min=25, age_max=54, genders=null (all), interests/behaviors=<layer 1 + 2>, advantage_audience=true.",
     "2. add_meta_ad_set - ad set B (Broad). Pass campaign_budget_optimization=true, NO budget_daily, same locations, no interests, advantage_audience=true.",
