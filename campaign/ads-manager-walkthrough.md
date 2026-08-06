@@ -64,6 +64,18 @@ This is the step that does the work. Layer 1 alone is everyone who likes food co
 Layer 2 alone is everyone who shops online. You want the intersection: people who cook
 *and* actually buy things on the internet.
 
+**On using `Amazon.com` for an Indian audience:** it's correct. Meta's interest entities
+are brands, not domains — `Amazon.com` is *the company Amazon*, and Indian users who
+engage with Amazon India get tagged against it. There is no per-marketplace interest for
+any large brand; `Amazon.co.uk` and `Amazon.de` don't exist either.
+
+It's also not load-bearing. All three narrow options are OR'd, and `Online shopping`
+(~1.35B) and `Engaged Shoppers` (~1.13B) dwarf `Amazon.com` (~338M globally), so the
+layer works regardless of how well the Amazon entity maps to India.
+
+To verify: build a throwaway audience with the 12 India locations, 25–54, and
+`Amazon.com` as the only interest. Tens of millions means it maps fine. Then delete it.
+
 ### Sanity check
 
 The estimate should drop from **101M–118.8M** to somewhere in the **low tens of millions**.
