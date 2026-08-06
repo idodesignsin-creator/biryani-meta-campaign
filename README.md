@@ -29,6 +29,7 @@ Still needed before launch: `{{PRICE}}`, `{{PACK_SIZE}}`, `{{FB_PAGE_ID}}`,
 | [`campaign/ad-copy.md`](campaign/ad-copy.md) | Ad copy — English + Hinglish, all three angles |
 | [`campaign/creative-brief.md`](campaign/creative-brief.md) | Asset specs, shot list, video scripts |
 | [`campaign/measurement.md`](campaign/measurement.md) | Amazon Attribution, KPIs, benchmarks |
+| [`campaign/ads-manager-walkthrough.md`](campaign/ads-manager-walkthrough.md) | **Click-by-click manual setup in the Ads Manager UI** |
 | [`campaign/launch-checklist.md`](campaign/launch-checklist.md) | Pre-flight + first 14 days |
 | [`campaign/campaign-spec.json`](campaign/campaign-spec.json) | Machine-readable spec for API creation |
 
