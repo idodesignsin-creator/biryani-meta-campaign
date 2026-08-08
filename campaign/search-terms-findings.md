@@ -130,3 +130,100 @@ convert; none of these did. The reason to move them is that Auto pays ~₹16 for
 can bid ₹8–10, far closer to what a ₹199 pack can carry.
 
 `biryani spices` needs the cap most: **₹135.82, 23.5% of all spend, nothing back.**
+
+## 7. Harvest executed — bids set on the 9 terms
+
+Amazon's add-keyword dialog surfaced impression share and rank, which confirms the whole
+niche-over-commodity argument numerically:
+
+| Term | Impression share | Rank | Suggested bid |
+| --- | --- | --- | --- |
+| `biryani whole spices` | **24.64%** | **1** | **₹5.56** |
+| `biryani spices` | 1.72% | 14 | ₹10.14 |
+
+₹135.82 went into `biryani spices` in Auto for a 1.72% share at rank 14 — head-term prices for
+invisibility. The more specific `biryani whole spices` gives rank 1 and a quarter of impressions
+at half the bid. **The more specific the term, the cheaper it is and the more it is dominated.**
+
+### Bids
+
+Defaults came in at Amazon's suggestion, averaging ₹11.14 against a ₹4–9 ceiling.
+
+| Keyword | Suggested | Set to | Why |
+| --- | --- | --- | --- |
+| `biryani whole spices` | ₹5.56 | **₹6.95** ↑ | *Raise.* Rank 1, 24.64% share, top-of-range still under ceiling. Buy more of the one term won cheaply. |
+| `whole spices biryani` | ₹6.96 | ₹6.96 | Already inside the ceiling |
+| `whole biryani masala spices` | ₹13.32 | ₹8.00 ↓ | Range floor is ₹6.87 |
+| `biryani spices` | ₹10.14 | ₹7.61 ↓ | Range floor; 1.72% share does not justify more |
+| `khada masala sabut` | ₹10.75 | ₹8.00 ↓ | Proven ₹60.79 in Auto |
+| `khada masala mix` | ₹11.13 | ₹8.35 ↓ | Range floor |
+| `sabut garam masala` | ₹13.42 | ₹9.03 ↓ | Floor sits at the ceiling edge |
+| `masala whole spices` | ₹12.66 | ₹10.64 ↓ | Floor above ceiling — watch |
+| `biryani spices whole` | ₹16.34 | **drop** | Dearest, floor ₹12.26, intent already covered |
+
+≈23% lower in total, concentrated on affordable terms.
+
+Bidding at range floors risks thin delivery; that is the price of staying near the ceiling. The
+campaign's job right now is **diagnostic** — reach 100–200 clicks and settle whether the listing
+converts. `biryani whole spices` at ₹6.95 is the best instrument for that, being the one place
+real volume is affordable.
+
+## 8. Auto switched off — Exact is now the whole campaign
+
+State as of 2026-08-08 evening: **Auto and Broad off. Exact only**, ₹120/day, default bid ₹8,
+16 keywords, 7 negatives. The head terms are gone — Exact impressions fell 47 → 11, exactly the
+`garam masala whole` + `garam masala` traffic disappearing.
+
+Two consequences: the "add the 9 terms as negatives in Auto" step is **moot** (nothing to
+compete with), and **discovery has stopped.** Turn Auto back on at ~₹50/day for discovery only,
+once the conversion question is settled.
+
+### Still to clean: 10 of 16 keywords sit above the ₹9 ceiling
+
+The nine harvested terms are correctly priced. The problem is the **original guessed keywords**,
+still live at ₹9–13.40 with no volume after eight days:
+
+| Keyword | Bid | Impressions | Action |
+| --- | --- | --- | --- |
+| `biryani garam masala` | ₹13.40 | 0 | **Pause** |
+| `mix khada garam masala` | ₹12.98 | 0 | **Pause** |
+| `khada garam masala mix` | ₹12.20 | 0 | **Pause** |
+| `biryani whole spice mix` | ₹12.00 | 1 | **Pause** |
+| `khada garam masala` | ₹12.00 | 1 | **Pause** — floor ₹11.38 is over ceiling; `khada masala sabut` covers the intent at ₹8 |
+| `whole garam masala mix` | ₹9.70 | 0 | **Pause** |
+| `whole spice garam masala` | ₹9.06 | 0 | **Pause** |
+| `biryani masala whole spices` | ₹12.00 | **9** | **Cut to ₹8.00** — real term, most impressions of any old keyword, floor ₹7.68 |
+
+Leaves ~9 keywords, every one drawn from a proven search query.
+
+### Word-order duplicates compete with each other
+
+Amazon's exact match treats word order as a close variant, so these match the same searches:
+
+- `khada garam masala mix` / `mix khada garam masala` / `khada masala mix`
+- `biryani whole spices` / `whole spices biryani`
+
+Amazon picks one internally, often the higher bid — so keeping a ₹12.98 twin of an ₹8.35
+keyword means occasionally paying ₹12.98 for traffic priced at ₹8.35. The pauses above resolve
+most of it.
+
+## 9. The decision rule
+
+At ₹120/day and ₹8–9 CPC: **13–15 clicks/day, 150 clicks in 10–11 days, about ₹1,300.**
+
+| If the listing truly converts | P(still 0 sales at 150 clicks) |
+| --- | --- |
+| 8% | 0.00% |
+| 5% | 0.05% |
+| 3% | 1.0% |
+
+**Zero sales at 150 clicks convicts the listing** — stop spending, fix the page. Any sales,
+measure the rate and recompute.
+
+### Be clear-eyed: this will not be profitable
+
+Break-even at ₹8 CPC needs **10–17% conversion** depending on COGS. The ~₹1,300 is **the price
+of an answer, not an investment expected to pay back.**
+
+A 5–8% result is still good news: it means the listing works and the only problem is that ₹199
+cannot carry ₹8 clicks — fixed with the 180 g pack, bundles or price, not with ad tweaks.
