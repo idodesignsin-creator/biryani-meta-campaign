@@ -39,7 +39,8 @@ Still needed before launch: creative assets, and an Amazon Attribution URL
 | [`campaign/launch-checklist.md`](campaign/launch-checklist.md) | Pre-flight + first 14 days |
 | [`campaign/pre-publish-review.md`](campaign/pre-publish-review.md) | Review of the built draft in Ads Manager — blockers before Publish |
 | [`campaign/baseline-2026-08-08.md`](campaign/baseline-2026-08-08.md) | **Pre-launch ASIN baseline — and why the launch is on hold** |
-| [`campaign/sponsored-products-audit.md`](campaign/sponsored-products-audit.md) | **The Amazon SP campaigns — why "zero results" isn't the finding it looks like** |
+| [`campaign/sponsored-products-audit.md`](campaign/sponsored-products-audit.md) | The Amazon SP campaigns — why "zero results" isn't the finding it looks like |
+| [`campaign/sp-optimisation-plan.md`](campaign/sp-optimisation-plan.md) | **What to change in the Amazon campaigns, and the affordable-CPC ceiling** |
 | [`campaign/campaign-spec.json`](campaign/campaign-spec.json) | Machine-readable spec for API creation |
 
 ## The two decisions you asked about
@@ -66,7 +67,21 @@ breakdown at day 7 alongside gender.
 
 ## Status
 
-**Launch on hold. The draft is built and unpublished — and should stay that way for now.**
+**Meta is on hold by agreement (2026-08-08). Work has moved to fixing the Amazon campaigns.**
+
+The decisive comparison came from the seller's own account: in the same week, **Kudampuli
+converted at 8% on ₹8.63 clicks while the biryani product took 36 clicks at ₹16.28 and sold
+nothing.** The account, fulfilment and pricing structure all work — biryani is paying 89% more
+per click in a commodity category against national brands.
+
+That reframes the whole problem as **unit economics, not traffic**: at ₹199 the affordable CPC
+is ₹4–9, and the head terms cost ₹27–50. See
+[`campaign/sp-optimisation-plan.md`](campaign/sp-optimisation-plan.md) for the keyword-level
+plan, and note it **supersedes the bid advice** in the earlier SP audit.
+
+---
+
+**The Meta draft is built and unpublished — and should stay that way for now.**
 
 The pre-launch ASIN baseline was pulled on 2026-08-08 and answered the question the campaign
 was going to spend ₹15,000 to answer: **138 sessions, 1 unit — 0.72% conversion**, while

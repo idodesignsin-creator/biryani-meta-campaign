@@ -1,5 +1,11 @@
 # Sponsored Products Audit — 2026-08-08
 
+> **⚠️ The bid guidance in this file is superseded by
+> [`sp-optimisation-plan.md`](sp-optimisation-plan.md).** "Raise bids to Amazon's suggested
+> bid" does not survive the unit economics — the affordable CPC for a ₹199 product is ₹4–9,
+> while suggested bids on the head terms run ₹27–50. The delivery diagnosis below still
+> stands; the prescription does not.
+
 Reviewed after the question *"there is already ongoing promotion in Amazon but zero result …
 that's why we're trying a Meta ad."*
 
