@@ -1,107 +1,99 @@
 # Creative Brief
 
-## What you already have
+## What shipped (2026-08-08)
 
-The pack shot in hand — silver stand-up pouch, black label, gold Spiceto wordmark, whole
-spices arranged around the base on dark wood — is a strong hero image. Warm key light,
-dark moody background, brass vessels and a window in the bokeh. It reads premium and it
-reads Kerala. Reuse that lighting setup for everything else so the set looks like one
-campaign.
+The launch creative went through three rounds. Recording what changed and why, because
+the reasoning generalises to the next round.
 
-What it can't do on its own: show the product being *used*. Every asset below exists to
-answer "what do I actually do with this?"
+### Round 1 — packshot
 
-## Asset specs
+Silver pouch on dark wood, brass vessels, window bokeh, headline
+*"DESIGNED FOR PERFECTION / READY FOR YOUR KITCHEN"*. Well-crafted but two problems:
 
-Build every ad in three aspect ratios. Meta's Advantage+ placements will use all of them,
-and letting one ratio get auto-cropped into the others is the most common avoidable
-quality loss in a small campaign.
+- The headline was a slogan, not an argument. It could have sat on a water purifier.
+- **No food in frame.** Nobody wants a pouch; they want biryani. The desire was absent.
 
-| Ratio | Pixels | Where it runs |
+### Round 2 — Moosakka + the dish
+
+Added Moosakka (the biryani expert from the A+ content), a kadai of finished biryani, and
+the 12 spices in individual brass bowls.
+
+This was the step change. Two reasons:
+
+- **Moosakka converts the claim into evidence.** "Designed by biryani experts" asserted in
+  text is marketing; a named expert cooking with the product is proof. A generic model
+  holding a bag would have added nothing.
+- **The 12 bowls render the ratio argument as a picture.** The whole pitch is that the
+  proportions are the product. Twelve measured bowls says that without a word.
+
+### Round 3 — what actually shipped
+
+- Headline tightened to **"DESIGNED BY BIRYANI EXPERTS / FOR HOME KITCHEN"**. Four lines
+  became three, and the second line does real work: it bridges expert credibility to
+  home use, which is the actual proposition.
+- Setting moved to a **home kitchen** — gas hob, pressure cooker. Says *you can do this*,
+  where the restaurant setting said *we can*.
+- Fixed **"BIRIYANI" → "BIRYANI"**, which had contradicted the pack in the same frame.
+
+Three ratios produced and re-composed (not cropped): 1:1, 9:16, 1.91:1.
+
+## Aspect ratios — produce all three, re-framed
+
+| Ratio | Pixels | Where |
 | --- | --- | --- |
-| 9:16 | 1080 × 1920 | Reels, Stories — where most of your delivery will land |
-| 4:5 | 1080 × 1350 | Feed (FB + IG). Tallest ratio the feed allows. |
-| 1:1 | 1080 × 1080 | Feed fallback, Explore, right column |
+| 9:16 | 1080 × 1920 | Reels, Stories, WhatsApp Status — most delivery lands here |
+| 4:5 | 1080 × 1350 | Feed. Tallest the feed allows. |
+| 1:1 | 1080 × 1080 | Feed fallback, Marketplace, right column |
 
-**Video:** MP4, H.264, 15 seconds, under 30 MB. **Design for sound-off** — assume most
-viewers never hear it. Burn captions into the file rather than relying on Meta's
-auto-captions.
+**Re-compose, don't crop.** A 1:1 upload was rejected outright by Instagram Explore home,
+which requires between 4:5 and 9:16. Auto-crop also destroys left-aligned headline text —
+the 1.91:1 in Facebook search results rendered as *"O SPICE MIX / ED BY / NI EXPERTS"*.
 
-**Safe zones on 9:16:** keep text and the product out of the top 250 px and bottom 400 px.
-That's where the profile name, CTA button and Instagram UI sit. Text placed there gets
-covered, and you won't see it in the Ads Manager preview.
+**9:16 safe zones:** keep text and product clear of the top 250 px and bottom 400 px.
 
-**Text-in-image:** Meta removed the hard 20% rule, but image-heavy text still suppresses
-reach in practice. Your current pack shot has a large two-line headline across the top —
-that's about the ceiling. Don't add more on top of it.
+## Video — findings from the 20s cut
 
-## Ad A1 — "Aroma" (video, 15s) — build this first
+The first video export was **1920 × 1080, 16:9, 20 s**, structured hero → spice b-roll →
+hero → logo. The bookend structure is right and the b-roll earns the "12 spices" claim
+visually. Issues found:
 
-This is the lead creative and the one that builds your retargeting pool. If you only
-produce one asset, produce this.
+| Issue | Detail |
+| --- | --- |
+| **Typo — "HAND-WELGHED"** | Should be WEIGHED. On screen ~0:02–0:15, i.e. most of the video. |
+| **Typo — "SPICETO BIRIYANI MIX"** | Should be BIRYANI. Inconsistent *within the same video* — the hero cards at 0:00 and 0:17 spell it correctly. |
+| **16:9 only** | Wrong shape for Meta. Reels/Stories/Status are 9:16; a landscape file letterboxes into a strip and the lower-third text shrinks with it. Export 9:16 and 4:5, re-framed — Moosakka sits right-of-centre and the text left, so a centre crop loses one or the other. |
+| **End card is a bare logo on white** | Jarring cut from the warm dark grade, and it wastes the final frame. It should carry the pack, ₹199 · 90 g · 50+ servings, and "On Amazon". As shipped the video never says what it costs or where to buy. |
+| **Nothing gets ground** | "Ready to grind" is the defining feature and no shot shows whole spices going in and powder coming out. The cinnamon crush at ~0:05 is the closest beat. Worth more than another beauty shot. |
 
-| Time | Visual | On-screen text |
-| --- | --- | --- |
-| 0:00–0:02 | Extreme close-up: hand tips whole spices from the pouch into a stone mortar. Shallow depth of field. | *Your masala died in the packet.* |
-| 0:02–0:05 | Pestle comes down. Cinnamon bark cracks. Cardamom splits open. Slow motion, tight. | *Ground spice loses its oil in weeks.* |
-| 0:05–0:08 | Ground masala tipped into hot ghee in a kadai — the bloom, the steam rising. | *Restaurants grind it fresh.* |
-| 0:08–0:11 | Biryani handi lid lifted, steam billowing up through the light. Rice, saffron streaks. | *So should you.* |
-| 0:11–0:13 | Pack shot, front label sharp, whole spices scattered around it. | *Spiceto Biryani Whole Spices* |
-| 0:13–0:15 | Pack shot holds. | *12+ whole spices · On Amazon* |
+Design for **sound-off** — burn captions in rather than relying on auto-captions.
 
-**Direction notes:** the sell here is the *crack* of a spice breaking and the *steam*. Get
-those two moments right and the rest is packaging. Shoot the mortar work at high frame
-rate for slow motion. Keep the dark, warm, single-source lighting from the pack shot.
+## Round 4 — what to test next
 
-**Sound (for the minority who hear it):** no voiceover. Pestle on stone, the sizzle of
-the tempering, ambient kitchen. Music is optional and usually worse.
+In priority order:
 
-## Ad A2 — "What's Inside" (static, 4:5)
-
-Flat-lay, shot directly overhead on the same dark wood.
-
-- Pouch positioned lower third, label facing camera.
-- Whole spices arranged in **separate small piles** across the frame — not mixed. The
-  separation is the message: you can see and count what you're getting.
-- Thin gold labels naming 6–8 of them (green cardamom, black cardamom, cinnamon, cloves,
-  star anise, mace, black pepper, shahi jeera). Small type, generous spacing.
-- Keep the background empty enough that the copy has somewhere to breathe.
-
-Resist labelling all twelve. Six named plus "and more" reads as confident; twelve labels
-reads as a diagram.
-
-## Ad A3 — "Kerala Origin" (static, 1:1)
-
-Provenance shot. Two options, in order of preference:
-
-1. **Location** — spices drying, a Kerala plantation, backwater or estate setting, with
-   the pouch placed naturally in frame. If you have any genuine sourcing photography from
-   Ernakulam or Idukki, use it. Real beats staged here by a wide margin.
-2. **Studio fallback** — the existing pack shot composition, with the brass vessels pushed
-   forward and a jute or banana-leaf texture introduced. Warmer, greener grade than A1.
-
-Only claim what's true. If the cardamom isn't Idukki cardamom, change the copy in
-`ad-copy.md` rather than shooting a picture that implies it.
-
-## Asset checklist
-
-- [ ] A1 video · 9:16, 4:5, 1:1 · captions burned in · under 30 MB each
-- [ ] A2 static · 9:16, 4:5, 1:1
-- [ ] A3 static · 9:16, 4:5, 1:1
-- [ ] Hero pack shot re-exported clean at 1080×1080 (no headline text) for reuse
-- [ ] Two alternate 3-second hooks for A1, for round 3 of testing
-
-That's 9 files minimum. Producing A1 in all three ratios and reusing the existing pack
-shot for A3 is a legitimate way to launch faster — but get A2 shot properly, it's the ad
-that does the arguing.
+1. **A headline carrying the ratio argument** — "THE RATIO IS THE RECIPE" or "ANYONE CAN
+   BUY WHOLE SPICES. ALMOST NOBODY GETS THE RATIO RIGHT." Currently the sharpest line in
+   the campaign lives only in the primary text, which most people never reach.
+2. **A veg biryani variant.** The kadai shows chicken while the pack carries the green veg
+   mark. The masala is vegetarian; the dish shown isn't. Large segment, cheap test.
+3. **The grinding moment** — mortar or mixer, whole spices in, fresh powder out.
+4. **Per-serving value on-image** — "50+ BIRYANIS. ₹199. UNDER ₹4 A POT."
+5. Apply the Moosakka treatment to A2 and A3 so the three ads read as one set. A2
+   ("Whole or Ground") suits Moosakka mid-grind rather than mid-serve.
 
 ## Things to avoid
 
-- **Amazon branding.** No Amazon logo, no smile mark, no Prime badge in the creative.
-  Text saying "On Amazon" is fine; the logo is a trademark problem.
-- **Stock biryani photography.** It's recognisable, it's usually North Indian restaurant
-  stock, and it undercuts a Kerala provenance claim.
-- **Text over the pouch label.** The label is already dense — FSSAI number, address, QR,
-  certifications. Overlaying more makes both illegible.
+- **Amazon branding** — no logo, smile mark, or Prime badge. "On Amazon" as text is fine.
+- **Stock biryani photography** — recognisable, usually North Indian restaurant stock, and
+  it undercuts a Kerala provenance claim.
 - **Health claims in the visual** — leaf icons, "100% natural" badges, wellness framing.
-  Same policy exposure as the copy. See the compliance table in `ad-copy.md`.
+  Same policy exposure as copy. See the compliance table in `ad-copy.md`.
+- **Advantage+ creative enhancements** — image touch-ups, background generation, uncrop,
+  text overlay and text generation were all turned off. The creative is a designed layout
+  with burned-in type, an FSSAI number and a QR code; these tools mangle it, and text
+  generation rewrites copy written specifically to stay compliant.
+
+## Rights
+
+Moosakka appears in paid advertising, which is a different use from a listing image.
+Confirm a signed likeness release covering paid social.
