@@ -68,8 +68,10 @@ breakdown at day 7 alongside gender.
 **Launch on hold. The draft is built and unpublished — and should stay that way for now.**
 
 The pre-launch ASIN baseline was pulled on 2026-08-08 and answered the question the campaign
-was going to spend ₹15,000 to answer: **the listing converts at 0.84%** (119 sessions, 1
-unit) while holding the buy box **100%** of the time. Traffic is not the binding constraint.
+was going to spend ₹15,000 to answer: **138 sessions, 1 unit — 0.72% conversion**, while
+holding the buy box ~100% of the time. A second, wider pull added 19 sessions and zero
+orders, which tightens the **95% upper bound on conversion to 3.39%**. Traffic is not the
+binding constraint.
 
 At ₹500/day the campaign needs **3–6% conversion just for revenue to equal ad spend**, before
 COGS and Amazon's fees — it would spend roughly ₹1,000 to sell a ₹199 packet. That gap is not
@@ -82,6 +84,12 @@ Attribution (the measurement the campaign otherwise lacks entirely).
 
 **Relaunch gate:** re-pull the same report; launch at **≥5% unit session percentage** over
 300+ sessions.
+
+**Next step is Sponsored Products, not Meta.** It needs no Brand Registry, reports conversion
+natively, and buys the sessions needed to re-measure in two weeks rather than the two to six
+months organic traffic would take. It also bounds the answer: SP traffic is in-market Amazon
+searchers, so if *they* won't buy this listing, cold social traffic won't either. ~₹4,000 to
+find out, against ₹15,000 for a blind Meta cycle.
 
 The campaign artefacts are unaffected and stay ready. The draft in Ads Manager is campaign
 `SPICETO | Traffic | Prospecting | IN-Metro` → ad set `Metro Spice Buyers | 25-54 | All | LPV`
