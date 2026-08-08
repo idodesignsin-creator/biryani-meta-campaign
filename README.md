@@ -37,6 +37,7 @@ Still needed before launch: creative assets, and an Amazon Attribution URL
 | [`campaign/measurement.md`](campaign/measurement.md) | Amazon Attribution, KPIs, benchmarks |
 | [`campaign/ads-manager-walkthrough.md`](campaign/ads-manager-walkthrough.md) | **Click-by-click manual setup in the Ads Manager UI** |
 | [`campaign/launch-checklist.md`](campaign/launch-checklist.md) | Pre-flight + first 14 days |
+| [`campaign/pre-publish-review.md`](campaign/pre-publish-review.md) | **Review of the built draft in Ads Manager — blockers before Publish** |
 | [`campaign/campaign-spec.json`](campaign/campaign-spec.json) | Machine-readable spec for API creation |
 
 ## The two decisions you asked about
@@ -63,8 +64,19 @@ breakdown at day 7 alongside gender.
 
 ## Status
 
-**Nothing has been created in the ad account.** Planning artefacts plus live-resolved
-targeting IDs.
+**A draft exists in Ads Manager, unpublished.** Campaign
+`SPICETO | Traffic | Prospecting | IN-Metro` → ad set `Metro Spice Buyers | 25-54 | All | LPV`
+→ one ad, `Static | The Ratio | 1x1 | EN | v1`. Built manually, not via the API.
+
+Reviewed against the spec in
+[`campaign/pre-publish-review.md`](campaign/pre-publish-review.md). Three things must
+happen before Publish: **baseline the ASIN** (irreversible — cannot be reconstructed after
+spend starts), **confirm the campaign and ad set toggles are off**, and **decide how this
+cycle measures a sale** (a Seller Central promo code is the only option available without
+Brand Registry, and it has to be in the copy before launch).
+
+Built one ad set with one ad against a spec of two ad sets × three ads — so round 1 as
+designed (angle A1 vs A2 vs A3) does not run. A deliberate call to note, not an error.
 
 Done:
 - Connection to ad account `387266110719612` verified
