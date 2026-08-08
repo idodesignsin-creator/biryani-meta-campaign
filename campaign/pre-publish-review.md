@@ -66,9 +66,45 @@ Shipping A1 as a **static rather than the specced 15s video is correct for now**
 found `HAND-WELGHED`, an inconsistent `BIRIYANI`, a 16:9-only export and an end card that
 never states price or where to buy. Fix those before the video runs.
 
-**Ignore the campaign score (55).** It rewards Advantage+ everything and five text variants
-— including the "+11 points: duplicate and add a video" nudge, which points straight at the
-unfixed video. Both would confound the test this campaign exists to run.
+## Campaign score — decline all of it
+
+The score (55) is not a quality grade. It measures how much of the campaign has been handed
+to Meta's automation, which is why nearly every recommendation broadens targeting or removes
+a control. Standing decision: **do not apply these**, and re-read this section rather than
+re-litigating each prompt.
+
+| Recommendation | Verdict |
+| --- | --- |
+| **"Reach people interested in your selected cities or regions"** (+5, *"lower cost per result by 6.7%"*) | **No.** Expands from *living in* the 12 cities to *interested in* them from anywhere in India. Contradicts the deliberate "People living in this location" setting — travellers and enthusiasts don't stock a home kitchen. See below for the deeper reason. |
+| **"Use both videos and images"** (+11) | **No, for now.** Points at the video with the unfixed typos, 16:9-only export and price-less end card. Revisit after the video is re-cut. |
+| **"Add products or site links"** | **No.** Extra link tiles add nothing for a single-ASIN Amazon destination. |
+| **Five text / headline variants** ("Not optimised") | **No.** Multiple variants confound the angle test the campaign exists to run. |
+
+### Why the location one is the dangerous one
+
+"Cost per result" here is cost per landing page view. Broadening an audience reliably makes
+clicks cheaper — it is the easiest metric in advertising to improve and the least meaningful.
+Normally the tradeoff surfaces downstream when the cheaper traffic fails to convert.
+
+**It cannot surface here.** With no Amazon Attribution URL and no promo code, there is no
+mechanism that would ever reveal that the cheaper visits bought worse. A 6.7% CPLPV
+improvement is unfalsifiable in this setup, which is precisely when a proxy-metric
+optimisation should be refused.
+
+Third cost: the day-7 and day-14 plan reads the **city breakdown** and cuts the bottom
+performers. Delivery that is no longer city-bound makes that breakdown unreadable, which
+removes what `targeting.md` calls the single highest-leverage optimisation available in
+week 2.
+
+**Reconsider only** once Attribution or a promo code is live — at that point cost per *sale*
+becomes visible and a targeting expansion can be judged on evidence instead of on Meta's
+modelled estimate.
+
+### Open question
+
+The "+11 points" card reads "using both videos and images **for 2 ad sets**", while the
+campaign nav shows one. Either Meta's copy is templated or a second ad set exists outside
+this view. Confirm — it changes the scope note above.
 
 ## Verified correct
 
