@@ -39,6 +39,7 @@ Still needed before launch: creative assets, and an Amazon Attribution URL
 | [`campaign/launch-checklist.md`](campaign/launch-checklist.md) | Pre-flight + first 14 days |
 | [`campaign/pre-publish-review.md`](campaign/pre-publish-review.md) | Review of the built draft in Ads Manager — blockers before Publish |
 | [`campaign/baseline-2026-08-08.md`](campaign/baseline-2026-08-08.md) | **Pre-launch ASIN baseline — and why the launch is on hold** |
+| [`campaign/sponsored-products-audit.md`](campaign/sponsored-products-audit.md) | **The Amazon SP campaigns — why "zero results" isn't the finding it looks like** |
 | [`campaign/campaign-spec.json`](campaign/campaign-spec.json) | Machine-readable spec for API creation |
 
 ## The two decisions you asked about
@@ -85,11 +86,20 @@ Attribution (the measurement the campaign otherwise lacks entirely).
 **Relaunch gate:** re-pull the same report; launch at **≥5% unit session percentage** over
 300+ sessions.
 
-**Next step is Sponsored Products, not Meta.** It needs no Brand Registry, reports conversion
-natively, and buys the sessions needed to re-measure in two weeks rather than the two to six
-months organic traffic would take. It also bounds the answer: SP traffic is in-market Amazon
-searchers, so if *they* won't buy this listing, cold social traffic won't either. ~₹4,000 to
-find out, against ₹15,000 for a blind Meta cycle.
+**Next step is Sponsored Products, not Meta** — and SP is *already running*, which changes the
+picture again. Three campaigns have been live since 3 Aug and returned no sales, which is why
+Meta was being tried. But they have produced only **~41 clicks**, because every bid sits below
+Amazon's suggested range and top-of-search is `<5%` everywhere. The Exact campaign has spent
+**₹0**. Zero sales in 41 clicks is what a healthy 5% listing looks like 12% of the time — it
+is not a failed test, it is an unfinished one. Full audit in
+[`campaign/sponsored-products-audit.md`](campaign/sponsored-products-audit.md).
+
+**The encouraging number: CTR is 1.57%** (18/1,149 impressions) against ~0.3–0.5% benchmarks,
+and unlike the conversion figure it is measured on a large enough sample to trust. Main image,
+title and price are working. The bottleneck is after the click, or not yet measured.
+
+**Roughly ₹1,400 of properly-bid Amazon traffic settles the question that ₹15,000 of Meta
+spend would leave ambiguous** — because Amazon reports the sale and Meta cannot.
 
 The campaign artefacts are unaffected and stay ready. The draft in Ads Manager is campaign
 `SPICETO | Traffic | Prospecting | IN-Metro` → ad set `Metro Spice Buyers | 25-54 | All | LPV`
