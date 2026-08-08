@@ -37,7 +37,8 @@ Still needed before launch: creative assets, and an Amazon Attribution URL
 | [`campaign/measurement.md`](campaign/measurement.md) | Amazon Attribution, KPIs, benchmarks |
 | [`campaign/ads-manager-walkthrough.md`](campaign/ads-manager-walkthrough.md) | **Click-by-click manual setup in the Ads Manager UI** |
 | [`campaign/launch-checklist.md`](campaign/launch-checklist.md) | Pre-flight + first 14 days |
-| [`campaign/pre-publish-review.md`](campaign/pre-publish-review.md) | **Review of the built draft in Ads Manager — blockers before Publish** |
+| [`campaign/pre-publish-review.md`](campaign/pre-publish-review.md) | Review of the built draft in Ads Manager — blockers before Publish |
+| [`campaign/baseline-2026-08-08.md`](campaign/baseline-2026-08-08.md) | **Pre-launch ASIN baseline — and why the launch is on hold** |
 | [`campaign/campaign-spec.json`](campaign/campaign-spec.json) | Machine-readable spec for API creation |
 
 ## The two decisions you asked about
@@ -64,19 +65,33 @@ breakdown at day 7 alongside gender.
 
 ## Status
 
-**A draft exists in Ads Manager, unpublished.** Campaign
+**Launch on hold. The draft is built and unpublished — and should stay that way for now.**
+
+The pre-launch ASIN baseline was pulled on 2026-08-08 and answered the question the campaign
+was going to spend ₹15,000 to answer: **the listing converts at 0.84%** (119 sessions, 1
+unit) while holding the buy box **100%** of the time. Traffic is not the binding constraint.
+
+At ₹500/day the campaign needs **3–6% conversion just for revenue to equal ad spend**, before
+COGS and Amazon's fees — it would spend roughly ₹1,000 to sell a ₹199 packet. That gap is not
+reachable by tuning targeting, creative or bids. Full working in
+[`campaign/baseline-2026-08-08.md`](campaign/baseline-2026-08-08.md).
+
+**The unlock is Brand Registry**, which resolves all three blockers at once: A+ Content
+(conversion), Vine (3 reviews → the ~10 where cold traffic stops bouncing), and Amazon
+Attribution (the measurement the campaign otherwise lacks entirely).
+
+**Relaunch gate:** re-pull the same report; launch at **≥5% unit session percentage** over
+300+ sessions.
+
+The campaign artefacts are unaffected and stay ready. The draft in Ads Manager is campaign
 `SPICETO | Traffic | Prospecting | IN-Metro` → ad set `Metro Spice Buyers | 25-54 | All | LPV`
-→ one ad, `Static | The Ratio | 1x1 | EN | v1`. Built manually, not via the API.
+→ one ad, `Static | The Ratio | 1x1 | EN | v1`, reviewed in
+[`campaign/pre-publish-review.md`](campaign/pre-publish-review.md). Note it was built as one
+ad set with one ad against a spec of two × three, so round 1 as designed (angle A1 vs A2 vs
+A3) would not have run.
 
-Reviewed against the spec in
-[`campaign/pre-publish-review.md`](campaign/pre-publish-review.md). Three things must
-happen before Publish: **baseline the ASIN** (irreversible — cannot be reconstructed after
-spend starts), **confirm the campaign and ad set toggles are off**, and **decide how this
-cycle measures a sale** (a Seller Central promo code is the only option available without
-Brand Registry, and it has to be in the copy before launch).
-
-Built one ad set with one ad against a spec of two ad sets × three ads — so round 1 as
-designed (angle A1 vs A2 vs A3) does not run. A deliberate call to note, not an error.
+⚠️ **Also open:** the listing title appears to have changed and **no longer contains
+"biryani"** — see the last section of the baseline. Verify against the live listing.
 
 Done:
 - Connection to ad account `387266110719612` verified
