@@ -1,0 +1,847 @@
+<title>Spiceto Biryani Whole Spices — Advertising Status</title>
+<style>
+  :root {
+    --ground: #F4F5F3;
+    --surface: #FFFFFF;
+    --surface-2: #EDEFEB;
+    --ink: #191D1B;
+    --ink-2: #3E4744;
+    --muted: #667069;
+    --line: #DCE0DA;
+    --line-2: #C6CCC3;
+    --accent: #1F4B46;
+    --accent-soft: #DDE8E5;
+    --critical: #A83224;
+    --critical-soft: #F6E2DE;
+    --caution: #A06A0B;
+    --caution-soft: #F7ECD8;
+    --ok: #37785A;
+    --ok-soft: #DFEDE5;
+
+    --serif: ui-serif, Georgia, "Iowan Old Style", "Times New Roman", serif;
+    --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #121614;
+      --surface: #191E1C;
+      --surface-2: #212724;
+      --ink: #EBEEE9;
+      --ink-2: #C3CAC5;
+      --muted: #8B948D;
+      --line: #2C3330;
+      --line-2: #3B443F;
+      --accent: #7FB8AE;
+      --accent-soft: #1D2A28;
+      --critical: #E38073;
+      --critical-soft: #2E1D1A;
+      --caution: #D8A64A;
+      --caution-soft: #2B2317;
+      --ok: #6FB791;
+      --ok-soft: #17251E;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ground: #121614;
+    --surface: #191E1C;
+    --surface-2: #212724;
+    --ink: #EBEEE9;
+    --ink-2: #C3CAC5;
+    --muted: #8B948D;
+    --line: #2C3330;
+    --line-2: #3B443F;
+    --accent: #7FB8AE;
+    --accent-soft: #1D2A28;
+    --critical: #E38073;
+    --critical-soft: #2E1D1A;
+    --caution: #D8A64A;
+    --caution-soft: #2B2317;
+    --ok: #6FB791;
+    --ok-soft: #17251E;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 20px 96px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+  }
+
+  .prose { max-width: 68ch; }
+
+  /* ---------- masthead ---------- */
+
+  .masthead {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding-top: 64px;
+  }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+  }
+
+  h1 {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: clamp(30px, 5vw, 44px);
+    line-height: 1.12;
+    letter-spacing: -0.015em;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  .standfirst {
+    font-family: var(--serif);
+    font-size: clamp(17px, 2.2vw, 20px);
+    line-height: 1.5;
+    color: var(--ink-2);
+    margin: 0;
+    max-width: 60ch;
+  }
+
+  /* ---------- status rail ---------- */
+
+  .status-rail {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  .status-cell {
+    background: var(--surface);
+    padding: 18px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .status-cell .label {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .status-cell .value {
+    font-family: var(--serif);
+    font-size: 19px;
+    line-height: 1.25;
+    color: var(--ink);
+  }
+
+  .status-cell .note {
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.45;
+  }
+
+  .chip {
+    align-self: flex-start;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 2px;
+  }
+  .chip.stop { background: var(--critical-soft); color: var(--critical); }
+  .chip.hold { background: var(--caution-soft); color: var(--caution); }
+  .chip.live { background: var(--ok-soft); color: var(--ok); }
+
+  /* ---------- sections ---------- */
+
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  h2 {
+    font-family: var(--serif);
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 0;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--ink);
+    text-wrap: balance;
+  }
+
+  h3 {
+    font-family: var(--sans);
+    font-size: 13px;
+    font-weight: 650;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0;
+  }
+
+  p { margin: 0; }
+  p + p { margin-top: 14px; }
+
+  strong { font-weight: 650; color: var(--ink); }
+
+  .num {
+    font-family: var(--mono);
+    font-variant-numeric: tabular-nums;
+    font-size: 0.94em;
+  }
+
+  /* ---------- ceiling chart ---------- */
+
+  .ceiling {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    padding: 26px 24px 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .ceiling-head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+  }
+
+  .ceiling-head .title {
+    font-family: var(--serif);
+    font-size: 19px;
+    color: var(--ink);
+  }
+
+  .ceiling-head .sub {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .scale {
+    position: relative;
+    height: 96px;
+    border-left: 1px solid var(--line-2);
+    border-bottom: 1px solid var(--line-2);
+  }
+
+  .band {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: var(--ok-soft);
+    border-right: 1px dashed var(--ok);
+  }
+
+  .band-tag {
+    position: absolute;
+    top: 6px;
+    left: 8px;
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--ok);
+  }
+
+  .bar {
+    position: absolute;
+    left: 0;
+    top: 44px;
+    height: 26px;
+    background: var(--critical);
+    border-radius: 0 2px 2px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+  }
+
+  .bar span {
+    font-family: var(--mono);
+    font-size: 12px;
+    font-weight: 600;
+    color: #FFFFFF;
+    letter-spacing: 0.02em;
+  }
+
+  .axis {
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--mono);
+    font-size: 10.5px;
+    color: var(--muted);
+    padding-top: 6px;
+  }
+
+  .ceiling-note {
+    font-size: 14px;
+    line-height: 1.55;
+    color: var(--ink-2);
+    border-top: 1px solid var(--line);
+    padding-top: 16px;
+  }
+
+  /* ---------- tables ---------- */
+
+  .table-scroll { overflow-x: auto; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14.5px;
+    min-width: 480px;
+  }
+
+  caption {
+    text-align: left;
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding-bottom: 10px;
+  }
+
+  th {
+    text-align: left;
+    font-family: var(--sans);
+    font-size: 11.5px;
+    font-weight: 650;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding: 0 14px 9px 0;
+    border-bottom: 1px solid var(--line-2);
+    white-space: nowrap;
+  }
+
+  td {
+    padding: 11px 14px 11px 0;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+    color: var(--ink-2);
+  }
+
+  td:first-child { color: var(--ink); }
+
+  td.n {
+    font-family: var(--mono);
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+
+  tr.total td {
+    border-bottom: none;
+    border-top: 2px solid var(--ink);
+    font-weight: 650;
+    color: var(--ink);
+    padding-top: 12px;
+  }
+
+  .bad { color: var(--critical); }
+  .good { color: var(--ok); }
+
+  /* ---------- ranked problems ---------- */
+
+  .problems {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .problem {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--line-2);
+    border-radius: 3px;
+    padding: 18px 22px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 4px 18px;
+    align-items: baseline;
+  }
+
+  .problem.p1 { border-left-color: var(--critical); }
+  .problem.p2 { border-left-color: var(--caution); }
+  .problem.p3 { border-left-color: var(--accent); }
+
+  .problem .rank {
+    font-family: var(--mono);
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .problem .name {
+    font-family: var(--serif);
+    font-size: 19px;
+    color: var(--ink);
+    line-height: 1.3;
+  }
+
+  .problem .body {
+    grid-column: 2;
+    font-size: 14.5px;
+    color: var(--ink-2);
+    line-height: 1.55;
+  }
+
+  /* ---------- action list ---------- */
+
+  ol.actions {
+    list-style: none;
+    counter-reset: step;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  ol.actions > li {
+    counter-increment: step;
+    background: var(--surface);
+    padding: 16px 22px;
+    display: grid;
+    grid-template-columns: 26px 1fr auto;
+    gap: 4px 16px;
+    align-items: baseline;
+  }
+
+  ol.actions > li::before {
+    content: counter(step);
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+  }
+
+  ol.actions .what {
+    font-size: 15.5px;
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.4;
+  }
+
+  ol.actions .why {
+    grid-column: 2;
+    font-size: 14px;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+
+  ol.actions .where {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: var(--accent-soft);
+    padding: 3px 8px;
+    border-radius: 2px;
+    white-space: nowrap;
+  }
+
+  /* ---------- keyword verdicts ---------- */
+
+  .verdict {
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 2px 7px;
+    border-radius: 2px;
+    white-space: nowrap;
+  }
+  .verdict.pause { background: var(--critical-soft); color: var(--critical); }
+  .verdict.keep { background: var(--ok-soft); color: var(--ok); }
+  .verdict.leave { background: var(--surface-2); color: var(--muted); }
+
+  /* ---------- open inputs ---------- */
+
+  .inputs {
+    background: var(--caution-soft);
+    border: 1px solid var(--caution);
+    border-radius: 3px;
+    padding: 22px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .inputs h3 { color: var(--caution); }
+
+  .inputs ul {
+    margin: 0;
+    padding-left: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    font-size: 14.5px;
+    color: var(--ink-2);
+    line-height: 1.5;
+  }
+
+  .inputs li::marker { color: var(--caution); }
+
+  footer {
+    border-top: 1px solid var(--line);
+    padding-top: 18px;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+
+  @media (max-width: 560px) {
+    ol.actions > li { grid-template-columns: 22px 1fr; }
+    ol.actions .where { grid-column: 2; justify-self: start; margin-top: 6px; }
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="eyebrow">
+      <span>Spiceto · ASIN B0H6TP1DNS</span>
+      <span>8 Aug 2026</span>
+      <span>Biryani Whole Spices only</span>
+    </div>
+    <h1>The problem is unit economics, not traffic</h1>
+    <p class="standfirst">
+      Every click bought so far costs roughly twice what a ₹199 product can carry. Until that
+      gap closes, more traffic from any channel loses money faster.
+    </p>
+  </header>
+
+  <div class="status-rail">
+    <div class="status-cell">
+      <span class="label">Meta campaign</span>
+      <span class="chip hold">On hold</span>
+      <span class="value">Built, unpublished</span>
+      <span class="note">One ad set, one ad. Nothing spent. Ready when the economics work.</span>
+    </div>
+    <div class="status-cell">
+      <span class="label">Amazon Sponsored Products</span>
+      <span class="chip live">Running</span>
+      <span class="value">3 campaigns → cut to 2</span>
+      <span class="note">₹586 spent, 36 clicks, no sales. Bids exceed what the product can afford.</span>
+    </div>
+    <div class="status-cell">
+      <span class="label">Amazon listing</span>
+      <span class="chip stop">Blocked</span>
+      <span class="value">3 reviews, no A+ content</span>
+      <span class="note">Brand Registry gates the fixes that matter most.</span>
+    </div>
+  </div>
+
+  <section>
+    <h2>The central number</h2>
+
+    <div class="ceiling">
+      <div class="ceiling-head">
+        <span class="title">Cost per click — affordable vs actual</span>
+        <span class="sub">₹199 pack · 90 g</span>
+      </div>
+
+      <div class="scale">
+        <div class="band" style="left:0; width:45%;">
+          <span class="band-tag">Affordable ₹4–9</span>
+        </div>
+        <div class="bar" style="width:81.4%;"><span>₹16.28 actual</span></div>
+      </div>
+      <div class="axis">
+        <span>₹0</span><span>₹5</span><span>₹10</span><span>₹15</span><span>₹20</span>
+      </div>
+
+      <p class="ceiling-note">
+        Affordable CPC is contribution margin × conversion rate. After Amazon's referral fee and
+        FBA, a ₹199 pack supports roughly <span class="num">₹4–9</span> per click depending on
+        COGS and conversion. Breaking even at the actual <span class="num">₹16.28</span> would
+        need <strong>21–35% conversion</strong>. The head term <em>garam masala whole</em>, at
+        its suggested bid of <span class="num">₹49.61</span>, would need <strong>58%</strong>.
+      </p>
+    </div>
+
+    <p class="prose">
+      This corrects earlier advice to raise bids toward Amazon's suggestion. A suggested bid is
+      what it costs to <em>win</em> the auction, not what the product can <em>afford</em>. The
+      fix is changing which keywords get bought, not paying more for the same ones.
+    </p>
+  </section>
+
+  <section>
+    <h2>What the data actually shows</h2>
+
+    <div class="table-scroll">
+      <table>
+        <caption>Sponsored Products · 1–8 Aug 2026</caption>
+        <thead>
+          <tr>
+            <th>Campaign</th><th>Impressions</th><th>Clicks</th><th>CTR</th>
+            <th>Spend</th><th>CPC</th><th>Sales</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Auto</td><td class="n">2,724</td><td class="n">34</td><td class="n">1.25%</td>
+            <td class="n">₹558.64</td><td class="n">₹16.43</td><td class="n bad">0</td>
+          </tr>
+          <tr>
+            <td>Broad</td><td class="n">516</td><td class="n">2</td><td class="n bad">0.39%</td>
+            <td class="n">₹27.55</td><td class="n">₹13.78</td><td class="n bad">0</td>
+          </tr>
+          <tr>
+            <td>Exact</td><td class="n">46</td><td class="n">0</td><td class="n">—</td>
+            <td class="n">₹0</td><td class="n">—</td><td class="n">—</td>
+          </tr>
+          <tr class="total">
+            <td>Total</td><td class="n">3,286</td><td class="n">36</td><td class="n">1.10%</td>
+            <td class="n">₹586.19</td><td class="n">₹16.28</td><td class="n bad">0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="table-scroll">
+      <table>
+        <caption>Listing baseline · pre-launch, Business Report</caption>
+        <thead>
+          <tr><th>Measure</th><th>Value</th><th>Reading</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sessions</td><td class="n">138</td>
+            <td>Thin organic traffic</td>
+          </tr>
+          <tr>
+            <td>Units ordered</td><td class="n">1</td>
+            <td>Conversion <span class="num">0.72%</span></td>
+          </tr>
+          <tr>
+            <td>Buy box held</td><td class="n good">100%</td>
+            <td>Rules out stock, suppression, competing offers</td>
+          </tr>
+          <tr>
+            <td>Conversion ceiling</td><td class="n">&lt;3.4%</td>
+            <td>95% confidence bound — a healthy 5% is ruled out</td>
+          </tr>
+          <tr>
+            <td>Click-through rate</td><td class="n good">1.10%</td>
+            <td>Roughly 2–3× benchmark. Image, title and price are working.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="prose">
+      Two findings pull in opposite directions, and both matter. <strong>CTR is genuinely
+      good</strong> — measured across 3,286 impressions, so it is reliable. People searching for
+      biryani masala do click. But <strong>zero sales across 36 clicks proves less than it
+      appears</strong>: that outcome occurs about 16% of the time even for a healthy
+      5%-converting listing. It is an unfinished test, not a failed one.
+    </p>
+  </section>
+
+  <section>
+    <h2>Three problems, in the order they bind</h2>
+
+    <div class="problems">
+      <div class="problem p1">
+        <span class="rank">01</span>
+        <span class="name">Cost per click exceeds what the price point supports</span>
+        <p class="body">
+          ₹16.28 actual against a ₹4–9 ceiling. No amount of targeting or creative work closes a
+          2× gap. Either buy cheaper long-tail clicks, or raise average order value — the 180 g
+          ₹299 pack and bundles both lift the ceiling proportionally.
+        </p>
+      </div>
+      <div class="problem p2">
+        <span class="rank">02</span>
+        <span class="name">A premium price with no on-page justification</span>
+        <p class="body">
+          ₹199 is 2.5–3× mass-market powder. That is defensible, but the page carries 3 reviews
+          and no A+ content. A shopper comparing against a ₹70 packet sees a higher price and
+          less proof. Brand Registry unlocks both A+ content and Vine.
+        </p>
+      </div>
+      <div class="problem p3">
+        <span class="rank">03</span>
+        <span class="name">The listing title appears to have dropped "biryani"</span>
+        <p class="body">
+          The reported title no longer contains <em>biryani</em>, <em>khada garam masala</em> or
+          <em>50+ servings</em>. If real, that costs organic search on the exact term the whole
+          product is built around — and removes the on-listing source substantiating the
+          servings claim. Verify against the live page.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Do this next</h2>
+
+    <ol class="actions">
+      <li>
+        <span class="what">Read the Auto campaign's Search Terms report</span>
+        <span class="where">Amazon Ads</span>
+        <span class="why">₹558 went through 34 clicks with no record of what people typed. It yields the keyword list and the negative list in one place. Everything else is guesswork until it is read.</span>
+      </li>
+      <li>
+        <span class="what">Pause the Broad campaign</span>
+        <span class="where">Amazon Ads</span>
+        <span class="why">0.39% CTR against Auto's 1.25%. 466 of its 516 impressions came from a commodity head term that Auto already covers.</span>
+      </li>
+      <li>
+        <span class="what">Rebuild the Exact keyword list</span>
+        <span class="where">Amazon Ads</span>
+        <span class="why">Pause the head terms; keep the biryani-specific terms at lower bids. Detail below.</span>
+      </li>
+      <li>
+        <span class="what">Move the 7 negative keywords from Exact to Auto</span>
+        <span class="where">Amazon Ads</span>
+        <span class="why">Exact match already restricts matching, so they do almost nothing where they sit. Auto is where loose matching and all the spend are.</span>
+      </li>
+      <li>
+        <span class="what">Apply for Brand Registry</span>
+        <span class="where">Seller Central</span>
+        <span class="why">One door, three unlocks: A+ content for conversion, Vine for reviews, and Amazon Attribution for measurement.</span>
+      </li>
+      <li>
+        <span class="what">Restore the search terms in the listing title</span>
+        <span class="where">Seller Central</span>
+        <span class="why">Confirm the live title, then put biryani and khada garam masala back if they are missing.</span>
+      </li>
+      <li>
+        <span class="what">Leave Meta paused</span>
+        <span class="where">Ads Manager</span>
+        <span class="why">The draft is built and reviewed. Revisit once listing conversion clears 5% over 300+ sessions.</span>
+      </li>
+    </ol>
+
+    <div class="table-scroll">
+      <table>
+        <caption>Exact campaign — keyword by keyword</caption>
+        <thead>
+          <tr><th>Keyword</th><th>Impressions</th><th>Verdict</th><th>Reason</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>garam masala whole</td><td class="n">21</td>
+            <td><span class="verdict pause">Pause</span></td>
+            <td>₹49.61 suggested — unaffordable at any conversion rate</td>
+          </tr>
+          <tr>
+            <td>garam masala</td><td class="n">14</td>
+            <td><span class="verdict pause">Pause</span></td>
+            <td>Commodity term; those shoppers want ₹70 powder</td>
+          </tr>
+          <tr>
+            <td>garam spices</td><td class="n">1</td>
+            <td><span class="verdict pause">Pause</span></td>
+            <td>Vague, and priced at ₹19.12</td>
+          </tr>
+          <tr>
+            <td>biryani masala whole spices</td><td class="n">9</td>
+            <td><span class="verdict keep">Keep · ₹10–12</span></td>
+            <td>The core term — closest match to what is being sold</td>
+          </tr>
+          <tr>
+            <td>biryani whole spice mix</td><td class="n">1</td>
+            <td><span class="verdict keep">Keep · ₹10–12</span></td>
+            <td>Reached 50% top-of-search</td>
+          </tr>
+          <tr>
+            <td>khada garam masala</td><td class="n">1</td>
+            <td><span class="verdict keep">Keep · ₹10–12</span></td>
+            <td>Correct vernacular for whole spices</td>
+          </tr>
+          <tr>
+            <td>5 remaining terms</td><td class="n">0</td>
+            <td><span class="verdict leave">Leave</span></td>
+            <td>Bid at or above suggested and still zero impressions — no search volume exists</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="prose">
+      Note the direction of travel: bids go <strong>down</strong>, not up. Even ₹10–12 sits above
+      the affordable ceiling, but it keeps the ad in auctions where the searcher wants precisely
+      what is being sold. The two generic terms took 74% of the campaign's impressions and
+      produced no clicks at all.
+    </p>
+  </section>
+
+  <section>
+    <h2>Still needed</h2>
+    <div class="inputs">
+      <h3>Three inputs block sharper answers</h3>
+      <ul>
+        <li>
+          <strong>COGS per 90 g unit.</strong> The one assumed figure in the affordable-CPC
+          calculation, and it moves the ceiling by roughly 2× across the plausible range.
+        </li>
+        <li>
+          <strong>The Business Report date range.</strong> Neither export carries it. Without it,
+          138 sessions cannot be converted into sessions per day — which is what determines
+          whether re-measuring takes one month or six.
+        </li>
+        <li>
+          <strong>The live listing title.</strong> Confirm whether "biryani" really has been
+          dropped, or whether the report field is simply truncated.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    Sources — Seller Central Business Reports (Detail Page Sales and Traffic by Child ASIN),
+    Amazon Ads campaign manager 1–8 Aug 2026, Meta Ads Manager draft.<br>
+    Full working in the campaign repository: baseline, SP audit, SP optimisation plan,
+    pre-publish review.
+  </footer>
+
+</div>
