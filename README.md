@@ -40,7 +40,8 @@ Still needed before launch: creative assets, and an Amazon Attribution URL
 | [`campaign/pre-publish-review.md`](campaign/pre-publish-review.md) | Review of the built draft in Ads Manager — blockers before Publish |
 | [`campaign/baseline-2026-08-08.md`](campaign/baseline-2026-08-08.md) | **Pre-launch ASIN baseline — and why the launch is on hold** |
 | [`campaign/sponsored-products-audit.md`](campaign/sponsored-products-audit.md) | The Amazon SP campaigns — why "zero results" isn't the finding it looks like |
-| [`campaign/sp-optimisation-plan.md`](campaign/sp-optimisation-plan.md) | **What to change in the Amazon campaigns, and the affordable-CPC ceiling** |
+| [`campaign/sp-optimisation-plan.md`](campaign/sp-optimisation-plan.md) | What to change in the Amazon campaigns, and the affordable-CPC ceiling |
+| [`campaign/search-terms-findings.md`](campaign/search-terms-findings.md) | **Search terms report — self-targeting, wasted spend, and proof the targeting is right** |
 | [`campaign/campaign-spec.json`](campaign/campaign-spec.json) | Machine-readable spec for API creation |
 
 ## The two decisions you asked about
@@ -101,17 +102,22 @@ Attribution (the measurement the campaign otherwise lacks entirely).
 **Relaunch gate:** re-pull the same report; launch at **≥5% unit session percentage** over
 300+ sessions.
 
-**Next step is Sponsored Products, not Meta** — and SP is *already running*, which changes the
-picture again. Three campaigns have been live since 3 Aug and returned no sales, which is why
-Meta was being tried. But they have produced only **~41 clicks**, because every bid sits below
-Amazon's suggested range and top-of-search is `<5%` everywhere. The Exact campaign has spent
-**₹0**. Zero sales in 41 clicks is what a healthy 5% listing looks like 12% of the time — it
-is not a failed test, it is an unfinished one. Full audit in
+**Sponsored Products is already running** — three campaigns live since 3 Aug, no sales, which
+is why Meta was being tried. But they have produced only **36 clicks** at **₹16.28 CPC**. Zero
+sales in 36 clicks is what a healthy 5% listing looks like ~16% of the time: an unfinished
+test, not a failed one. Audit in
 [`campaign/sponsored-products-audit.md`](campaign/sponsored-products-audit.md).
 
-**The encouraging number: CTR is 1.57%** (18/1,149 impressions) against ~0.3–0.5% benchmarks,
-and unlike the conversion figure it is measured on a large enough sample to trust. Main image,
-title and price are working. The bottleneck is after the click, or not yet measured.
+**The encouraging number: CTR is 1.10%** (36/3,286 impressions) against ~0.3–0.5% benchmarks,
+and unlike the conversion figure it rests on a large enough sample to trust. Main image, title
+and price are working. The bottleneck is after the click.
+
+**The search terms report confirmed the targeting is right** — 68% of visible spend went to
+`biryani spices`, `biryani whole spices`, `biryani spices whole` and `biryani masala whole
+spices`. Right query, good ad, click, no purchase. It also caught **the campaign paying to
+advertise on Spiceto's own cardamom listing** (ASIN `B0FYY8TVNY`) and ₹55.91 of dead spend in
+the Substitutes group. See
+[`campaign/search-terms-findings.md`](campaign/search-terms-findings.md).
 
 **Roughly ₹1,400 of properly-bid Amazon traffic settles the question that ₹15,000 of Meta
 spend would leave ambiguous** — because Amazon reports the sale and Meta cannot.
