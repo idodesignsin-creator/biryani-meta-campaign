@@ -43,9 +43,18 @@ had `combo pack`; an earlier pass here removed it as low value. Autocomplete put
 of 20 suggestions** — one of the highest-volume modifiers in the category. The seller's instinct
 was right.
 
-**2. `biryani whole spice mix` should not have been paused.** That call rested on 1 impression in
-8 days. Autocomplete lists it as a suggested search, which is stronger evidence of volume than
-thin impression data. **Re-add at ₹8.**
+**2. `biryani whole spice mix` — the "re-add it" call was itself an overstatement.**
+
+Autocomplete proves a query **exists and is typed**. It does not prove the query carries
+meaningful volume — position 6 of 10 says real, not big. Meanwhile the keyword's own history is
+real evidence the other way: bid at **₹15.09, exactly Amazon's suggestion and inside the
+₹9.34–₹18.86 range**, it drew **1 impression in 8 days** (at 50% top-of-search). Both things are
+true — a genuine query, and a small one.
+
+**Do not re-add it as exact.** The phrase keyword `biryani whole spices` already covers it:
+phrase match fires when the phrase appears in order with extra words around it, and
+`biryani whole spice mix` contains `biryani whole spice` + `mix`, with singular/plural handled as
+a close variant. The phrase keyword catches it at a lower bid with nothing extra to manage.
 
 ## Negatives that are blocking real demand
 
