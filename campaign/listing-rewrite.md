@@ -55,21 +55,40 @@ vernacular terms worth ₹132 of spend.
 **If you want the 8 characters back**, drop `, Kerala` for a 63-character version. Kerala carries
 no search evidence in the data — it is there for provenance and trust, not ranking.
 
-## 1b. Item Highlight — carries the overflow
+## 1b. Item Highlight — carries what the title could not
 
-**Current:** `Perfect for Biryani, Curries, Rice Dishes - 50+ Servings`
+### The rule that governs all three fields
 
-**Replace with** — 106 characters:
+**Amazon indexes each word once across the whole listing.** A word in the title gains nothing
+from also appearing in Item Highlight or backend keywords. Repetition does not strengthen
+ranking — it only consumes space that could have carried a term you do not yet rank for.
+
+So treat **Title + Item Highlight + Backend Keywords as one shared keyword budget with no
+overlaps.** Bullets and description are the exception: they are display copy that humans read,
+so natural repetition there is unavoidable and fine — just do not count on it for SEO.
+
+### The correction
+
+An earlier draft of this sheet failed that rule. It read:
+
 ```
 12 Hand-Weighed Whole Spices from Idukki, Kerala - Ready to Grind for Biryani, Curry & Rice | 50+ Servings
 ```
 
-This picks up what the 75-character title had to leave behind: the spice count, Idukki, ready to
-grind, curry, rice and the servings claim.
+`whole`, `spices`, `kerala` and `biryani` are all in the title already — four wasted slots.
+
+**Use this instead** — 131 characters, **zero overlap with the title**:
+```
+Hand-Weighed to an Expert Ratio - Idukki Grown, Ready to Grind or Use in the Dum | Pulao, Curry & Rice | 50+ Servings, No Additives
+```
+
+New terms this brings in: `hand-weighed, expert, ratio, idukki, grown, ready, grind, dum, pulao,
+curry, rice, 50+, servings, no additives`.
 
 **One caution:** Item Highlight is a newer attribute and it is not certain Amazon indexes it for
 search the way it indexes title and bullets. Treat it as display copy that *may* also rank —
-which is why nothing critical was moved here. Every high-spend keyword stayed in the title.
+which is why nothing high-value was moved here. Every keyword with spend behind it stayed in the
+title.
 
 ## 2. Bullet Points — replace all 6 with these 5
 
@@ -137,10 +156,28 @@ Delete the current string entirely and paste this. Appending would blow the 250-
 several of your old words are now in the title, where Amazon already indexes them once —
 repeating them in backend just wastes bytes.
 
-**242 of 250 bytes:**
+**243 of 250 bytes, zero overlap with title or Item Highlight:**
 ```
-biriyani masale khade saboot podi thalassery malabar hyderabadi kolkata ambur arcot lucknowi dindigul bhatkal donne handi pulao pilaf tadka phodni potli elaichi tejpatta dalchini laung jaiphal javitri saunf shahi jeera kali mirch south indian
+biriyani khade saboot podi thalassery malabar hyderabadi kolkata ambur arcot lucknowi dindigul bhatkal donne handi pilaf tadka phodni potli elaichi tejpatta dalchini laung jaiphal javitri saunf shahi jeera kali mirch south indian briyani kadha
 ```
+
+### Why the near-variants are *not* redundant
+
+`biriyani`, `briyani`, `saboot`, `khade` and `kadha` look like repeats of title words. They are
+not, and the distinction matters:
+
+- Amazon's stemming handles **English morphology** — plurals, tenses, common misspellings of
+  English words. It will connect *spice* and *spices* on its own.
+- It does **not** reliably connect **romanisation variants** of Hindi and Malayalam. *Biriyani*
+  and *biryani* are two different spellings of a Devanagari word, not a plural. Neither is
+  *saboot* / *sabut* or *khada* / *kadha*.
+
+Indian shoppers type all of these. The correct spelling has to stay in the title; the variants
+have nowhere to live but backend.
+
+**Removed on the same principle:** `masale` (Hindi plural of *masala*, which is in the title —
+Amazon stems plurals, so it was a marginal repeat) and `pulao` (now carried by the Item
+Highlight).
 
 **Carried over from your original list:** `arcot lucknowi kolkata ambur south indian elaichi
 tejpatta kali mirch laung`. Your `kolkata` was a good call — an earlier draft here dropped it,
