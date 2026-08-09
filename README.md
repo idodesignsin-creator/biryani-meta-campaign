@@ -44,7 +44,8 @@ Still needed before launch: creative assets, and an Amazon Attribution URL
 | [`campaign/search-terms-findings.md`](campaign/search-terms-findings.md) | Search terms report — self-targeting, wasted spend, and proof the targeting is right |
 | [`campaign/volume-correction.md`](campaign/volume-correction.md) | Why Exact-only cannot run the test, and why not to discount further |
 | [`campaign/vine-blocker.md`](campaign/vine-blocker.md) | Vine says the listing is incomplete — the free diagnosis, and the new order of operations |
-| [`campaign/listing-fixes.md`](campaign/listing-fixes.md) | **Detail page audit — the title gap, and two spices named wrongly** |
+| [`campaign/listing-fixes.md`](campaign/listing-fixes.md) | Detail page audit — the title gap, and two spices named wrongly |
+| [`campaign/listing-rewrite.md`](campaign/listing-rewrite.md) | **Copy-paste rewrite of every listing field, built for organic search** |
 | [`campaign/campaign-spec.json`](campaign/campaign-spec.json) | Machine-readable spec for API creation |
 
 ## The two decisions you asked about
