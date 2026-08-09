@@ -161,10 +161,14 @@ Delete the current string entirely and paste this. Appending would blow the 250-
 several of your old words are now in the title, where Amazon already indexes them once —
 repeating them in backend just wastes bytes.
 
-**243 of 250 bytes, zero overlap with title or Item Highlight:**
+**247 of 250 bytes, zero overlap with title or Item Highlight:**
 ```
-biriyani khade saboot podi thalassery malabar hyderabadi kolkata ambur arcot lucknowi dindigul bhatkal donne handi pilaf tadka phodni potli elaichi tejpatta dalchini laung jaiphal javitri saunf shahi jeera kali mirch south indian briyani kadha
+biriyani khade saboot podi thalassery malabar hyderabadi kolkata ambur arcot lucknowi bhatkal handi pilaf tadka elaichi tejpatta dalchini laung jaiphal javitri saunf shahi jeera kali mirch south indian briyani kadha combo kit species shajeera pack
 ```
+
+> **Updated 9 Aug** from Amazon autocomplete — see
+> [`autocomplete-findings.md`](autocomplete-findings.md). Added `combo kit species shajeera pack`;
+> `combo` alone appears in 4 of 20 suggestions and an earlier pass here wrongly dropped it.
 
 ### Why the near-variants are *not* redundant
 

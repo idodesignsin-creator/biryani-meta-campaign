@@ -45,7 +45,8 @@ Still needed before launch: creative assets, and an Amazon Attribution URL
 | [`campaign/volume-correction.md`](campaign/volume-correction.md) | Why Exact-only cannot run the test, and why not to discount further |
 | [`campaign/vine-blocker.md`](campaign/vine-blocker.md) | Vine says the listing is incomplete — the free diagnosis, and the new order of operations |
 | [`campaign/listing-fixes.md`](campaign/listing-fixes.md) | Detail page audit — the title gap, and two spices named wrongly |
-| [`campaign/listing-rewrite.md`](campaign/listing-rewrite.md) | **Copy-paste rewrite of every listing field, built for organic search** |
+| [`campaign/listing-rewrite.md`](campaign/listing-rewrite.md) | Copy-paste rewrite of every listing field, built for organic search |
+| [`campaign/autocomplete-findings.md`](campaign/autocomplete-findings.md) | **Amazon autocomplete = real demand — and the negatives blocking it** |
 | [`campaign/campaign-spec.json`](campaign/campaign-spec.json) | Machine-readable spec for API creation |
 
 ## The two decisions you asked about
