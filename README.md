@@ -43,7 +43,8 @@ Still needed before launch: creative assets, and an Amazon Attribution URL
 | [`campaign/sp-optimisation-plan.md`](campaign/sp-optimisation-plan.md) | What to change in the Amazon campaigns, and the affordable-CPC ceiling |
 | [`campaign/search-terms-findings.md`](campaign/search-terms-findings.md) | Search terms report — self-targeting, wasted spend, and proof the targeting is right |
 | [`campaign/volume-correction.md`](campaign/volume-correction.md) | Why Exact-only cannot run the test, and why not to discount further |
-| [`campaign/vine-blocker.md`](campaign/vine-blocker.md) | **Vine says the listing is incomplete — the free diagnosis, and the new order of operations** |
+| [`campaign/vine-blocker.md`](campaign/vine-blocker.md) | Vine says the listing is incomplete — the free diagnosis, and the new order of operations |
+| [`campaign/listing-fixes.md`](campaign/listing-fixes.md) | **Detail page audit — the title gap, and two spices named wrongly** |
 | [`campaign/campaign-spec.json`](campaign/campaign-spec.json) | Machine-readable spec for API creation |
 
 ## The two decisions you asked about
@@ -81,6 +82,14 @@ blank.
 
 **New order of operations: fix completeness → Vine → 30 reviews → then advertise.** Full detail
 in [`campaign/vine-blocker.md`](campaign/vine-blocker.md).
+
+**The detail page audit found the title is the clearest problem on the listing.** It runs 63
+characters of ~200 available and contains **none** of *biryani* (₹257 of ad spend), *sabut*
+(₹110) or *khada* (₹83). A 170-character replacement is drafted in
+[`campaign/listing-fixes.md`](campaign/listing-fixes.md), which also catches **two of the twelve
+spices labelled wrongly** — Sha Jeerakam and Perumjeerakam are both called "Fenugreek" when they
+are caraway and fennel. That error sits on the page whose entire pitch is precision, in front of
+the one buyer who would notice.
 
 ---
 

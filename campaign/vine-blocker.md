@@ -15,13 +15,15 @@ close), 100% buy box (nothing structural). An incomplete page produces exactly t
 
 ## What "incomplete" usually means
 
-- [ ] **Product description field empty** — most common cause, and it happens *specifically*
-      when A+ content is added and the plain description left blank. A+ replaces it visually;
-      Vine still checks the field. **First suspect**, given the listing was just reworked.
-- [ ] Fewer than 5 bullet points
-- [ ] Too few images
+> **Updated after inspecting the live record — see [`listing-fixes.md`](listing-fixes.md).**
+> The description is **present and substantial**, and there are **6 bullet points**. The
+> empty-description theory below is disproven.
+
+- [x] ~~Product description field empty~~ — **ruled out**, description is populated
+- [x] ~~Fewer than 5 bullet points~~ — **ruled out**, 6 present
+- [ ] **Too few images** ← now the leading suspect, check the Images tab
+- [ ] **Not FBA / not In Stock in New condition** ← check the Offer tab
 - [ ] Missing required category attributes
-- [ ] Not FBA / not In Stock in New condition
 
 ## The order of operations flips
 
