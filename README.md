@@ -42,7 +42,8 @@ Still needed before launch: creative assets, and an Amazon Attribution URL
 | [`campaign/sponsored-products-audit.md`](campaign/sponsored-products-audit.md) | The Amazon SP campaigns — why "zero results" isn't the finding it looks like |
 | [`campaign/sp-optimisation-plan.md`](campaign/sp-optimisation-plan.md) | What to change in the Amazon campaigns, and the affordable-CPC ceiling |
 | [`campaign/search-terms-findings.md`](campaign/search-terms-findings.md) | Search terms report — self-targeting, wasted spend, and proof the targeting is right |
-| [`campaign/volume-correction.md`](campaign/volume-correction.md) | **Why Exact-only cannot run the test, and why not to discount further** |
+| [`campaign/volume-correction.md`](campaign/volume-correction.md) | Why Exact-only cannot run the test, and why not to discount further |
+| [`campaign/vine-blocker.md`](campaign/vine-blocker.md) | **Vine says the listing is incomplete — the free diagnosis, and the new order of operations** |
 | [`campaign/campaign-spec.json`](campaign/campaign-spec.json) | Machine-readable spec for API creation |
 
 ## The two decisions you asked about
@@ -69,7 +70,21 @@ breakdown at day 7 alongside gender.
 
 ## Status
 
-**Meta is on hold by agreement (2026-08-08). Work has moved to fixing the Amazon campaigns.**
+**Ads are on hold (2026-08-09). Work has moved to fixing the Amazon listing itself.**
+
+**Brand Registry is APPROVED — and Vine rejected the listing as "incomplete."** Amazon's own
+system inspected the detail page and judged it unfinished. That is a free diagnosis of exactly
+what ~₹1,300 of clicks was going to spend a fortnight testing, and it fits every other signal:
+healthy CTR, zero conversion, 100% buy box. First suspect is an **empty product description
+field**, which happens specifically when A+ content is added and the plain description left
+blank.
+
+**New order of operations: fix completeness → Vine → 30 reviews → then advertise.** Full detail
+in [`campaign/vine-blocker.md`](campaign/vine-blocker.md).
+
+---
+
+**Meta remains on hold by agreement (2026-08-08).**
 
 The decisive comparison came from the seller's own account: in the same week, **Kudampuli
 converted at 8% on ₹8.63 clicks while the biryani product took 36 clicks at ₹16.28 and sold
