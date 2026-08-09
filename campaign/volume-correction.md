@@ -71,9 +71,9 @@ intact — but it mainly buys CTR, which is not where this listing is losing.
 
 ## What actually moves it
 
-1. **Brand Registry** — the unlock. Requires a registered trademark. **Open question: does
-   Spiceto have one?** With it: Vine (up to 30 genuine reviews with no sales required) plus A+
-   content. Without it, the loop holds — orders needed for reviews, reviews needed for orders.
+1. **Brand Registry** — **ANSWERED: approved** (trademark still pending registration). Vine is
+   therefore available in principle, but currently blocked on FBA inventory, not page content —
+   see [`vine-blocker.md`](vine-blocker.md).
 2. **Request a Review** button in Seller Central on every order. Free, immediate, compliant.
 3. **Check delivery time** to the metro cities is inside a week. Slow delivery suppresses
    conversion on impulse grocery purchases.
