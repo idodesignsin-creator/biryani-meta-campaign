@@ -167,7 +167,7 @@ keywords breaches Amazon policy.
 | Serving Recommendation | `…= 50+ Biryanies` | `…= 50+ Biryanis` |
 | Parent ASIN title (`B0H6TSDQ7R`) | `Biriyani mix varrient` | `Spiceto Biryani Whole Spices — Khada Garam Masala` |
 | Item Type Name | `Biryani Whole Spice Mix \| Khada Garam Masala` | **keep — already good** |
-| Item Highlight | `Perfect for Biryani, Curries, Rice Dishes - 50+ Servings` | **keep** |
+| Item Highlight | `Perfect for Biryani, Curries, Rice Dishes - 50+ Servings` | **replace — see §1b** |
 | Size | `90 g (Pack of 1)` | **keep** |
 | Browse node | Whole Spices, Seeds & Herbs | **keep — correct** |
 
