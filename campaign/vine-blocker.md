@@ -5,34 +5,64 @@
 - **Brand Registry: APPROVED** (trademark still pending registration)
 - **Vine: NOT ELIGIBLE — "listing incomplete"**
 
-## Why this is the most useful finding so far
+## What the rejection actually says
 
-Amazon's own system inspected the detail page and judged it **incomplete**. That is a free
-diagnosis of precisely what ~₹1,300 of clicks was going to spend a fortnight testing.
+The first reading of the rejection was "listing incomplete", which pointed at page content.
+Inspecting the enrolment page directly showed a different error, and it changes the fix — see
+below. The listing-content theories are all closed.
 
-It also fits every other signal: healthy CTR (people click), zero conversion (the page does not
-close), 100% buy box (nothing structural). An incomplete page produces exactly that pattern.
+## The real blocker: inventory, not content
 
-## What "incomplete" usually means
+The error on the enrolment page reads:
 
-> **Updated after inspecting the live record — see [`listing-fixes.md`](listing-fixes.md).**
-> The description is **present and substantial**, and there are **6 bullet points**. The
-> empty-description theory below is disproven.
+> **"No eligible offers — 400. We were not able to identify eligible offers with inventory for
+> this product."**
 
-- [x] ~~Product description field empty~~ — **ruled out**, description is populated
-- [x] ~~Fewer than 5 bullet points~~ — **ruled out**, 6 present
-- [ ] **Too few images** ← now the leading suspect, check the Images tab
-- [ ] **Not FBA / not In Stock in New condition** ← check the Offer tab
-- [ ] Missing required category attributes
+**That is an offer/stock problem, not a listing-content problem.** Vine draws units from a live
+Fulfilled-by-Amazon offer, and it cannot find one.
+
+Two checks, in order:
+
+1. **Is the product actually FBA?** Vine only works with FBA inventory. On Easy Ship or
+   self-ship, Vine is unavailable regardless of how complete the listing is — units must be sent
+   into FBA first.
+2. **The enrolment is on the PARENT ASIN.** The page shows `B0H6TSDQ7R — Parent ASIN —
+   2 variations`. Parents never hold offers; children do (`B0H6TP1DNS` = the 90 g child). At
+   least one **child** needs live FBA stock before Enrol activates.
+
+Check Manage Inventory for FBA stock on both children.
+
+### Listing-content theories, now closed
+
+- ~~Product description empty~~ — populated and substantial
+- ~~Fewer than 5 bullets~~ — 6 present
+- ~~Missing required attributes~~ — Item Name, Brand, Manufacturer, Description, Bullets,
+  Serving Quantity/Unit and Ingredients are all filled
+- Empty nutrition sections (Energy, Fat, Protein, Carbohydrate, Vitamins) are **not** marked
+  required and are **not** the blocker — worth filling for FSSAI and display, but separately
+
+## Cost, now that the fee tiers are visible
+
+| Units | Fee | Product cost | Total | Likely reviews | Cost/review |
+| --- | --- | --- | --- | --- | --- |
+| 2 | ₹0 | ₹170 | ₹170 | 1–2 | — |
+| 10 | ₹1,000 | ₹850 | ₹1,850 | 5–8 | ₹285 |
+| **30** | ₹2,600 | ₹2,550 | **₹5,150** | **15–24** | **₹264** |
+
+*COGS assumed at ₹85 — still unconfirmed. Vine reviewers typically review 50–80% of units.*
+
+**Take 30.** Best cost per review, and it moves the listing from 3 reviews to roughly 20–27 —
+past the ~10-review threshold `launch-checklist.md` identifies. ₹5,150 against the ₹15,000 Meta
+cycle that would have taught nothing.
 
 ## The order of operations flips
 
-**Stop ad spend. Fix completeness. Get Vine. Then advertise.**
+**Stop ad spend. Get FBA stock in. Get Vine. Then advertise.**
 
 | Route | Cost | Result |
 | --- | --- | --- |
 | Ads now | ~₹1,300 | *Maybe* an answer; listing still has 3 reviews |
-| Vine first | ~30 units of COGS | **30 genuine reviews** and a complete page |
+| Vine first | ~₹5,150 all-in | **~20 genuine reviews** on the page |
 
 Vine costs more in product than the ads cost in cash, but it buys **the fix, not the
 diagnosis**. Advertising a page Amazon considers incomplete is paying to send strangers to
@@ -66,8 +96,8 @@ not work yet.
 
 ## Plan
 
-1. **Today** — find why the listing reads as incomplete. Start with the description field.
-2. **This week** — enrol in Vine, send units.
+1. **Today** — check FBA inventory on the child ASINs. That is what blocks Vine.
+2. **This week** — get stock into FBA if it is not there, then enrol 30 units.
 3. **Hold the ads** — leave Auto paused; Exact at ₹120/day will barely spend.
 4. **In 3–4 weeks** — with 30 reviews and a complete page, re-run the same Exact campaign. That
    is a real test against a listing that can actually convert.

@@ -37,7 +37,21 @@ are 6 bullet points.
 **Remaining suspects: the Images tab and the Offer tab.** Image count is the most common cause;
 Vine also requires an FBA offer in New condition with stock available.
 
-## 3. Two spices are labelled wrongly
+## 3. Two spices are labelled wrongly — INCLUDING IN THE INGREDIENTS FIELD
+
+**Escalated.** The error is not only in marketing copy. The structured **Ingredients** attribute
+— the legal ingredient declaration for a packaged food — reads:
+
+> • Cardamom • Black Pepper • Clove • Cinnamon • Bay Leaf • Nutmeg • Mace (Javithri) • Star
+> Anise • Cumin (Jeerakam) • Poppy Seeds (Khus Khus) • **Fenugreek (Sha Jeerakam)** •
+> **Fenugreek (Perumjeerakam)**
+
+Under FSSAI labelling rules an accurate ingredient declaration is required. Beyond compliance:
+someone avoiding fenugreek is misinformed, and someone who reacts to fennel is not warned.
+
+**Also check the printed pouch.** If the physical label carries the same error, that is a larger
+fix than a Seller Central edit.
+
 
 The description reads: *"Fenugreek (Sha Jeerakam), Fenugreek (Perumjeerakam)"* — both wrong, and
 they are not the same spice as each other.
@@ -71,6 +85,14 @@ being withheld, when the complete list is the strongest proof on the page.
 Bullet 2 carries an unsupported statistic. Precise-sounding numbers with no source reduce
 credibility rather than adding it. *"Identical ratio in every pack"* says the same thing without
 inviting the question.
+
+## 7. More field-level errors found on the attributes page
+
+- **Serving Size Description** — *"1 to 2 teaspoons if you **griend** it"* → grind
+- **Parent ASIN title** — *"Biriyani mix varrient"* → two typos (Biryani, variant)
+- **Nutrition sections all empty** — Energy, Fat, Protein, Carbohydrate, Vitamins & Minerals.
+  Not marked required and **not** the Vine blocker, but FSSAI expects nutritional information on
+  packaged food and Amazon displays these fields.
 
 ## Also observed
 
