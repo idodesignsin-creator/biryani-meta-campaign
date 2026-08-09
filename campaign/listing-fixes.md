@@ -34,8 +34,9 @@ Amazon weights early words more heavily.
 "incomplete" verdict. **That is wrong** — the description is present and substantial, and there
 are 6 bullet points.
 
-**Remaining suspects: the Images tab and the Offer tab.** Image count is the most common cause;
-Vine also requires an FBA offer in New condition with stock available.
+**Resolved:** the enrolment page itself reports *"No eligible offers — 400… no eligible offers
+with inventory"*. It is an FBA stock problem, not page content. See
+[`vine-blocker.md`](vine-blocker.md).
 
 ## 3. Two spices are labelled wrongly — INCLUDING IN THE INGREDIENTS FIELD
 
@@ -52,9 +53,8 @@ someone avoiding fenugreek is misinformed, and someone who reacts to fennel is n
 **Also check the printed pouch.** If the physical label carries the same error, that is a larger
 fix than a Seller Central edit.
 
-
-The description reads: *"Fenugreek (Sha Jeerakam), Fenugreek (Perumjeerakam)"* — both wrong, and
-they are not the same spice as each other.
+The same error appears in the product description. Neither name is fenugreek, and the two are
+not the same spice as each other:
 
 | Malayalam | Actually is | Listed as |
 | --- | --- | --- |
