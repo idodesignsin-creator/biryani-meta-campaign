@@ -77,13 +77,18 @@ An earlier draft of this sheet failed that rule. It read:
 
 `whole`, `spices`, `kerala` and `biryani` are all in the title already — four wasted slots.
 
-**Use this instead** — 131 characters, **zero overlap with the title**:
+**The field caps at 125 characters** — Seller Central rejects anything longer.
+
+**Use this** — 122 characters, **zero overlap with the title**:
 ```
-Hand-Weighed to an Expert Ratio - Idukki Grown, Ready to Grind or Use in the Dum | Pulao, Curry & Rice | 50+ Servings, No Additives
+12 Hand-Weighed, Expert Ratio | Idukki Grown | Grind Fresh or Add to Dum | Pulao, Curry, Rice | 50+ Servings, No Additives
 ```
 
-New terms this brings in: `hand-weighed, expert, ratio, idukki, grown, ready, grind, dum, pulao,
-curry, rice, 50+, servings, no additives`.
+Carries 16 terms the title cannot: `12, hand-weighed, expert, ratio, idukki, grown, grind, fresh,
+dum, pulao, curry, rice, 50+, servings, no, additives`.
+
+The `12` matters here — the title has no room for it, so this is the only indexed field carrying
+the spice count, which is the product's core proof point.
 
 **One caution:** Item Highlight is a newer attribute and it is not certain Amazon indexes it for
 search the way it indexes title and bullets. Treat it as display copy that *may* also rank —
