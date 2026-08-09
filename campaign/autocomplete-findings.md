@@ -30,13 +30,13 @@ Typing `biryani whole`:
 | biryani whole masala | |
 | biryani whole spices masala | |
 | biryani whole spices all mix | |
-| biryani whole spice mix | **was wrongly paused — see below** |
+| biryani whole spice mix | real query, but small — see below |
 | biryani whole kit | **blocked by a negative** |
 | biryani masala whole spices all mix | |
 | biryani raw spices whole kit | **blocked by a negative** |
 | biryani whole species | misspelling of "spices" |
 
-## Two corrections this forces
+## What this changes — and one thing it does not
 
 **1. `combo` should never have been dropped from backend keywords.** The original backend list
 had `combo pack`; an earlier pass here removed it as low value. Autocomplete puts **`combo` in 4
