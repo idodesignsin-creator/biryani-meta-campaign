@@ -46,7 +46,8 @@ Still needed before launch: creative assets, and an Amazon Attribution URL
 | [`campaign/vine-blocker.md`](campaign/vine-blocker.md) | Vine says the listing is incomplete — the free diagnosis, and the new order of operations |
 | [`campaign/listing-fixes.md`](campaign/listing-fixes.md) | Detail page audit — the title gap, and two spices named wrongly |
 | [`campaign/listing-rewrite.md`](campaign/listing-rewrite.md) | Copy-paste rewrite of every listing field, built for organic search |
-| [`campaign/autocomplete-findings.md`](campaign/autocomplete-findings.md) | **Amazon autocomplete = real demand — and the negatives blocking it** |
+| [`campaign/autocomplete-findings.md`](campaign/autocomplete-findings.md) | Amazon autocomplete = real demand — and the negatives blocking it |
+| [`campaign/meta-reconsidered.md`](campaign/meta-reconsidered.md) | **Why the Meta objection was overstated — and the one-week test that answers it** |
 | [`campaign/campaign-spec.json`](campaign/campaign-spec.json) | Machine-readable spec for API creation |
 
 ## The two decisions you asked about
@@ -111,7 +112,21 @@ negative phrase `kit` blocking two popular searches for exactly this product. Se
 
 ---
 
-**Meta remains on hold by agreement (2026-08-08).**
+**Meta reconsidered (2026-08-09).** The earlier framing — that reels traffic is worse than Amazon
+search — was wrong. Amazon SP *harvests* existing demand; Meta *creates* it. And the harvestable
+pool turned out to be tiny: exact-match terms draw ~10 impressions/day, a ceiling no bid can
+raise. That is an argument **for** demand creation.
+
+What still stands is narrower: brands selling volume off reels almost all sell on **their own
+site**. Meta → Amazon means no pixel, no purchase optimisation, no retargeting, no idea which ad
+sold. **A one-week test is agreed** on three conditions — destination `spiceto.in` with the pixel
+live, a **₹599+ bundle** rather than the ₹199 single (₹199 cannot absorb a ₹9 visit), and
+optimisation for **Add to Cart** rather than Purchase. Detail in
+[`campaign/meta-reconsidered.md`](campaign/meta-reconsidered.md).
+
+---
+
+**The original Meta-to-Amazon plan stays on hold.**
 
 The decisive comparison came from the seller's own account: in the same week, **Kudampuli
 converted at 8% on ₹8.63 clicks while the biryani product took 36 clicks at ₹16.28 and sold
