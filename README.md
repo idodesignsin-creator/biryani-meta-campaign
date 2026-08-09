@@ -104,10 +104,12 @@ which is a legal declaration under FSSAI rather than marketing copy.
 Amazon position is driven mainly by sales velocity and conversion, so the keyword work and the
 Vine reviews have to happen together — the rewrite alone moves impressions, not orders.
 
-**Amazon autocomplete then supplied better keyword data than the paid report** and forced two
-corrections: `combo` should never have been dropped from backend keywords (it appears in 4 of 20
-suggestions), and `biryani whole spice mix` should not have been paused. It also showed the
-negative phrase `kit` blocking two popular searches for exactly this product. See
+**Amazon autocomplete then supplied better keyword data than the paid report.** It forced one
+real correction — `combo` should never have been dropped from backend keywords, since it appears
+in 4 of 20 suggestions — and showed the negative phrase `kit` blocking two popular searches for
+exactly this product. A second "correction" (re-adding `biryani whole spice mix`) was itself an
+overstatement and was withdrawn: autocomplete proves a query is *typed*, not that it carries
+volume, and the phrase keyword covers it anyway. See
 [`campaign/autocomplete-findings.md`](campaign/autocomplete-findings.md).
 
 ---
