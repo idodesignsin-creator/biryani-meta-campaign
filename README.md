@@ -76,9 +76,8 @@ breakdown at day 7 alongside gender.
 **Brand Registry is APPROVED — and Vine rejected the listing as "incomplete."** Amazon's own
 system inspected the detail page and judged it unfinished. That is a free diagnosis of exactly
 what ~₹1,300 of clicks was going to spend a fortnight testing, and it fits every other signal:
-healthy CTR, zero conversion, 100% buy box. First suspect is an **empty product description
-field**, which happens specifically when A+ content is added and the plain description left
-blank.
+healthy CTR, zero conversion, 100% buy box. The description and bullets turned out to be
+populated, so the remaining suspects are **image count** and the **FBA/stock offer**.
 
 **New order of operations: fix completeness → Vine → 30 reviews → then advertise.** Full detail
 in [`campaign/vine-blocker.md`](campaign/vine-blocker.md).
