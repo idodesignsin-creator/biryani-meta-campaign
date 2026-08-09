@@ -77,3 +77,52 @@ intact — but it mainly buys CTR, which is not where this listing is losing.
 2. **Request a Review** button in Seller Central on every order. Free, immediate, compliant.
 3. **Check delivery time** to the metro cities is inside a week. Slow delivery suppresses
    conversion on impulse grocery purchases.
+
+---
+
+## Confirmed empirically — 9 Aug 2026
+
+The Exact-only campaign ran a full day on 9 keywords with corrected bids:
+
+| | |
+| --- | --- |
+| Impressions | **10** |
+| Clicks at 1.5% CTR | 0.15/day |
+| Days to 150 clicks | **~1,000** |
+
+The ₹120/day budget cannot spend. The prediction above (~6 impressions/day) was right.
+
+### It is not the bids
+
+`biryani whole spices` is bid at **₹6.95 — the top of its suggested range** (₹4.52–6.95) — and
+drew **1 impression**. The auction is being won; the searches are not there.
+
+**Exact match fires only on the precise query typed.** Not "biryani whole spices online", not
+"best biryani whole spices", not "biryani whole spices 100g". Each is a separate query the exact
+keyword never sees. This is structural — no bid change fixes it.
+
+### The fix: two changes
+
+| Setup | Impressions/day | Days to 150 clicks |
+| --- | --- | --- |
+| Exact only (today) | 10 | 1,000 |
+| Exact + Phrase | ~150 | 67 |
+| **Exact + Phrase + Auto** | **~500** | **20** |
+
+1. **Add the same 9 terms in PHRASE match**, bid ₹1 below their exact bids (₹6–12). Phrase
+   catches every query *containing* the term. When an exact and a phrase keyword both match,
+   Amazon serves the exact one — the precision layer survives, phrase only picks up the rest.
+2. **Turn Auto back on at ₹10 close match** — *not* the ₹19.59 Amazon suggests. Auto ran 454
+   impressions/day before being switched off, and the 26 negatives now in place make it far
+   cleaner than the run that spent on the seller's own cardamom listing.
+
+### Unchanged
+
+This remains **diagnostic, not profitable**. At ₹199 with ₹8–13 clicks, break-even needs 10–17%
+conversion. The spend buys an answer, not a channel.
+
+### Separately: watch organic
+
+The new title went live 9 Aug. Amazon reindexes in roughly 24–72 hours. Track **organic
+sessions** in the Business Report over the following week — that is where the title and keyword
+work shows up, and unlike everything above it is free traffic.
