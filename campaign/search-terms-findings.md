@@ -209,6 +209,11 @@ most of it.
 
 ## 9. The decision rule
 
+> **⚠️ SUPERSEDED — see [`volume-correction.md`](volume-correction.md).** The timeline below
+> assumed ₹120/day would buy 13–15 clicks a day. It will not: Exact alone delivers ~6
+> impressions/day, so 150 clicks is unreachable. Auto has to come back on. The *decision rule*
+> holds; the *timeline* does not.
+
 At ₹120/day and ₹8–9 CPC: **13–15 clicks/day, 150 clicks in 10–11 days, about ₹1,300.**
 
 | If the listing truly converts | P(still 0 sales at 150 clicks) |

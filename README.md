@@ -41,7 +41,8 @@ Still needed before launch: creative assets, and an Amazon Attribution URL
 | [`campaign/baseline-2026-08-08.md`](campaign/baseline-2026-08-08.md) | **Pre-launch ASIN baseline — and why the launch is on hold** |
 | [`campaign/sponsored-products-audit.md`](campaign/sponsored-products-audit.md) | The Amazon SP campaigns — why "zero results" isn't the finding it looks like |
 | [`campaign/sp-optimisation-plan.md`](campaign/sp-optimisation-plan.md) | What to change in the Amazon campaigns, and the affordable-CPC ceiling |
-| [`campaign/search-terms-findings.md`](campaign/search-terms-findings.md) | **Search terms report — self-targeting, wasted spend, and proof the targeting is right** |
+| [`campaign/search-terms-findings.md`](campaign/search-terms-findings.md) | Search terms report — self-targeting, wasted spend, and proof the targeting is right |
+| [`campaign/volume-correction.md`](campaign/volume-correction.md) | **Why Exact-only cannot run the test, and why not to discount further** |
 | [`campaign/campaign-spec.json`](campaign/campaign-spec.json) | Machine-readable spec for API creation |
 
 ## The two decisions you asked about
@@ -121,6 +122,15 @@ the Substitutes group. See
 
 **Roughly ₹1,400 of properly-bid Amazon traffic settles the question that ₹15,000 of Meta
 spend would leave ambiguous** — because Amazon reports the sale and Meta cannot.
+
+⚠️ **Correction (2026-08-09):** Auto was switched off, leaving Exact alone — which delivers only
+**~6 impressions/day** and so can never reach a diagnostic sample. The ₹120/day budget cannot be
+spent; volume is the constraint, not money. **Auto has to come back on** with the waste cut
+(negative product target `B0FYY8TVNY`, Substitutes off, `mdh`/`elaichi` phrase, `spices`/`garam
+masala` exact). Also: **do not discount further** — CTR at 3x benchmark proves shoppers accept
+₹199 *before* clicking, so price is not the barrier, and every rupee off lowers the affordable
+CPC ceiling that is already being exceeded. Full working in
+[`campaign/volume-correction.md`](campaign/volume-correction.md).
 
 The campaign artefacts are unaffected and stay ready. The draft in Ads Manager is campaign
 `SPICETO | Traffic | Prospecting | IN-Metro` → ad set `Metro Spice Buyers | 25-54 | All | LPV`
