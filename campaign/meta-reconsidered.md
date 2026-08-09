@@ -77,3 +77,52 @@ the store has to be finished first.
   organic rank and the Amazon channel, and is unaffected by whatever Meta does.
 - The **Amazon draft campaign** in Ads Manager still points at the ASIN. If this test runs, it
   runs as a **new campaign pointed at spiceto.in**, not by unpausing the old one.
+
+---
+
+## Decision (2026-08-09, later same day): publish to Amazon, not spiceto.in
+
+The three-condition plan above (spiceto.in destination, bundle AOV, ATC optimisation) is
+**withdrawn**. Two objections from the seller, both correct:
+
+**1. Amazon price-parity policy.** Selling cheaper on an owned site risks the buy box —
+confirmed real, not a modelling assumption.
+
+**2. Unit economics favour Amazon, not the site.**
+
+| | Amazon | Own site |
+| --- | --- | --- |
+| Referral / postal | ₹12 referral | ₹100 postal |
+| Fulfilment | ₹65 FBA | ~₹4 gateway |
+| **Net before COGS** | **₹122** | **₹95** |
+
+Amazon nets **₹27 more per order**. The earlier recommendation to route Meta traffic to
+spiceto.in was wrong on the numbers, not just on measurement grounds.
+
+**3. spiceto.in was already tried and failed**, for identified reasons — login wall, account
+creation, minimum purchase order. That is real evidence and outranks any hypothetical.
+
+### Revised plan: publish the existing draft to Amazon, run one week, decide
+
+Pre-publish checklist:
+
+- [ ] **Fix the still-truncating description** — currently `12 hand-weighed Whole Spice Mix`
+      (32 chars, clips in preview). Revert to `12 hand-weighed spices` (22 chars). This bug was
+      flagged in `pre-publish-review.md` and never actually corrected on the live ad.
+- [ ] **Complete the India securities/investments ad declaration** — blocks Publish outright.
+- [ ] **Check whether Amazon Attribution is now available** — Brand Registry is approved. If
+      unlocked, generate a real tracking URL for this ad instead of the plain ASIN link. If not
+      yet available, the existing hardcoded UTMs are inert on Amazon — harmless, ignore.
+- [ ] **Pull a fresh Business Report baseline immediately before publishing** — the 138-session
+      figure is now stale and overlaps with days the Exact SP campaign was live.
+- [ ] **Do not ramp Auto SP during the same week** — simultaneous channels confound whether any
+      session lift came from Meta or from Amazon ads.
+
+### Day-7 decision rule
+
+At ₹500/day and ~₹9 CPLPV: ~55 LPV/day, ~385 for the week, against a baseline of roughly 5–10
+sessions/day. The lift will be unmissable in the Business Report.
+
+- **Sessions jump 5–10x, orders stay near zero** → same finding as the SP test: the listing is
+  the constraint, not traffic. Stop.
+- **Orders appear** → real signal, worth a second week and a closer look at what converted.
