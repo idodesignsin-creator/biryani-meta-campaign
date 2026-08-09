@@ -23,18 +23,19 @@ So: do this rewrite **and** the Vine work. The rewrite alone will move impressio
 
 ---
 
-## 1. Item Name (title)
+## 1. Item Name (title) — 75-character limit
 
-**Current** — 63 characters of ~200, and it contains none of the words buyers type:
+Amazon caps this field at **75 characters** for the category, so the long version is out. The
+good news: every high-spend root fits anyway.
 
+**Current** — 63 characters, and it contains none of the words buyers type:
 ```
 Spiceto Premium Whole Garam Masala 90g | 12 Hand-Weighed Spices
 ```
 
-**Replace with** — 171 characters, covers all 8 root keywords:
-
+**Replace with** — 71 characters, all 7 roots covered:
 ```
-Spiceto Biryani Whole Spices 90g | Khada Garam Masala Sabut Mix | 12 Hand-Weighed Whole Spices from Idukki Kerala | Ready to Grind for Biryani, Curry & Rice | 50+ Servings
+Spiceto Biryani Whole Spices 90g | Khada Garam Masala Sabut Mix, Kerala
 ```
 
 | Root keyword | Ad spend it drove | In new title |
@@ -42,12 +43,33 @@ Spiceto Biryani Whole Spices 90g | Khada Garam Masala Sabut Mix | 12 Hand-Weighe
 | biryani | ₹257.07 | ✓ |
 | sabut | ₹109.92 | ✓ |
 | khada | ₹82.94 | ✓ |
-| whole spices | — | ✓ |
+| mix | ₹22.15 | ✓ |
 | garam masala | ₹17.27 | ✓ |
+| whole spices | — | ✓ |
+| 90g | — | ✓ |
 
-Brand first, then the dominant search term. Amazon weights early words more heavily.
+Amazon matches on **tokens**, not phrases, so `Khada Garam Masala Sabut Mix` alone satisfies
+`khada masala mix`, `sabut masala`, `sabut garam masala` and `khada masala sabut` — the four
+vernacular terms worth ₹132 of spend.
 
----
+**If you want the 8 characters back**, drop `, Kerala` for a 63-character version. Kerala carries
+no search evidence in the data — it is there for provenance and trust, not ranking.
+
+## 1b. Item Highlight — carries the overflow
+
+**Current:** `Perfect for Biryani, Curries, Rice Dishes - 50+ Servings`
+
+**Replace with** — 106 characters:
+```
+12 Hand-Weighed Whole Spices from Idukki, Kerala - Ready to Grind for Biryani, Curry & Rice | 50+ Servings
+```
+
+This picks up what the 75-character title had to leave behind: the spice count, Idukki, ready to
+grind, curry, rice and the servings claim.
+
+**One caution:** Item Highlight is a newer attribute and it is not certain Amazon indexes it for
+search the way it indexes title and bullets. Treat it as display copy that *may* also rank —
+which is why nothing critical was moved here. Every high-spend keyword stayed in the title.
 
 ## 2. Bullet Points — replace all 6 with these 5
 
@@ -109,25 +131,33 @@ label repeats the error, that is a print run, not a form field.
 
 ---
 
-## 4. Backend Generic Keywords
+## 4. Backend Generic Keywords — **replace, do not append**
 
-**Replace with** — 225 of 250 bytes, no title words repeated, no competitor brands:
+Delete the current string entirely and paste this. Appending would blow the 250-byte cap, and
+several of your old words are now in the title, where Amazon already indexes them once —
+repeating them in backend just wastes bytes.
 
+**242 of 250 bytes:**
 ```
-biriyani masale khade saboot podi thalassery malabar hyderabadi ambur arcot lucknowi dindigul bhatkal donne dum handi pulao pilaf tadka phodni potli elaichi tejpatta dalchini laung jaiphal javitri saunf shahi jeera kali mirch
+biriyani masale khade saboot podi thalassery malabar hyderabadi kolkata ambur arcot lucknowi dindigul bhatkal donne handi pulao pilaf tadka phodni potli elaichi tejpatta dalchini laung jaiphal javitri saunf shahi jeera kali mirch south indian
 ```
 
-Reasoning:
-- **`biriyani`** — the most common Indian misspelling, and the one your own campaigns use. Never
-  in the title (spelling must stay correct there), so backend is the only place to catch it.
-- **Regional biryani styles** — thalassery, malabar, hyderabadi, ambur, arcot, lucknowi,
-  dindigul, bhatkal, donne. Each is a distinct search.
-- **Hindi/Malayalam spice names** — elaichi, tejpatta, dalchini, laung, jaiphal, javitri, saunf,
-  shahi jeera, kali mirch.
-- **Deliberately excluded:** any word already in the title (Amazon indexes it once — repeating
-  wastes bytes), and competitor brand names such as MDH or Everest, which breach Amazon policy.
+**Carried over from your original list:** `arcot lucknowi kolkata ambur south indian elaichi
+tejpatta kali mirch laung`. Your `kolkata` was a good call — an earlier draft here dropped it,
+which was wrong, since Kolkata biryani is a major regional style.
 
----
+**Dropped from your original**, because they are now in the title or bullets and do not need
+repeating: `khada sabut dum idukki combo pack`.
+
+**Added:**
+- **`biriyani`** — the most common Indian misspelling, and the one your own campaigns use. It
+  cannot go in the title (spelling must stay correct there), so backend is its only home.
+- **More regional styles** — thalassery, malabar, hyderabadi, dindigul, bhatkal, donne.
+- **More Hindi spice names** — dalchini, jaiphal, javitri, saunf, shahi jeera.
+- **Cooking terms** — handi, pulao, pilaf, tadka, phodni, potli, masale, khade, saboot, podi.
+
+**Deliberately excluded:** competitor brands such as MDH and Everest — using them in backend
+keywords breaches Amazon policy.
 
 ## 5. Smaller field fixes
 
