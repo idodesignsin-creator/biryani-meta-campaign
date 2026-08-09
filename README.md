@@ -89,10 +89,11 @@ have taught nothing.
 **New order of operations: FBA stock in → Vine → ~20 reviews → then advertise.** Full detail in
 [`campaign/vine-blocker.md`](campaign/vine-blocker.md).
 
-**The detail page audit found the title is the clearest problem on the listing.** It runs 63
-characters of ~200 available and contains **none** of *biryani* (₹257 of ad spend), *sabut*
-(₹110) or *khada* (₹83). A 171-character replacement, plus a
-copy-paste rewrite of every other field, is in
+**The detail page audit found the title was the clearest problem on the listing.** It contained
+**none** of *biryani* (₹257 of ad spend), *sabut* (₹110) or *khada* (₹83). The field caps at **75
+characters**, and a 71-character replacement carrying all seven roots went live on 9 Aug, along
+with a 122-character Item Highlight (125 cap) carrying the terms the title had no room for. Both
+plus a copy-paste rewrite of every other field are in
 [`campaign/listing-rewrite.md`](campaign/listing-rewrite.md). The audit also caught **two of the
 twelve spices declared wrongly** — Sha Jeerakam and Perumjeerakam are both called "Fenugreek"
 when they are caraway and fennel, and the error sits in the **structured Ingredients attribute**,
@@ -101,6 +102,12 @@ which is a legal declaration under FSSAI rather than marketing copy.
 **On organic search:** the rewrite makes the listing *eligible* to rank; it does not create rank.
 Amazon position is driven mainly by sales velocity and conversion, so the keyword work and the
 Vine reviews have to happen together — the rewrite alone moves impressions, not orders.
+
+**Amazon autocomplete then supplied better keyword data than the paid report** and forced two
+corrections: `combo` should never have been dropped from backend keywords (it appears in 4 of 20
+suggestions), and `biryani whole spice mix` should not have been paused. It also showed the
+negative phrase `kit` blocking two popular searches for exactly this product. See
+[`campaign/autocomplete-findings.md`](campaign/autocomplete-findings.md).
 
 ---
 
