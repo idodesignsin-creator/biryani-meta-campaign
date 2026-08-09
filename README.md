@@ -74,22 +74,32 @@ breakdown at day 7 alongside gender.
 
 **Ads are on hold (2026-08-09). Work has moved to fixing the Amazon listing itself.**
 
-**Brand Registry is APPROVED — and Vine rejected the listing as "incomplete."** Amazon's own
-system inspected the detail page and judged it unfinished. That is a free diagnosis of exactly
-what ~₹1,300 of clicks was going to spend a fortnight testing, and it fits every other signal:
-healthy CTR, zero conversion, 100% buy box. The description and bullets turned out to be
-populated, so the remaining suspects are **image count** and the **FBA/stock offer**.
+**Brand Registry is APPROVED. Vine is blocked on inventory, not page content.** The enrolment
+page reports *"No eligible offers — 400… no eligible offers with inventory"*. Vine draws units
+from a live FBA offer and cannot find one. Two checks: whether the product is FBA at all (Vine
+does not work with Easy Ship or self-ship), and that enrolment is sitting on **parent ASIN**
+`B0H6TSDQ7R`, which holds no offer — a child needs live FBA stock. Every listing-content theory
+is closed: description populated, 6 bullets, required attributes filled.
 
-**New order of operations: fix completeness → Vine → 30 reviews → then advertise.** Full detail
-in [`campaign/vine-blocker.md`](campaign/vine-blocker.md).
+Fee tiers are now visible: **30 units = ₹2,600 + ~₹2,550 of product ≈ ₹5,150** for an estimated
+15–24 reviews. Best cost per review of the three tiers, against the ₹15,000 Meta cycle that would
+have taught nothing.
+
+**New order of operations: FBA stock in → Vine → ~20 reviews → then advertise.** Full detail in
+[`campaign/vine-blocker.md`](campaign/vine-blocker.md).
 
 **The detail page audit found the title is the clearest problem on the listing.** It runs 63
 characters of ~200 available and contains **none** of *biryani* (₹257 of ad spend), *sabut*
-(₹110) or *khada* (₹83). A 170-character replacement is drafted in
-[`campaign/listing-fixes.md`](campaign/listing-fixes.md), which also catches **two of the twelve
-spices labelled wrongly** — Sha Jeerakam and Perumjeerakam are both called "Fenugreek" when they
-are caraway and fennel. That error sits on the page whose entire pitch is precision, in front of
-the one buyer who would notice.
+(₹110) or *khada* (₹83). A 171-character replacement, plus a
+copy-paste rewrite of every other field, is in
+[`campaign/listing-rewrite.md`](campaign/listing-rewrite.md). The audit also caught **two of the
+twelve spices declared wrongly** — Sha Jeerakam and Perumjeerakam are both called "Fenugreek"
+when they are caraway and fennel, and the error sits in the **structured Ingredients attribute**,
+which is a legal declaration under FSSAI rather than marketing copy.
+
+**On organic search:** the rewrite makes the listing *eligible* to rank; it does not create rank.
+Amazon position is driven mainly by sales velocity and conversion, so the keyword work and the
+Vine reviews have to happen together — the rewrite alone moves impressions, not orders.
 
 ---
 
