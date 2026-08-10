@@ -64,3 +64,30 @@ independent analyses of the same competitor set. Use the 75-char revision above 
 `sabut` token. Fix bullet 2's "99% consistency" the same way already applied elsewhere in this
 project. Confirm "export-grade" and "vegan" before keeping them, and soften the Hyderabadi
 claim in bullet 3.
+
+---
+
+## Final version shipped (2026-08-10)
+
+**Title — 59/75 chars:**
+```
+Spiceto Garam Masala Whole 90g | Khada Sabut Mix, 12 Spices
+```
+
+**Item Highlight — 95/125 chars:**
+```
+Hand-Weighed, Ratio by Kerala Biryani Experts | Ready to Grind or Use in the Dum | No Additives
+```
+
+Verified: zero token overlap between the two fields (the repeat issue from the intermediate
+draft is fully resolved). Full coverage confirmed on every search term this project holds real
+data for, including `biryani whole spices` / `biryani spices whole`, which the previous draft
+missed on "spices" — now caught because "spices" sits in the title and "biryani" moved to the
+highlight rather than being dropped.
+
+"12 Spice" was also corrected to "12 Spices" in this pass.
+
+16 characters of spare room on the title, 30 on the highlight — not a problem, just headroom if
+a future addition is ever wanted (e.g. "Idukki" for origin).
+
+This is the version to ship.
