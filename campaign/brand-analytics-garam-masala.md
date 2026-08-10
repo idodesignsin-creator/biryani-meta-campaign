@@ -75,3 +75,63 @@ click share (6–11%) and steady conversion (8–14%). The most consistently vis
 across the whole category.
 
 ## Awaiting further screenshots before analysis
+
+---
+
+## Update (later same day): June 2026 monthly, all three product slots complete
+
+### `garam masala whole mix` (rank 63,096)
+
+| Slot | ASIN | Product | Click share | Conversion share |
+| --- | --- | --- | --- | --- |
+| #1 | B0C5XW51LH | MAI RASOI Whole Sabut Mix Garam Masala (50 g) | 9.17% | 12.67% |
+| #2 | B0C5XSKVWL | MAI RASOI Whole Sabut Mix Garam Masala (100 g) | 6.91% | 6.67% |
+| #3 | B0CBVNPHQY | Chukde – Garam Masala Whole (7.05 oz), Blend of 13 Spices | 6.57% | 5.33% |
+
+### `whole garam masala` (rank 2,04,929)
+
+| Slot | ASIN | Product | Click share | Conversion share |
+| --- | --- | --- | --- | --- |
+| #1 | B0CBVNPHQY | Chukde – Garam Masala Whole (7.05 oz) | 11.57% | 0% |
+| #2 | B0C5XW51LH | MAI RASOI Whole Sabut Mix Garam Masala (50 g) | 10.82% | 10.26% |
+| #3 | B01G5XKA5A | JK Garam Masala Whole \| Premium Whole Spices Mix | 8.21% | 7.69% |
+
+## Two more live listings captured
+
+**CHUKDE – Garam Masala Whole (7.05 oz), Blend of 13 Spices, 200 g** (ASIN `B0CBVNPHQY`)
+
+| | |
+| --- | --- |
+| Price | ₹234 (−31% off ₹340 MRP) = **₹117/100 g** |
+| Rating | 4.1★, 300 ratings |
+| Velocity | "300+ bought in past month" |
+| Fulfilment | Amazon FBA, sold by RK World Infocom Pvt Ltd |
+
+**JK Garam Masala Whole \| Premium Whole Spices Mix \| Sabut Khada Masala, 50 g** (ASIN
+`B01G5XKA5A`)
+
+| | |
+| --- | --- |
+| Price | ₹100, **no visible discount/MRP strike-through** = **₹200/100 g** |
+| Rating | **4.5★, 389 ratings — best of every competitor captured** |
+| Velocity | "300+ bought in past month" |
+| Brand | "Since 1957" heritage claim |
+| Minimum order | 4 units — unusual, pushes a bulk-style purchase |
+| Fulfilment | Delivered by Amazon, sold by JKCart |
+
+## Price per 100 g — full competitor set
+
+| Product | ₹/100 g |
+| --- | --- |
+| Chukde | 117.00 |
+| THE GOOD GOODS (200 g) | 131.96 |
+| MAI RASOI | 163.00 |
+| THE GOOD GOODS (100 g) | 199.00 |
+| **JK** | **200.00** |
+| **Spiceto** | **221.00 — most expensive of all** |
+
+**Flag:** JK is the *second*-most-expensive competitor, carries no discount, and has the best
+rating+review-count combination in the dataset (4.5★, 389 ratings). Clean evidence that trust
+signals — reviews, rating, heritage branding — outweigh price in this category. Consistent with
+the earlier finding that Spiceto is the priciest listing captured, but reframes what actually
+needs fixing: reviews and trust, not necessarily price.
