@@ -135,3 +135,70 @@ rating+review-count combination in the dataset (4.5★, 389 ratings). Clean evid
 signals — reviews, rating, heritage branding — outweigh price in this category. Consistent with
 the earlier finding that Spiceto is the priciest listing captured, but reframes what actually
 needs fixing: reviews and trust, not necessarily price.
+
+---
+
+## Update: week 30 "biryani masala whole spices", and week 29 "garam masala whole mix" family
+
+### `biryani masala whole spices`, week 30 (19–25 Jul)
+
+Rank 4,33,119 — down from week 29's 3,53,290 for the same term.
+
+| Slot | ASIN | Product | Click share | Conversion share |
+| --- | --- | --- | --- | --- |
+| #1 | B0D5B68CP8 | JAIPUR MASALE Khada Garam Masala \| Whole Spices Blend \| Sabut | 10.34% | 0% |
+| #2 | B078H9VQ18 | More Choice Japatri 2… | — (partial capture) | — |
+
+### `garam masala whole mix` vs `whole garam masala mix`, week 29 (12–18 Jul)
+
+**`garam masala whole mix`** (rank 62,194):
+
+| Slot | ASIN | Product | Click share | Conversion share |
+| --- | --- | --- | --- | --- |
+| #1 | B0CBVNPHQY | Chukde – Garam Masala Whole (7.05 oz), Blend of 13 Spices | 9.21% | 12.5% |
+| #2 | B0DBV3J8HV | T.O.K TASTES OF KERALA Special Garam Masala Kit Spice Blend | 6.58% | 4.17% |
+
+**`whole garam masala mix`** (rank 5,27,377):
+
+| Slot | ASIN | Product | Click share | Conversion share |
+| --- | --- | --- | --- | --- |
+| #1 | B0CBVNPHQY | Chukde – Garam Masala Whole (7.05 oz) | 16% | **50% — highest conversion share found in this project** |
+| #2 | B079H113LK | Tata Sampann Garam Masala Powder with Natural Oils | 12% | 0% |
+
+## New live listing: T.O.K TASTES OF KERALA Special Garam Masala Kit (ASIN `B0DBV3J8HV`)
+
+| | |
+| --- | --- |
+| Title claims | "(300 g)" |
+| Actual Size field | **150 g (Pack of 1)** — title/size mismatch, a competitor-side listing error, not unique to Spiceto |
+| Price | ₹475 (−5% off ₹499 MRP) = **₹316.67/100 g — most expensive competitor found yet** |
+| Rating | 4.1★, only 8 ratings |
+| Fulfilment | Amazon FBA, sold by ANCHERY DRUGS |
+| Offer | "₹20 per unit cashback on buying 2+" |
+
+## Price per 100 g — updated ladder
+
+| Product | ₹/100 g |
+| --- | --- |
+| Chukde | 117.00 |
+| THE GOOD GOODS (200 g) | 131.96 |
+| MAI RASOI | 163.00 |
+| THE GOOD GOODS (100 g) | 199.00 |
+| JK | 200.00 |
+| Spiceto | 221.00 |
+| **T.O.K** | **316.67 — priced above everyone, only 8 ratings** |
+
+T.O.K is a useful counter-example: high price alone doesn't build trust without reviews either.
+
+## Chukde is now the most-captured competitor across every "garam masala whole" variant
+
+| Term | Chukde conversion share |
+| --- | --- |
+| garam masala whole mix (June) | 5.33% |
+| whole garam masala (June) | 0% |
+| garam masala whole mix (week 29) | 12.5% |
+| whole garam masala mix (week 29) | **50%** |
+
+Appears as a top-3 clicked product on nearly every variant captured — more consistently present
+than even MAI RASOI. Worth treating as a primary reference listing alongside JAIPUR MASALE and
+JK once full analysis begins.
