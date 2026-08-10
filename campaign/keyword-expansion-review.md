@@ -98,3 +98,54 @@ masala`, `sabut garam masala` (stays at ₹9.43, not ₹13–14).
 | `biryani masala whole spices` | Lower to ₹7 or pause |
 | `whole spices biryani` | Pause |
 | `biryani whole spices`, `biryani spices` | Keep as is — best performers, don't touch |
+
+---
+
+## Correction (2026-08-10): word order is NOT a close variant on Exact match
+
+Earlier reviews in this project (here, and in `search-terms-findings.md`) claimed word-order
+pairs like `khada garam masala mix` / `mix khada garam masala` would compete with each other on
+Exact match, since Amazon "treats word order as a close variant." **That claim is wrong.**
+
+Amazon's actual close-variant rules for Exact match cover plurals/singulars, common
+misspellings, abbreviations and accents — **not word order.** `garam masala sabut` and
+`sabut garam masala` are two fully independent keywords; each fires only on its own literal
+sequence and neither competes with the other for the same auction.
+
+The live account data confirms this directly: `khada masala sabut` shows 6 impressions and
+`sabut garam masala` shows 7 — independent, uncorrelated numbers, consistent with genuinely
+distinct targets rather than one cannibalising the other.
+
+**Practical effect: word-order pairs do not need to be pruned.** The earlier advice to "keep
+only one member of each pair" no longer applies on Exact match. (It may still apply to Phrase or
+Broad match, where Amazon's matching is looser — not verified either way in this project.)
+
+## Live Exact campaign as of 10 Aug 2026 — 9 keywords, avg bid ₹9.11
+
+| Keyword | Bid | Amazon suggested |
+| --- | --- | --- |
+| biryani spices whole | ₹8.00 | ₹16.34 (₹12.26–20.43) |
+| garam masala | ₹10.00 | ₹13.38 (₹8.62–16.73) |
+| garam masala sabut | ₹9.00 | ₹13.42 (₹6.97–17.15) |
+| garam masala whole | ₹10.00 | ₹49.61 (₹42.76–59.66) |
+| garam masala whole mix | ₹9.00 | ₹36.42 (₹30.14–47.67) |
+| khada garam masala | ₹9.00 | ₹13.37 (₹11.38–17.30) |
+| khada masala sabut | ₹8.00 | ₹10.75 (₹7.81–14.56) |
+| sabut garam masala | ₹10.00 | ₹13.42 (₹9.03–17.44) |
+| whole garam masala | ₹9.00 | ₹11.78 (₹8.83–14.73) |
+
+All bids sit in ₹8–10 — close to the established ₹4–9 ceiling, a large improvement on the
+earlier ₹14–16 proposal.
+
+### Two open items
+
+**`biryani whole spices` and `biryani spices` are both absent from this set.** Unlike the
+word-order question above, this is not a mechanics correction — it is the account's only actual
+Spiceto-specific proof of performance. `biryani whole spices` was rank #1 by impression share in
+this account (24.64%), live at ₹6.95, before being dropped. `biryani spices` was live and
+delivering at ₹7.61. Recommend re-adding both rather than running on an entirely unproven set.
+
+**`garam masala` standalone is live at ₹10** — inside Amazon's own suggested range, i.e. priced
+to actually win volume on the highest-volume, least-relevant term in the set (rank ~9,654). This
+is the same commodity term that cost ₹17.27 for zero result before being negatived once already
+(`search-terms-findings.md`). Recommend cutting to ₹6–7 if kept at all, and watching closely.
