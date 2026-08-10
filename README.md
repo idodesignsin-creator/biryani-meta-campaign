@@ -47,7 +47,8 @@ Still needed before launch: creative assets, and an Amazon Attribution URL
 | [`campaign/listing-fixes.md`](campaign/listing-fixes.md) | Detail page audit — the title gap, and two spices named wrongly |
 | [`campaign/listing-rewrite.md`](campaign/listing-rewrite.md) | Copy-paste rewrite of every listing field, built for organic search |
 | [`campaign/autocomplete-findings.md`](campaign/autocomplete-findings.md) | Amazon autocomplete = real demand — and the negatives blocking it |
-| [`campaign/meta-reconsidered.md`](campaign/meta-reconsidered.md) | **Meta test approved — destination is Amazon, not spiceto.in, and why** |
+| [`campaign/meta-reconsidered.md`](campaign/meta-reconsidered.md) | Meta test approved — destination is Amazon, not spiceto.in, and why |
+| [`campaign/brand-analytics-search-terms.md`](campaign/brand-analytics-search-terms.md) | **Amazon market-wide search data — proof one competitor converts at 33%, and Spiceto is the priciest per-100g** |
 | [`campaign/campaign-spec.json`](campaign/campaign-spec.json) | Machine-readable spec for API creation |
 
 ## The two decisions you asked about
