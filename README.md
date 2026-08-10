@@ -50,7 +50,8 @@ Still needed before launch: creative assets, and an Amazon Attribution URL
 | [`campaign/meta-reconsidered.md`](campaign/meta-reconsidered.md) | Meta test approved — destination is Amazon, not spiceto.in, and why |
 | [`campaign/brand-analytics-search-terms.md`](campaign/brand-analytics-search-terms.md) | Amazon market-wide search data — proof one competitor converts at 33%, and Spiceto is the priciest per-100g |
 | [`campaign/brand-analytics-garam-masala.md`](campaign/brand-analytics-garam-masala.md) | Data collection — "garam masala whole" outsearches "biryani whole spices" 5-7x |
-| [`campaign/title-revision-check.md`](campaign/title-revision-check.md) | **Check on the "garam masala leads" title rewrite — restores the missing "sabut" token, flags two new unverified claims** |
+| [`campaign/title-revision-check.md`](campaign/title-revision-check.md) | Check on the "garam masala leads" title rewrite — final version shipped |
+| [`campaign/keyword-expansion-review.md`](campaign/keyword-expansion-review.md) | **Review of a 35-keyword expansion plan — good keyword picks, bids reverted above the affordable ceiling** |
 | [`campaign/campaign-spec.json`](campaign/campaign-spec.json) | Machine-readable spec for API creation |
 
 ## The two decisions you asked about
