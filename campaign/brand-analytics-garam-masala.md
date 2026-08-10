@@ -202,3 +202,64 @@ T.O.K is a useful counter-example: high price alone doesn't build trust without 
 Appears as a top-3 clicked product on nearly every variant captured — more consistently present
 than even MAI RASOI. Worth treating as a primary reference listing alongside JAIPUR MASALE and
 JK once full analysis begins.
+
+---
+
+## Update: "sabut garam masala" family, week-over-week volatility, and "khada masala sabut"
+
+### `sabut garam masala` / `garam masala sabut` — week 29 vs week 30
+
+**Week 29 (12–18 Jul):**
+
+| Term | Rank | #1 ASIN | Product | Click share | Conversion share |
+| --- | --- | --- | --- | --- | --- |
+| sabut garam masala | 2,30,975 | B0CBVNPHQY | Chukde – Garam Masala Whole (7.05 oz) | 11.67% | **16.67%** |
+| garam masala sabut | 2,86,875 | B07X8CHQDT | Pushp Brand Garam Masala Jar (500 Pack of 1) | 8.33% | 0% |
+
+**Week 30 (19–25 Jul) — same two terms, top result flipped:**
+
+| Term | Rank | #1 ASIN | Product | Click share | Conversion share |
+| --- | --- | --- | --- | --- | --- |
+| sabut garam masala | 2,27,495 | B07X8CHQDT | Pushp Brand Garam Masala Jar (500 Pack of 1) | 10.53% | 0% |
+| garam masala sabut | 2,31,467 | B079H113LK | Tata Sampann Garam Masala Powder with Natural Oils | 12.5% | 0% |
+
+**Data reliability note:** the #1 clicked product for both terms changed between weeks
+(Chukde→Pushp; Pushp→Tata Sampann). At this search volume, "top clicked" rankings are volatile
+week to week — a caveat against reading any single week's snapshot as settled fact.
+
+## New live listing: Pushp Brand Garam Masala Jar (ASIN `B07X8CHQDT`)
+
+| | |
+| --- | --- |
+| Price | ₹366 (−28% off ₹506 MRP) = **₹73.20/100 g — cheapest found in this project** |
+| Rating | 4.0★, 147 ratings |
+| Velocity | "50+ bought in past month" |
+| Fulfilment | Amazon FBA, sold by Pushp Brand (India) Pvt. Ltd. |
+| Variant pricing | 100 g = ₹85; 100 g (4-pack) = ₹80.75/100 g; 200 g = ₹80/100 g |
+
+Despite the lowest price and strong reviews of any competitor captured, **converts at 0% on both
+`sabut garam masala` terms.** Reinforces that 0% conversion is the *norm* across this category's
+search results — not something specific to Spiceto. Chukde and JK remain the only competitors
+with consistently positive conversion captured so far.
+
+## `khada masala sabut`, week 30 (partial — slots #2 and #3 only)
+
+| Slot | ASIN | Product | Click share | Conversion share |
+| --- | --- | --- | --- | --- |
+| #2 | B0D5B68CP8 | JAIPUR MASALE Khada Garam Masala \| Whole Spices Blend | 10.23% | 0% |
+| #3 | B0D4VM12FT | **Chef CO. Khada Garam Masala 85 g Pack of 2 \| Whole Sabut Akkha** (new) | 9.09% | 0% |
+
+Slot #1 not captured in this screenshot — worth a follow-up if available.
+
+## Price per 100 g — updated ladder
+
+| Product | ₹/100 g |
+| --- | --- |
+| **Pushp** | **73.20 — cheapest** |
+| Chukde | 117.00 |
+| THE GOOD GOODS (200 g) | 131.96 |
+| MAI RASOI | 163.00 |
+| THE GOOD GOODS (100 g) | 199.00 |
+| JK | 200.00 |
+| Spiceto | 221.00 |
+| T.O.K | 316.67 |
