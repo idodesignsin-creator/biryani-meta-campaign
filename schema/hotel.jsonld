@@ -1,0 +1,152 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Hotel",
+  "@id": "https://www.mestahotel.com/#hotel",
+  "name": "Mesta Hotel",
+  "alternateName": "Mesta Hotel Wayanad",
+  "url": "https://www.mestahotel.com/",
+  "logo": "https://www.mestahotel.com/images/logo.png",
+  "image": [
+    "https://www.mestahotel.com/images/mesta-hotel-exterior.jpg",
+    "https://www.mestahotel.com/images/mesta-hotel-pool.jpg",
+    "https://www.mestahotel.com/images/mesta-hotel-pride-room.jpg",
+    "https://www.mestahotel.com/images/mesta-hotel-restaurant.jpg"
+  ],
+  "description": "Mesta Hotel is a 4-star family and business hotel in Sulthan Bathery, Wayanad, Kerala. Located 2 km from the Sulthan Bathery Public Bus Stand, the hotel offers four room categories, a swimming pool, two multi-cuisine restaurants and a 100-guest banquet hall.",
+  "slogan": "REPLACE_ME_OR_DELETE",
+  "telephone": "+919526503344",
+  "email": "reservation@mestahotel.com",
+  "faxNumber": "",
+  "priceRange": "REPLACE_ME_EG_₹₹₹",
+  "currenciesAccepted": "INR",
+  "paymentAccepted": "Cash, Credit Card, Debit Card, UPI",
+  "starRating": {
+    "@type": "Rating",
+    "ratingValue": "4",
+    "bestRating": "5"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Main Road",
+    "addressLocality": "Sulthan Bathery",
+    "addressRegion": "Kerala",
+    "postalCode": "673592",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "REPLACE_ME_LATITUDE",
+    "longitude": "REPLACE_ME_LONGITUDE"
+  },
+  "hasMap": "REPLACE_ME_GOOGLE_MAPS_SHARE_URL",
+  "checkinTime": "14:00:00+05:30",
+  "checkoutTime": "11:00:00+05:30",
+  "numberOfRooms": "REPLACE_ME_TOTAL_ROOM_COUNT",
+  "petsAllowed": false,
+  "smokingAllowed": false,
+  "isAccessibleForFree": false,
+  "publicAccess": true,
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "V.N.K Group"
+  },
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Wayanad District, Kerala"
+  },
+  "amenityFeature": [
+    { "@type": "LocationFeatureSpecification", "name": "Swimming Pool", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Free Wi-Fi", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Free Parking", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Restaurant", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Room Service", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Banquet Hall", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Conference Facilities", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Air Conditioning", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Family Rooms", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Airport Transfer", "value": "REPLACE_ME_TRUE_OR_DELETE_LINE" }
+  ],
+  "containsPlace": [
+    {
+      "@type": "HotelRoom",
+      "name": "Blossom Room",
+      "description": "A 230 sq ft room for up to two adults and one child, with a plush mattress and a fully stocked minibar.",
+      "url": "https://www.mestahotel.com/rooms-blossom.php",
+      "occupancy": { "@type": "QuantitativeValue", "maxValue": 3, "unitCode": "C62" },
+      "floorSize": { "@type": "QuantitativeValue", "value": 230, "unitCode": "FTK" },
+      "bed": { "@type": "BedDetails", "numberOfBeds": 1, "typeOfBed": "Queen" }
+    },
+    {
+      "@type": "HotelRoom",
+      "name": "Pride Room",
+      "description": "A 290 sq ft room for up to two adults and one child, with a private balcony and stylish furnishings.",
+      "url": "https://www.mestahotel.com/rooms-pride.php",
+      "occupancy": { "@type": "QuantitativeValue", "maxValue": 3, "unitCode": "C62" },
+      "floorSize": { "@type": "QuantitativeValue", "value": 290, "unitCode": "FTK" },
+      "bed": { "@type": "BedDetails", "numberOfBeds": 1, "typeOfBed": "King" },
+      "amenityFeature": [
+        { "@type": "LocationFeatureSpecification", "name": "Private Balcony", "value": true }
+      ]
+    },
+    {
+      "@type": "HotelRoom",
+      "name": "Signature Room",
+      "description": "A 290 sq ft room for up to two adults and one child, with premium amenities, plush bedding and exclusive toiletries.",
+      "url": "https://www.mestahotel.com/rooms-signature.php",
+      "occupancy": { "@type": "QuantitativeValue", "maxValue": 3, "unitCode": "C62" },
+      "floorSize": { "@type": "QuantitativeValue", "value": 290, "unitCode": "FTK" },
+      "bed": { "@type": "BedDetails", "numberOfBeds": 1, "typeOfBed": "King" }
+    },
+    {
+      "@type": "HotelRoom",
+      "name": "Opus Family Room",
+      "description": "A 300 sq ft room for families of up to five adults and one child, with king and queen size beds.",
+      "url": "https://www.mestahotel.com/rooms-opus.php",
+      "occupancy": { "@type": "QuantitativeValue", "maxValue": 6, "unitCode": "C62" },
+      "floorSize": { "@type": "QuantitativeValue", "value": 300, "unitCode": "FTK" },
+      "bed": [
+        { "@type": "BedDetails", "numberOfBeds": 1, "typeOfBed": "King" },
+        { "@type": "BedDetails", "numberOfBeds": 1, "typeOfBed": "Queen" }
+      ]
+    }
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "contactType": "reservations",
+      "telephone": "+919526503344",
+      "email": "reservation@mestahotel.com",
+      "availableLanguage": ["en", "ml", "hi"],
+      "areaServed": "IN"
+    },
+    {
+      "@type": "ContactPoint",
+      "contactType": "front desk",
+      "telephone": "+914936225555",
+      "availableLanguage": ["en", "ml", "hi"],
+      "areaServed": "IN"
+    }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/mestahotel/",
+    "https://www.instagram.com/mestahotel/",
+    "https://www.tripadvisor.com/Hotel_Review-g1439834-d3679101-Reviews-Mesta_Hotel-Sulthan_Bathery_Wayanad_District_Kerala.html",
+    "https://www.goibibo.com/hotels/mesta-hotel-in-wayanad-249262203389660201/"
+  ],
+  "potentialAction": {
+    "@type": "ReserveAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "REPLACE_ME_BOOKING_ENGINE_URL",
+      "inLanguage": "en",
+      "actionPlatform": [
+        "http://schema.org/DesktopWebPlatform",
+        "http://schema.org/MobileWebPlatform"
+      ]
+    },
+    "result": {
+      "@type": "LodgingReservation",
+      "name": "Book a room at Mesta Hotel"
+    }
+  }
+}

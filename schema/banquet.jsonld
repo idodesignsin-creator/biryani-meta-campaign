@@ -1,0 +1,38 @@
+{
+  "@context": "https://schema.org",
+  "@type": "EventVenue",
+  "@id": "https://www.mestahotel.com/banquets.php#banquet",
+  "name": "Mesta Hotel Banquet Hall",
+  "description": "A 1,000 sq ft air-conditioned banquet hall in Sulthan Bathery, Wayanad, seating up to 100 guests. Equipped with Wi-Fi, projectors and audio-visual equipment for weddings, receptions, corporate meetings and conferences.",
+  "url": "https://www.mestahotel.com/banquets.php",
+  "image": "https://www.mestahotel.com/images/mesta-banquet-hall.jpg",
+  "telephone": "+919526503344",
+  "maximumAttendeeCapacity": 100,
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Main Road",
+    "addressLocality": "Sulthan Bathery",
+    "addressRegion": "Kerala",
+    "postalCode": "673592",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "REPLACE_ME_LATITUDE",
+    "longitude": "REPLACE_ME_LONGITUDE"
+  },
+  "amenityFeature": [
+    { "@type": "LocationFeatureSpecification", "name": "Air Conditioning", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Wi-Fi", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Projector", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Audio-Visual Equipment", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Catering", "value": true },
+    { "@type": "LocationFeatureSpecification", "name": "Parking", "value": true }
+  ],
+  "floorSize": {
+    "@type": "QuantitativeValue",
+    "value": 1000,
+    "unitCode": "FTK"
+  },
+  "containedInPlace": { "@id": "https://www.mestahotel.com/#hotel" }
+}
