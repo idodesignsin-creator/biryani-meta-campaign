@@ -18,12 +18,18 @@
 
 The site has a **structural URL problem, not a content problem**. The content is
 decent — 20+ real pages, a genuine blog with five Wayanad travel guides, clear room
-descriptions. But the site is running **two parallel URL systems at once** (a legacy
-`.php` set and a newer `.html` set), and it is **indexed on four different
-host/protocol combinations**. Every ranking signal the site earns is being split
-across duplicates instead of accumulating on one canonical page.
+descriptions.
 
-Fix the canonicalization and the duplicate URLs first. Title tags second. Everything
+But two things are actively destroying the value of that content:
+
+1. The site is **indexed on four different host/protocol combinations**, including
+   plain HTTP — so pages compete with themselves.
+2. **Dead URLs are sitting in the index.** `/restaurants.html` is confirmed returning
+   404 while still ranking in Google. Pages were removed or renamed without
+   redirects, throwing away the equity they had earned and dropping searchers onto a
+   blank error page.
+
+Fix canonicalization and the dead-URL redirects first. Title tags second. Everything
 else is downstream of those two.
 
 ---
@@ -46,12 +52,12 @@ else is downstream of those two.
 | `/contact-mesta-hotel-wayanad.php` | Contact Top Hotels in Wayanad \| Hotels in Sulthan Bathery |
 | `/blog.php` | Welcome to mesta hotel |
 
-### Newer `.html` set
+### Legacy `.html` set — **at least one confirmed dead**
 | URL | Indexed title |
 | --- | --- |
 | `/4-star-hotels-in-wayanad.html` | Best Wayanad Hotels \| 4-star Hotels In Wayanad \| Mesta Hotels |
 | `/rooms/blossom.html` | Blossom \| hotel rooms in wayanad \| Top hotels in :wayanad |
-| `/restaurants.html` | Restaurants in Our Four-star Hotel \| 4 star Hotels in Wayanad |
+| `/restaurants.html` | Restaurants in Our Four-star Hotel \| 4 star Hotels in Wayanad — **❌ 404** |
 | `/facilities.html` | Facilities at mesta Hotel \| Couple friendly hotels in Wayanad |
 | `/gallery.html` | Gallery \| 4 star Hotels in Wayanad \| Luxury hotels in Wayanad |
 | `/offers-packages.html` | Exclusive Deals at Wayanad Hotels \| Mesta Hotel Offers |
@@ -90,30 +96,63 @@ for a site taking booking enquiries.
   on every page.
 - Enable HSTS once the redirects are verified.
 
-### 2. Two parallel URL systems — a half-finished migration
+### 2. Dead `.html` URLs sitting in the index — pages removed without redirects
 
-The clearest proof: **`/restaurants.php` and `/restaurants.html` are both live and
-both indexed, with different title tags.** These are two URLs for one restaurant.
+**Verified 14 Aug 2026:** `mestahotel.com/restaurants.html` returns a bare
+**404 Not Found**. Google still has that URL indexed, with a full title tag
+("Restaurants in Our Four-star Hotel | 4 star Hotels in Wayanad").
 
-The same split runs through the room pages:
-- Flat legacy: `/rooms.php`, `/rooms-pride.php`, `/luxury-balcony-rooms-wayanad.php`
-- Nested new: `/rooms/blossom.html`
+> **Correction to an earlier draft of this audit.** This was originally written up as
+> "`.php` and `.html` are both live" — a duplicate-content problem. That was wrong,
+> and the reality is more damaging: **the `.html` page is gone, and Google is still
+> indexing it.** Searchers who click that result land on a blank 404.
 
-This looks like a redesign where new `.html` pages were published but the old `.php`
-pages were never redirected or removed. Both sets are being crawled, both are
-accumulating (and splitting) signals.
+Two things follow, and both matter more than duplication would have:
+
+1. **Pages were deleted or renamed without 301 redirects.** All the ranking equity
+   `/restaurants.html` had accumulated has been thrown away rather than passed to
+   `/restaurants.php`.
+2. **The 404 page is a raw server default.** No branding, no navigation, no search
+   box, no way back into the site — just the words "404 Not Found" on white. Every
+   visitor who lands there is lost.
+
+**The migration ran `.html` → `.php`, not the other way round.** An earlier version
+of this document assumed the opposite, because `/rooms/blossom.html` has a nested
+structure that looks newer. That assumption was wrong, and it reverses the
+recommendation below.
 
 **Fix:**
-1. Decide which system is canonical. The `.html` set has better structure
-   (`/rooms/blossom.html` is a proper hierarchy) — recommend standardising on it,
-   ideally extension-less (`/rooms/blossom`).
-2. Map every legacy `.php` URL to its `.html` equivalent and 301 it. One hop, no
-   chains.
-3. For `.php` pages with no `.html` equivalent (`/banquets.php`, `/things-todo.php`,
-   `/contact-mesta-hotel-wayanad.php`, `/blog.php`), build the `.html` version first,
-   then redirect.
-4. Submit a fresh `sitemap.xml` containing **only** canonical URLs.
-5. Watch Search Console Coverage for "Duplicate, Google chose a different canonical".
+1. **Confirm the true status code.** A page that *displays* "404 Not Found" may still
+   return HTTP `200` — a "soft 404", which is worse, because Google keeps the URL
+   indexed indefinitely. Check with `curl -I https://mestahotel.com/restaurants.html`
+   or the Search Console URL Inspection tool.
+2. **Audit every indexed `.html` URL** — see the checklist below. Establish which are
+   alive and which are dead before changing anything.
+3. **301 each dead `.html` URL to its live `.php` equivalent.** One hop, no chains.
+   `/restaurants.html` → `/restaurants.php` is the first one.
+4. **Build a proper 404 page** — branded, with the main navigation, a link home, and
+   links to rooms and contact.
+5. **Submit a fresh `sitemap.xml`** containing only live, canonical URLs.
+6. **Watch Search Console → Pages** for "Not found (404)" and "Soft 404".
+
+#### URLs to check (all confirmed indexed)
+
+| URL | Status |
+| --- | --- |
+| `/restaurants.html` | ❌ **404 confirmed** |
+| `/facilities.html` | ? |
+| `/gallery.html` | ? |
+| `/offers-packages.html` | ? |
+| `/4-star-hotels-in-wayanad.html` | ? |
+| `/rooms/blossom.html` | ? |
+| `/blog/adventure-activities-in-wayanad.html` | ? |
+| `/blog/solo-travelers-guide-to-wayanad-best-hotels-in-wayanad.html` | ? |
+| `/blog/wayanad-on-a-budget.html` | ? |
+| `/blog/planning-a-wayanad-trip.html` | ? |
+| `/blog/how-to-select-the-best-stay-in-wayanad-as-per-your-budget-interests.html` | ? |
+
+**Fastest way to fill this in:** Search Console → **Pages** → "Not found (404)". That
+returns the complete list in one view, including URLs neither of us has seen yet.
 
 ---
 
@@ -284,7 +323,7 @@ against the live source.
 | # | Finding | Priority | Effort |
 | --- | --- | --- | --- |
 | 1 | Four host/protocol variants indexed; HTTP URLs live | **P0** | Low — server config |
-| 2 | Parallel `.php` / `.html` URL systems, no redirects | **P0** | Medium |
+| 2 | Dead `.html` URLs indexed (404s), no redirects, raw error page | **P0** | Medium |
 | 3 | Duplicate, placeholder, and typo'd title tags | **P1** | Low |
 | 4 | Keyword cannibalization across 5 pages | **P1** | Low |
 | 5 | Keyword-stuffed titles, inconsistent brand casing | **P1** | Low |

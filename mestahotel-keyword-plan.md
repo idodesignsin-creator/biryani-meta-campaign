@@ -158,7 +158,12 @@ Then act on them:
 
 ### Step 4 — Fix keyword-to-page mapping (blocks Step 5)
 
-One keyword, one page. This requires the duplicate-URL fix from the technical audit.
+One keyword, one page. This requires the URL fix from the technical audit.
+
+> **Update, 14 Aug 2026:** `/restaurants.html` is confirmed returning **404** while
+> still indexed by Google. The live restaurant page is `/restaurants.php`. Before
+> mapping any keyword to a page, verify the page actually resolves — the target
+> column below assumes clean URLs that may not exist yet.
 
 | Page | Single primary keyword | Currently |
 | --- | --- | --- |
