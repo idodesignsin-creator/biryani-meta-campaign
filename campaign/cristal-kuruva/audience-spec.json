@@ -1,0 +1,115 @@
+{
+  "_comment": "Machine-readable Custom Saved Audience spec for Cristal Kuruva Resort, Wayanad. All location/interest/behavior IDs are null placeholders -- the Adspirer API quota was exhausted (0/15, resets 2026-09-04) when this was written, so nothing here has been resolved against the live Meta Marketing API. Resolve every ID with search_meta_targeting before using this to create anything; do not guess IDs. See audience-targeting.md for full reasoning.",
+  "account": {
+    "platform": "meta_ads",
+    "ad_account_id": "387266110719612",
+    "ad_account_name": "I DO Designs Ad account",
+    "currency": "INR",
+    "country": "IN"
+  },
+  "property": {
+    "name": "Cristal Kuruva Resort",
+    "location": "Wayanad, Kerala",
+    "category": "premium resort / leisure hospitality"
+  },
+  "audience_type": "saved_audience",
+  "advantage_detailed_targeting": false,
+  "_advantage_note": "OFF by design -- brief explicitly asked for a custom audience, not Advantage+ Audience automatic expansion.",
+  "ad_sets": [
+    {
+      "name": "Cristal Kuruva | Kerala Premium",
+      "locations": {
+        "location_types": ["home"],
+        "custom_locations": [
+          { "key": null, "type": "city", "city": "Kochi", "state": "Kerala", "radius": 20, "distance_unit": "kilometer" },
+          { "key": null, "type": "city", "city": "Kozhikode", "state": "Kerala", "radius": 20, "distance_unit": "kilometer" },
+          { "key": null, "type": "city", "city": "Thiruvananthapuram", "state": "Kerala", "radius": 15, "distance_unit": "kilometer" }
+        ],
+        "excluded_locations": [
+          { "key": null, "type": "region", "region": "Wayanad district, Kerala", "radius": 50, "distance_unit": "kilometer" }
+        ]
+      },
+      "age_min": 28,
+      "age_max": 58,
+      "genders": "all",
+      "targeting_layers": {
+        "layer1_include_any": ["Luxury travel", "Resort", "Boutique hotel", "Ecotourism", "Wildlife tourism", "Honeymoon", "Kerala tourism", "Wellness tourism", "Ayurveda", "Bed and breakfast", "MakeMyTrip", "Yatra", "Booking.com", "Airbnb"],
+        "layer2_narrow_any": ["Frequent travelers", "Business travelers", "Luxury goods", "Engaged shoppers", "Small business owners"],
+        "resolved_interest_ids": {}
+      }
+    },
+    {
+      "name": "Cristal Kuruva | Bangalore-TN Weekend Drive",
+      "locations": {
+        "location_types": ["home"],
+        "custom_locations": [
+          { "key": null, "type": "city", "city": "Bangalore", "state": "Karnataka", "radius": 25, "distance_unit": "kilometer", "note": "Meta lists this as 'Bangalore', not 'Bengaluru'" },
+          { "key": null, "type": "city", "city": "Chennai", "state": "Tamil Nadu", "radius": 25, "distance_unit": "kilometer" },
+          { "key": null, "type": "city", "city": "Coimbatore", "state": "Tamil Nadu", "radius": 20, "distance_unit": "kilometer" }
+        ],
+        "excluded_locations": [
+          { "key": null, "type": "region", "region": "Wayanad district, Kerala", "radius": 50, "distance_unit": "kilometer" }
+        ]
+      },
+      "age_min": 28,
+      "age_max": 58,
+      "genders": "all",
+      "targeting_layers": {
+        "layer1_include_any": ["Luxury travel", "Resort", "Boutique hotel", "Ecotourism", "Wildlife tourism", "Honeymoon", "Kerala tourism", "Wellness tourism", "Ayurveda", "Bed and breakfast", "MakeMyTrip", "Yatra", "Booking.com", "Airbnb"],
+        "layer2_narrow_any": ["Frequent travelers", "Business travelers", "Luxury goods", "Engaged shoppers", "Small business owners"],
+        "resolved_interest_ids": {}
+      }
+    },
+    {
+      "name": "Cristal Kuruva | Mumbai Fly-In Premium",
+      "locations": {
+        "location_types": ["home"],
+        "custom_locations": [
+          { "key": null, "type": "city", "city": "Mumbai", "state": "Maharashtra", "radius": 25, "distance_unit": "kilometer" }
+        ],
+        "excluded_locations": [
+          { "key": null, "type": "region", "region": "Wayanad district, Kerala", "radius": 50, "distance_unit": "kilometer" }
+        ]
+      },
+      "age_min": 28,
+      "age_max": 58,
+      "genders": "all",
+      "targeting_layers": {
+        "layer1_include_any": ["Luxury travel", "Resort", "Boutique hotel", "Ecotourism", "Wildlife tourism", "Honeymoon", "Kerala tourism", "Wellness tourism", "Ayurveda", "Bed and breakfast", "MakeMyTrip", "Yatra", "Booking.com", "Airbnb"],
+        "layer2_narrow_any": ["Frequent travelers", "Business travelers", "Luxury goods", "Engaged shoppers", "Small business owners"],
+        "resolved_interest_ids": {}
+      }
+    },
+    {
+      "name": "Cristal Kuruva | Executive (test)",
+      "_note": "Optional, smaller-budget test ad set. Advanced job-title/employer targeting, expect small reach and high CPM.",
+      "locations": {
+        "location_types": ["home"],
+        "custom_locations": [
+          { "key": null, "type": "city", "city": "Kochi", "state": "Kerala", "radius": 20, "distance_unit": "kilometer" },
+          { "key": null, "type": "city", "city": "Kozhikode", "state": "Kerala", "radius": 20, "distance_unit": "kilometer" },
+          { "key": null, "type": "city", "city": "Thiruvananthapuram", "state": "Kerala", "radius": 15, "distance_unit": "kilometer" },
+          { "key": null, "type": "city", "city": "Bangalore", "state": "Karnataka", "radius": 25, "distance_unit": "kilometer" },
+          { "key": null, "type": "city", "city": "Chennai", "state": "Tamil Nadu", "radius": 25, "distance_unit": "kilometer" },
+          { "key": null, "type": "city", "city": "Coimbatore", "state": "Tamil Nadu", "radius": 20, "distance_unit": "kilometer" },
+          { "key": null, "type": "city", "city": "Mumbai", "state": "Maharashtra", "radius": 25, "distance_unit": "kilometer" }
+        ]
+      },
+      "age_min": 30,
+      "age_max": 58,
+      "genders": "all",
+      "targeting_layers": {
+        "job_titles": ["Founder", "CEO", "Director", "Vice President", "Chief Executive Officer", "Managing Director"],
+        "employers": [],
+        "_employers_note": "Left empty -- resolve specific large IT/tech employer names in Bangalore and Chennai once quota resets."
+      }
+    }
+  ],
+  "retargeting_audiences_to_create_day1": [
+    { "name": "Website Visitors - All", "source": "resort website (needs Meta Pixel)", "window_days": 180 },
+    { "name": "Website Visitors - Booking/Enquiry page", "source": "resort website booking/contact URL", "window_days": 90 },
+    { "name": "Video Viewers 50%+", "source": "resort video ads", "window_days": 365 },
+    { "name": "Instagram Engagers", "source": "resort Instagram account", "window_days": 365 },
+    { "name": "Facebook Page Engagers", "source": "resort Facebook Page", "window_days": 365 }
+  ]
+}

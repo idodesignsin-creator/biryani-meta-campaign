@@ -1,5 +1,8 @@
 # Spiceto Biryani Whole Spices — Meta Ads Campaign
 
+> This repo also tracks a second, unrelated campaign: **Cristal Kuruva Resort, Wayanad**
+> Meta audience targeting, in [`campaign/cristal-kuruva/`](campaign/cristal-kuruva/).
+
 Meta (Facebook/Instagram) traffic campaign driving to the Amazon.in detail page for
 **Spiceto Biryani Whole Spices — Khada Garam Masala**.
 
