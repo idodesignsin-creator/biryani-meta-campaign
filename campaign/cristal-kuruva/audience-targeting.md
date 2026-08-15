@@ -62,18 +62,43 @@ up booking. Review the delivery-by-gender breakdown after ~1 week of spend and s
 if one side is clearly cheaper at real volume, same logic as the biryani campaign's
 gender call in `../targeting.md`.
 
-## The honest limit on "high-profile / high-converting"
+## The real "high-profile" lever: Household Income (India)
 
-Meta does not expose direct household-income or net-worth targeting for India (that
-option only exists for a handful of countries, the US chief among them). There is no
-"high-profile" or "premium" interest to select. What follows is the closest available
-proxy, built the same way the biryani campaign's Ad Set A was built — a broad relevant
-layer, narrowed by a spend/travel-behavior layer:
+Meta rolled out direct household-income targeting for India — confirmed live on this
+account under **Detailed Targeting → Demographics → Household income → India**. This is
+the actual filter to use, not a proxy. Data source is third-party-modelled ("high-quality
+data sources," per Meta's own banner), so treat it as directionally right rather than
+verified-to-the-rupee — but it's a real income percentile, not an interest guess.
 
-### Layer 1 — travel & resort intent (include ANY of)
+| Bracket | Est. India population |
+| --- | --- |
+| Top 10% | 228.6M – 268.8M |
+| Top 11%–20% | 117.3M – 137.9M |
+| Top 21%–30% | 111.8M – 131.5M |
+| Top 31%–40% | 85.9M – 101.0M |
+| Top 41%–50% | 74.2M – 87.2M |
+| Lower than 50% | 556.9M – 654.9M |
 
-Search and verify each against the live catalogue before building — some may not exist
-in India's inventory, same caveat as "no biryani interest exists" in the sister campaign:
+**Layer 1 — Household income (required, this is the primary filter):**
+
+Default recommendation across all ad sets: select **Top 10%** and **Top 11%–20%**
+together (i.e. top quintile nationally). These sizes are national, not city-level — the
+location targeting below is what narrows a 100M+ nationwide bracket down to a usable
+audience in each city.
+
+- **Ad Set C (Mumbai Fly-In Premium):** Top 10% only. Smallest, richest segment; the
+  fly-in market can bear the tightest income cut.
+- **Ad Sets A and B (Kerala / Bangalore-TN):** Top 10%–20%, extend to **Top 21%–30%** if
+  delivery is thin in the smaller cities (Kozhikode, Coimbatore, Trivandrum) — three
+  brackets is still a meaningful premium cut, and these markets have less population to
+  draw from than Bangalore, Chennai or Mumbai.
+
+### Layer 2 — narrow by travel & resort intent (must ALSO match ANY of)
+
+Income alone selects wealthy people generally, not people currently in a travel-buying
+mindset — narrow with interest to keep the audience relevant. Search and verify each
+against the live catalogue before building; some may not exist in India's inventory, same
+caveat as "no biryani interest exists" in the sister campaign:
 
 | Interest / topic to search | Category |
 | --- | --- |
@@ -88,22 +113,23 @@ in India's inventory, same caveat as "no biryani interest exists" in the sister 
 | Bed and breakfast | interest |
 | MakeMyTrip / Yatra / Booking.com / Airbnb | interest (OTA usage as travel-booking proxy) |
 
-### Layer 2 — narrow by spending-power proxy (must ALSO match ANY of)
+### Layer 3 — optional further narrow (behavior proxies, use only if reach is still too broad)
+
+With income + travel intent already in place, this layer is now a backup, not the core
+mechanism it was before income targeting was available:
 
 | Interest / behavior to search | Category | Why it's a proxy |
 | --- | --- | --- |
-| Frequent travelers | behavior | Meta's standard high-travel-frequency segment — the single best India-available proxy for disposable income spent on trips |
-| Business travelers | behavior | Corporate offsite / MICE booking signal, and generally higher personal spend |
-| Luxury goods | interest | Broad but real premium-brand affinity signal |
-| Online spenders / Engaged shoppers | behavior | Meta's proxy for people who transact online frequently, i.e. comfortable completing a high-value booking on a phone |
-| Small business owners | behavior | Household income proxy where direct income targeting doesn't exist |
+| Frequent travelers | behavior | High-travel-frequency segment |
+| Business travelers | behavior | Corporate offsite / MICE booking signal |
+| Luxury goods | interest | Premium-brand affinity signal |
+| Online spenders / Engaged shoppers | behavior | Comfortable completing a high-value booking on a phone |
 
-### Layer 3 — optional: job title / employer targeting (advanced, smaller reach)
+### Layer 4 — optional: job title / employer targeting (advanced, smaller reach, Ad Set D only)
 
-Meta India does support job-title and employer targeting. This is the most direct
-"high-profile" lever available, at the cost of a much smaller, more expensive-to-fill
-audience — treat it as a separate, smaller-budget test ad set rather than the main
-prospecting engine:
+A second, independent way to confirm "high-profile" alongside modelled income — worth
+running as its own small test rather than stacking onto the main ad sets, since combining
+income + job title + interest narrows the audience to almost nothing:
 
 - Job titles: "Founder", "CEO", "Director", "Vice President", "Chief Executive Officer",
   "Managing Director"
@@ -116,12 +142,12 @@ the smaller, slower-filling audience as the cost of precision.
 
 ## Ad set structure — recommended split
 
-| Ad set | Locations | Targeting | Purpose |
-| --- | --- | --- | --- |
-| A — Kerala Premium | Kochi, Kozhikode, Trivandrum | Layer 1 + Layer 2 | Local high-intent, shortest booking friction, likely cheapest CPL |
-| B — Bangalore/TN Weekend Drive | Bangalore, Chennai, Coimbatore | Layer 1 + Layer 2 | Largest volume opportunity, drive-market messaging (weekend, short-lead) |
-| C — Mumbai Fly-In Premium | Mumbai | Layer 1 + Layer 2, optionally add Layer 3 | Smallest but highest-AOV segment — justifies a richer creative (video, longer stay packages) and a higher bid ceiling |
-| D — Executive (optional) | All four | Layer 3 only | Small-budget test of job-title/employer targeting; expect high CPM, judge on booking value not cost-per-click |
+| Ad set | Locations | Income (Layer 1) | Targeting | Purpose |
+| --- | --- | --- | --- | --- |
+| A — Kerala Premium | Kochi, Kozhikode, Trivandrum | Top 10%–20% (extend to 30% if thin) | + Layer 2, optionally Layer 3 | Local high-intent, shortest booking friction, likely cheapest CPL |
+| B — Bangalore/TN Weekend Drive | Bangalore, Chennai, Coimbatore | Top 10%–20% | + Layer 2, optionally Layer 3 | Largest volume opportunity, drive-market messaging (weekend, short-lead) |
+| C — Mumbai Fly-In Premium | Mumbai | Top 10% only | + Layer 2 | Smallest but highest-AOV segment — justifies a richer creative (video, longer stay packages) and a higher bid ceiling |
+| D — Executive (optional) | All four | Top 10% | + Layer 4 (job title) instead of Layer 2/3 | Small-budget test of income + job-title stacked; expect very high CPM, judge on booking value not cost-per-click |
 
 Splitting by geography rather than one blended audience lets each region's cost-per-result
 be compared directly — Bangalore and Mumbai will not perform the same, and blending them
@@ -154,12 +180,23 @@ from guessed interests.
    and add Wayanad district as an exclusion.
 3. Set **Age** to the chosen band (28–58, or split into 28–40 / 41–58 per ad set).
 4. Leave **Gender** as All.
-5. Under **Detailed Targeting**, add the Layer 1 terms as "Must Match at least ONE of the
-   following" (Meta's default OR grouping), then click **Narrow Audience** and add the
-   Layer 2 terms as the second, ANDed group.
-6. Leave **Advantage Detailed Targeting toggled OFF.**
-7. Name it clearly per ad set, e.g. `Cristal Kuruva | Bangalore-TN | Premium Travel Intent`,
+5. Under **Detailed Targeting**, search "household income" and add the bracket(s) for
+   this ad set from **Demographics → Household income → India** (Layer 1) — these
+   combine as OR with each other automatically.
+6. Click **Narrow Audience**, then add the Layer 2 travel/resort interest terms as the
+   next, ANDed group ("Must Match at least ONE of the following").
+7. Optional: **Narrow Audience** again and add Layer 3 behavior terms as a third ANDed
+   group only if the audience size is still larger than needed.
+8. Leave **Advantage Detailed Targeting toggled OFF.**
+9. Name it clearly per ad set, e.g. `Cristal Kuruva | Bangalore-TN | Top20% + Travel Intent`,
    and save — a Saved Audience can be reused across future ad sets without rebuilding it.
+
+Watch the audience-size estimate in the right-hand panel as you stack layers — income
+brackets alone run into the hundreds of millions nationally, so it's the location +
+interest layers doing the real narrowing down to a usable city-level number. If a
+combination collapses to a very small size (this is likely for Ad Set D with income +
+job title stacked), that's expected — it's a small, expensive, high-precision test, not
+the main prospecting engine.
 
 As you type each Layer 1/2/3 term into Detailed Targeting, Ads Manager's own autocomplete
 tells you in real time whether it exists in the live catalogue and shows its audience
