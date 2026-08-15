@@ -33,11 +33,8 @@ already in transit or scoping a trip are a real, distinct segment worth its own 
 Two notes carried over from how this repo handles Meta location entry generally:
 
 - **Meta lists it as "Bangalore," not "Bengaluru"** — search the old name.
-- **Location keys below are placeholders.** I could not resolve live Meta location IDs
-  because the Adspirer API quota is exhausted this period (see the folder README). In
-  Ads Manager you don't need an ID to build this by hand — type the city name, pick it
-  from the dropdown, set the radius. The IDs only matter for the API path in
-  `audience-spec.json`, and that file is marked `null` until they're resolved.
+- **Build this directly in Ads Manager.** You don't need a location ID to do it by hand —
+  type the city name, pick it from the dropdown, then set the radius next to it.
 
 **Exclude:** Wayanad district itself, and a wide radius around the resort (say 50 km).
 You are not trying to advertise a staycation to people who already live next to it.
@@ -110,9 +107,9 @@ prospecting engine:
 
 - Job titles: "Founder", "CEO", "Director", "Vice President", "Chief Executive Officer",
   "Managing Director"
-- Employers: large IT/tech employers concentrated in Bangalore and Chennai (worth
-  resolving specific company names once quota resets and matching them to the two Tamil
-  Nadu/Karnataka locations above)
+- Employers: large IT/tech employers concentrated in Bangalore and Chennai — type
+  specific company names into the Employer field in Ads Manager and add whichever
+  resolve, matching them to the two Tamil Nadu/Karnataka locations above
 
 **Advantage detailed targeting:** OFF — that's the definition of "custom" here. Accept
 the smaller, slower-filling audience as the cost of precision.
@@ -164,12 +161,9 @@ from guessed interests.
 7. Name it clearly per ad set, e.g. `Cristal Kuruva | Bangalore-TN | Premium Travel Intent`,
    and save — a Saved Audience can be reused across future ad sets without rebuilding it.
 
-## What to do once Adspirer quota resets (2026-09-04)
-
-1. Run `search_meta_targeting` for each location and each Layer 1/2/3 term above to
-   resolve real IDs and confirm each one actually exists in Meta's India catalogue —
-   don't assume; the biryani campaign found several category-specific interests simply
-   don't exist.
-2. Fill the resolved IDs into `audience-spec.json`.
-3. Either hand that file to me to attach directly to a new ad set, or use it to double-check
-   the manually-built Saved Audience above matches.
+As you type each Layer 1/2/3 term into Detailed Targeting, Ads Manager's own autocomplete
+tells you in real time whether it exists in the live catalogue and shows its audience
+size — treat that as the verification step. Some terms above may not resolve; the biryani
+campaign found several category-specific interests simply don't exist in Meta's India
+inventory, so don't be surprised if a few of these don't either. Drop whichever don't
+resolve and keep the rest — the layers don't depend on every single term existing.
