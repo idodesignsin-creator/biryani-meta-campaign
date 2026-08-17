@@ -25,6 +25,7 @@ step-by-step Ads Manager build guide you can follow directly.
 | --- | --- |
 | [`audience-targeting.md`](audience-targeting.md) | The full targeting spec, reasoning, and copy-paste Ads Manager build steps |
 | [`seo-comparison.md`](seo-comparison.md) | SEO review of crystalkuruva.com vs competitor mountainshadows.in — page gaps, technical fixes, keyword moats |
+| [`seo-audit.md`](seo-audit.md) | Full SEO audit of crystalkuruva.com with live ranking tests — supersedes two claims in the comparison doc |
 
 ## Note on the brand name
 

@@ -88,7 +88,7 @@ Priority order, highest commercial intent first:
 | Proposed page | Target query | Why |
 | --- | --- | --- |
 | `/pool-villa-resort-wayanad` | "private pool villa wayanad" | Direct head-to-head with Mountain Shadows' best page. The homepage already claims this keyword with nothing to back it. |
-| `/treehouse-resort-wayanad` | "treehouse resort wayanad" | **Mountain Shadows has no tree house.** Crystal Kuruva does. Uncontested against the main rival. |
+| `/treehouse-resort-wayanad` | "treehouse resort wayanad" | Mountain Shadows has no tree house; Crystal Kuruva does. **But see the correction in [`seo-audit.md`](seo-audit.md)** — the wider category is contested (Vythiri, Wayanad Treehouse, Tranquil), so this is not the easy win described here. |
 | `/resorts-near-kuruva-island` | "resorts near kuruva island", "kuruvadweep resort" | Geographic moat — see below. |
 | `/family-resorts-wayanad` | "family resorts in wayanad" | Two family room types already exist; currently buried in `/cottages.php`. |
 | `/honeymoon-resorts-wayanad` | "honeymoon resorts wayanad" | High-AOV segment, matches Ad Set C in the Meta audience doc. Currently only a blog post covers it. |
