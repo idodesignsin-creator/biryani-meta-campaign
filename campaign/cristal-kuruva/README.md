@@ -24,3 +24,10 @@ step-by-step Ads Manager build guide you can follow directly.
 | File | Covers |
 | --- | --- |
 | [`audience-targeting.md`](audience-targeting.md) | The full targeting spec, reasoning, and copy-paste Ads Manager build steps |
+| [`seo-comparison.md`](seo-comparison.md) | SEO review of crystalkuruva.com vs competitor mountainshadows.in — page gaps, technical fixes, keyword moats |
+
+## Note on the brand name
+
+The resort spells it **"Crystal Kuruva"** (per crystalkuruva.com), not "Cristal Kuruva".
+This folder and the audience doc still carry the misspelling from the original brief —
+worth correcting before anything reaches ad copy or the client.
