@@ -54,6 +54,7 @@ Still needed before launch: creative assets, and an Amazon Attribution URL
 | [`campaign/keyword-expansion-review.md`](campaign/keyword-expansion-review.md) | Review of a 35-keyword expansion plan, plus a correction on Exact-match word order and the live keyword audit |
 | [`campaign/first-purchases-2026-08-10.md`](campaign/first-purchases-2026-08-10.md) | **First real purchases — 3 sales, ₹1,187.62, and why Auto (not Exact) produced them** |
 | [`campaign/exact-impressions-2026-08-18.md`](campaign/exact-impressions-2026-08-18.md) | Why low Exact-match impressions don't mean low search demand |
+| [`campaign/cardamom-8mm-listing.md`](campaign/cardamom-8mm-listing.md) | **Cardamom 8mm++ "Diamond" listing copy** — title, item highlight, bullets, backend for the Aug 2026 harvest |
 | [`campaign/campaign-spec.json`](campaign/campaign-spec.json) | Machine-readable spec for API creation |
 
 ## The two decisions you asked about
