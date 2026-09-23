@@ -151,3 +151,30 @@ A brand-new ASIN with zero reviews converts worse than any copy can fix.
 
 If the two products come from different regions, they must stay separate ASINs. Also fix the
 200 g description's "Kuttanadan" heading, and remove its health-claim bullet (§1).
+
+---
+
+## 8. Seller Central form fields (checked from a screenshot, 23 Sep)
+
+| Field | Entered | Action |
+| --- | --- | --- |
+| Item Form | Whole | Correct |
+| **Unit Count** | **400** gram | **Change to 450.** The pack is 450 g. |
+| **HSN** | **09083190** | **Wrong: 0908 31 is cardamom.** Kudampuli is a dried fruit rind. The likely heading is 0813 40 (other dried fruit), commonly `08134090`. Confirm with your accountant before submitting, because HSN sets the GST rate. |
+
+### Specialty
+
+These are safe as long as they match the pack:
+
+| Value | Condition |
+| --- | --- |
+| `Wood-Smoked` | True for traditional kudampuli |
+| `Sun-Dried` | True |
+| `Deseeded` | Only if the rinds are deseeded |
+| `Vegetarian` | Plant product. The pack must carry the green veg mark. |
+| `Vegan` | True whether or not salt or oil is used in curing |
+| `Preservative Free` / `No Additives` | **Only if** no salt or oil is used in curing (see §1) |
+
+Do **not** enter: `Organic` (needs NPOP/Jaivik Bharat certification), `Gluten Free` (under
+FSSAI the claim needs lab testing), `Export Grade` (unverified), or anything about health or
+weight loss.
