@@ -48,6 +48,7 @@ Still needed before launch: creative assets, and an Amazon Attribution URL
 | [`campaign/listing-rewrite.md`](campaign/listing-rewrite.md) | Copy-paste rewrite of every listing field, built for organic search |
 | [`campaign/autocomplete-findings.md`](campaign/autocomplete-findings.md) | Amazon autocomplete = real demand — and the negatives blocking it |
 | [`campaign/meta-reconsidered.md`](campaign/meta-reconsidered.md) | Meta test approved — destination is Amazon, not spiceto.in, and why |
+| [`campaign/kuttanadan-kudampuli-450g-listing.md`](campaign/kuttanadan-kudampuli-450g-listing.md) | New 450 g Kudampuli ASIN — fact-check, title, bullets, description, backend |
 | [`campaign/brand-analytics-search-terms.md`](campaign/brand-analytics-search-terms.md) | Amazon market-wide search data — proof one competitor converts at 33%, and Spiceto is the priciest per-100g |
 | [`campaign/brand-analytics-garam-masala.md`](campaign/brand-analytics-garam-masala.md) | Data collection — "garam masala whole" outsearches "biryani whole spices" 5-7x |
 | [`campaign/title-revision-check.md`](campaign/title-revision-check.md) | Check on the "garam masala leads" title rewrite — final version shipped |
