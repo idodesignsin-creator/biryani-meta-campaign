@@ -55,6 +55,7 @@ Still needed before launch: creative assets, and an Amazon Attribution URL
 | [`campaign/first-purchases-2026-08-10.md`](campaign/first-purchases-2026-08-10.md) | **First real purchases — 3 sales, ₹1,187.62, and why Auto (not Exact) produced them** |
 | [`campaign/exact-impressions-2026-08-18.md`](campaign/exact-impressions-2026-08-18.md) | Why low Exact-match impressions don't mean low search demand |
 | [`campaign/amazons-choice-poster.md`](campaign/amazons-choice-poster.md) | Poster concept — four products earn Amazon's Choice |
+| [`campaign/amazons-choice-carousel.md`](campaign/amazons-choice-carousel.md) | 8-slide carousel — slide copy, captions (EN / Hinglish / Malayalam), checklist |
 | [`campaign/campaign-spec.json`](campaign/campaign-spec.json) | Machine-readable spec for API creation |
 
 ## The two decisions you asked about

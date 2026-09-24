@@ -75,11 +75,10 @@ Rebuild the layout for this size instead of cropping it (see `creative-brief.md`
   1 → 2 → 3 → 4, and "NOW AMAZON DID TOO." lands. The two halves of the line map onto the
   two shots, and it works with sound off.
 
-## Carousel follow-up (optional)
+## Carousel
 
-Slide 1 is the poster. Slides 2–5 give each product its own frame: the pack, the dish, the
-badge tag and one line of copy. Slide 2 is the Biryani pack with **"50+ biryanis. ₹199.
-Under ₹4 a pot."**
+The full 8-slide carousel, with copy, visuals and captions for every slide, is in
+[`amazons-choice-carousel.md`](amazons-choice-carousel.md).
 
 ## Caption
 
