@@ -7,21 +7,23 @@ now carry the Amazon's Choice badge on Amazon.in.
 documents the Biryani Whole Spices (Khada Garam Masala, ASIN `B0H6TP1DNS`). Slots 2–4 below
 are placeholders until those details arrive.
 
-## The idea — "Chosen, four times"
+## The idea — "Your kitchen chose us. Now Amazon did too."
 
-A single award doesn't prove much, because one product can get lucky. Four products
-getting the badge says the whole range is good. The poster is built on that point: it's
-about the brand, and any one product is just an example of it.
+**Chosen headline (2026-09-24).** The badge comes second in this line. Customers come
+first, and Amazon's recognition follows them. That keeps the poster warm and grateful
+rather than boastful, and it credits the people who actually earned the badges.
 
-- **Headline:** **CHOSEN. FOUR TIMES.**
+- **Headline:** **YOUR KITCHEN CHOSE US.** / **NOW AMAZON DID TOO.**
+  - Line 1 in cream, line 2 in gold, so the eye lands on the payoff.
 - **Sub-headline:** Four Spiceto products are now *Amazon's Choice* on Amazon.in
 - **Proof line:** Hand-weighed in Idukki, Kerala · From our kitchen to yours
 - **CTA:** Search "Spiceto" on Amazon
 
-### Other headline options
+### Headlines considered
 
 | Headline | Angle |
 | --- | --- |
+| **CHOSEN. FOUR TIMES.** | The original lead. Keep it for the carousel's last slide. |
 | **4 FOR 4.** | Short and confident. Works best in 9:16 at a large size. |
 | **KERALA'S SPICES. INDIA'S CHOICE.** | Provenance plus recognition. The strongest line for a Kerala brand. |
 | **ONE WAS LUCK. FOUR IS A PATTERN.** | Argument-led, in the style of the "ratio is the recipe" line from the creative brief. |
@@ -33,8 +35,8 @@ about the brand, and any one product is just an example of it.
 ┌───────────────────────────────────────┐
 │  SPICETO logo                  (small)│
 │                                       │
-│      CHOSEN.                          │
-│      FOUR TIMES.                      │   ← big serif headline, cream on deep maroon
+│  YOUR KITCHEN CHOSE US.               │   ← cream, big serif, on deep maroon
+│  NOW AMAZON DID TOO.                  │   ← gold, same size
 │  Four Spiceto products are now        │
 │  Amazon's Choice on Amazon.in         │
 │                                       │
@@ -68,8 +70,10 @@ Rebuild the layout for this size instead of cropping it (see `creative-brief.md`
 - Headline in the upper-middle, below the 250 px top safe zone.
 - Packs in a **2 × 2 grid**, not a row. Four packs across 1080 px get too small to read.
 - CTA and QR above the 400 px bottom safe zone.
-- **Motion option (6–8 s):** the badges appear one at a time with a "tick" sound,
-  1 → 2 → 3 → 4, then the headline lands. It works with sound off too.
+- **Motion option (6–8 s):** open on a home kitchen, a hand reaching for a Spiceto pack,
+  with "YOUR KITCHEN CHOSE US." Cut to the four packs as the badges appear one at a time,
+  1 → 2 → 3 → 4, and "NOW AMAZON DID TOO." lands. The two halves of the line map onto the
+  two shots, and it works with sound off.
 
 ## Carousel follow-up (optional)
 
@@ -79,14 +83,15 @@ Under ₹4 a pot."**
 
 ## Caption
 
-> Four Spiceto products are now **Amazon's Choice** on Amazon.in 🌿
-> Hand-weighed in Idukki, packed fresh, and now picked four times over.
-> Thank you to every kitchen that chose us first.
+> Your kitchen chose us. Now Amazon did too. 🌿
+> Four Spiceto products are now **Amazon's Choice** on Amazon.in.
+> This badge is yours as much as ours. Thank you to every kitchen that chose us first.
 > 🔎 Search "Spiceto" on Amazon.in
 
 Hinglish variant:
 
-> Ek nahi, chaar! 🎉 Spiceto ke 4 products ab **Amazon's Choice** hain.
+> Pehle aapki rasoi ne chuna, ab Amazon ne bhi! 🎉
+> Ek nahi, chaar! Spiceto ke 4 products ab **Amazon's Choice** hain.
 > Kerala se seedha aapki rasoi tak.
 > Amazon.in par "Spiceto" search karein.
 
@@ -103,6 +108,5 @@ Hinglish variant:
 ## What I need from you
 
 1. The names of the other three products, plus the pack photos (transparent PNG is best).
-2. Which headline you like, or whether the Malayalam variant should lead.
-3. Where it will run: organic posts only, or paid Meta ads as well. Paid ads raise the
+2. Where it will run: organic posts only, or paid Meta ads as well. Paid ads raise the
    stakes on the "badge may be removed" risk above.
