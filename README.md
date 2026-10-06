@@ -55,6 +55,7 @@ Still needed before launch: creative assets, and an Amazon Attribution URL
 | [`campaign/first-purchases-2026-08-10.md`](campaign/first-purchases-2026-08-10.md) | **First real purchases — 3 sales, ₹1,187.62, and why Auto (not Exact) produced them** |
 | [`campaign/exact-impressions-2026-08-18.md`](campaign/exact-impressions-2026-08-18.md) | Why low Exact-match impressions don't mean low search demand |
 | [`campaign/spice-box-title.md`](campaign/spice-box-title.md) | Spice Box (Combo of 4) — 72-char title + 125-char Item Highlight, repositioned as a Diwali gift box |
+| [`campaign/spice-box-listing-copy.md`](campaign/spice-box-listing-copy.md) | Spice Box — gift-led bullet points and description, and claims to remove |
 | [`campaign/campaign-spec.json`](campaign/campaign-spec.json) | Machine-readable spec for API creation |
 
 ## The two decisions you asked about
