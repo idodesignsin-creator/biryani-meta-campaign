@@ -81,7 +81,7 @@ already says it). As noted above, if the cinnamon is actually cassia, change *Ci
 ### Backend keywords (no repeats of title or highlight words)
 
 ```
-housewarming return gifts festive pooja kali mirch lavang ilaichi elakkai sabut khada garam
+housewarming return festive pooja kali mirch lavang ilaichi elakkai sabut khada garam
 masala 8mm dry fruit
 ```
 
