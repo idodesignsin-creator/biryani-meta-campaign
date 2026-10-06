@@ -32,50 +32,57 @@ packed in a clear four-compartment box. Amazon files it under
    declared wrongly (`listing-fixes.md`). The photo shows bark that is mostly flat, broken
    pieces rather than rolled quills. If it's cassia, call it cassia everywhere, including the
    Ingredients attribute.
-5. **The title is 199 characters, but the biryani listing was capped at 75** in Grocery. This
-   long title may only survive because it was saved before the cap. Any edit could then be
-   rejected or cut down to 75. **Try saving Option A in Seller Central first.** If it's
-   refused, use Option B.
+5. **The title is 199 characters, but the cap is 75** (confirmed). The long title only survives
+   because it was saved before the cap, so the replacement below is written for 75.
 
-## Recommended
+## Final — title 72/75, Item Highlight 125/125
 
-### Option A — full length (164 characters), if the category accepts it
+The 75-character cap is confirmed for this listing, so the title holds only the core match terms
+and the Item Highlight carries everything else. **No word appears in both fields.** Repeating a
+word doesn't strengthen it, it only uses up space.
 
-```
-Spiceto Kerala Whole Spices Gift Box, 230g - Green Cardamom (Elaichi), Black Pepper, Cloves & Cinnamon Sticks | Single-Origin Idukki | Combo of 4 Spices Gift Hamper
-```
-
-- The first ~70 characters (about what mobile search results show) answer *what it is* and
-  *how much*: brand, Kerala, whole spices, gift box, 230 g.
-- It keeps the four spice names, which are the real search terms, and adds *elaichi*, the most
-  searched Hindi name in the set.
-- *Gift Hamper* at the end covers the second gift query family. *Combo* is kept once because
-  shoppers do type it (`autocomplete-findings.md`).
-- *Single-Origin Idukki* is the one quality claim worth its space, because it's specific and
-  checkable. Drop the generic claims instead.
-
-### Option B — 72 characters, if the 75-character cap applies
+### Item Name (72 of 75 characters)
 
 ```
 Spiceto Kerala Spices Gift Box 230g - Cardamom, Pepper, Cloves, Cinnamon
 ```
 
-Everything cut from the title moves to the Item Highlight and backend keywords below.
+- **Brand, origin, what it is and the weight** sit in the first 35 characters, which still show
+  when mobile search results cut the title short.
+- **"Spices Gift Box"** matches *spice box*, *spices gift box* and *gift box* queries, and tells
+  container shoppers this isn't an empty masala dabba.
+- **All four spices are named in English**, because those are the primary search terms.
+  *Pepper* also matches *black pepper*, since *black* is in the highlight.
 
-### Item Highlight (111 of 125 characters)
-
-```
-Diwali & Corporate Gift - 50g Cardamom, 85g Black Pepper, 45g Cloves, 50g Cinnamon in a Clear 4-Compartment Box
-```
-
-Listing the weight of each spice helps conversion more than any adjective. A buyer sees that
-50 g of cardamom is most of the value. After Diwali, replace *Diwali* with *Festive*.
-
-### Backend keywords (no repeats of title words)
+### Item Highlight (125 of 125 characters)
 
 ```
-diwali hamper corporate housewarming return gifts elaichi kali mirch laung dalchini lavang
-khada masala sabut garam pepper 8mm cardamom dry fruits alternative festive pooja
+Diwali & Corporate Gift Hamper - Combo of 4 Idukki Whole Spices: 50g Green Elaichi, 85g Black Pepper, 45g Laung, 50g Dalchini
+```
+
+Everything the title couldn't fit:
+
+| Moved here | Why |
+| --- | --- |
+| Diwali, Corporate, Gift Hamper | The gift queries that belong to this category |
+| Combo of 4 | *Combo* is a word shoppers type (`autocomplete-findings.md`) |
+| Idukki, Whole | The single-origin claim, and the *whole spices* queries |
+| Green, Black | Complete *green cardamom* and *black pepper* |
+| Elaichi, Laung, Dalchini | Hindi names, so the English names in the title aren't repeated |
+| 50g / 85g / 45g / 50g | Per-spice weights help conversion: the buyer sees 50 g of cardamom |
+
+The highlight uses exactly 125 characters, so any edit must stay the same length. **After Diwali,
+swap `Diwali` for `Festive`.** Both are six characters, so it still fits.
+
+**Dropped completely:** Premium, Export Quality, Farm Fresh, Traditional, Single-Origin (Idukki
+already says it). As noted above, if the cinnamon is actually cassia, change *Cinnamon* and
+*Dalchini* to cassia before publishing.
+
+### Backend keywords (no repeats of title or highlight words)
+
+```
+housewarming return gifts festive pooja kali mirch lavang ilaichi elakkai sabut khada garam
+masala 8mm dry fruit
 ```
 
 Before pasting, confirm *8mm* (the cardamom grade) is accurate. Drop any term that doesn't
