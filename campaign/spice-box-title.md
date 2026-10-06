@@ -78,15 +78,38 @@ swap `Diwali` for `Festive`.** Both are six characters, so it still fits.
 already says it). As noted above, if the cinnamon is actually cassia, change *Cinnamon* and
 *Dalchini* to cassia before publishing.
 
-### Backend keywords (no repeats of title or highlight words)
+### Generic keywords (backend search terms): 243 of 250 bytes
+
+Paste this as a single line. It contains no word from the title. Words from the Item Highlight
+**are** repeated here on purpose, because it isn't certain that Amazon indexes the Item Highlight
+for search (see `listing-rewrite.md` §1b).
 
 ```
-housewarming return festive pooja kali mirch lavang ilaichi elakkai sabut khada garam
-masala 8mm dry fruit
+hamper diwali corporate festive whole combo idukki elaichi ilaichi laung lavang dalchini kali mirch black green sabut khada garam masala housewarming return pooja wedding employee client 8mm dry fruit assorted set pack elakka grambu kurumulaku
 ```
 
-Before pasting, confirm *8mm* (the cardamom grade) is accurate. Drop any term that doesn't
-match the product.
+| Group | Words | Queries they complete with the title |
+| --- | --- | --- |
+| Gift / occasion | hamper diwali corporate festive housewarming return pooja wedding employee client | *diwali gift box*, *corporate gift hamper*, *return gifts*, *employee diwali gift* |
+| Product form | whole combo assorted set pack | *whole spices combo*, *spices gift set*, *assorted spices pack* |
+| Origin | idukki | *idukki cardamom*, *idukki spices* (*kerala* is already in the title) |
+| Hindi names | elaichi ilaichi laung lavang dalchini kali mirch | *elaichi gift box*, *kali mirch*; both spellings of elaichi are common |
+| Malayalam names | elakka grambu kurumulaku | Kerala shoppers searching in Manglish |
+| Qualifiers | black green 8mm | *black pepper*, *green cardamom*, *8mm cardamom* |
+| Adjacent | sabut khada garam masala | *sabut garam masala*: these four spices are its core |
+| Substitute gift | dry fruit | *dry fruit gift box* shoppers, who buy at the same ₹500–800 gift price point |
+
+Rules followed: space-separated with no commas, no word repeated, no plurals of words already
+present (Amazon matches singular and plural), no competitor brands, and no unverifiable claims
+(no *organic*, *best* or *premium*).
+
+**Check before pasting:**
+- **8mm:** keep it only if the cardamom really is 8 mm grade. Otherwise delete it.
+- **dry fruit:** this is a deliberate reach into the dry-fruit gift-box audience. If the
+  Sponsored Products search terms later show those clicks don't convert, swap it for *christmas*
+  ahead of December.
+- Seller Central counts **bytes**, not characters. This line is all ASCII, so 243 bytes equals
+  243 characters.
 
 ## What would move conversion more than the title
 
