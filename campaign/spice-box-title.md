@@ -78,38 +78,45 @@ swap `Diwali` for `Festive`.** Both are six characters, so it still fits.
 already says it). As noted above, if the cinnamon is actually cassia, change *Cinnamon* and
 *Dalchini* to cassia before publishing.
 
-### Generic keywords (backend search terms): 243 of 250 bytes
+### Generic keywords (backend search terms), gift-led: 247 of 250 bytes
 
-Paste this as a single line. It contains no word from the title. Words from the Item Highlight
-**are** repeated here on purpose, because it isn't certain that Amazon indexes the Item Highlight
-for search (see `listing-rewrite.md` §1b).
+The title already covers the product terms (spices, cardamom, pepper, cloves, cinnamon, Kerala).
+This listing sits in **Spices Gifts**, and the buyer isn't searching for "cardamom". They're
+searching for *something to give*. So the whole backend field goes on gift intent: occasions,
+recipients and gift formats. None of these words is in the title. Amazon combines them with the
+title's *gift box* and *spices*, so each one creates queries like *corporate gift box*,
+*diwali gift hamper*, *gift for employees*, *housewarming gift* and *spices gift basket*.
 
 ```
-hamper diwali corporate festive whole combo idukki elaichi ilaichi laung lavang dalchini kali mirch black green sabut khada garam masala housewarming return pooja wedding employee client 8mm dry fruit assorted set pack elakka grambu kurumulaku
+corporate diwali hamper employee client festive deepavali dhanteras navratri christmas new year housewarming griha pravesh wedding return favour guests anniversary parents family friends staff office bulk souvenir gourmet edible food basket pongal
 ```
 
-| Group | Words | Queries they complete with the title |
+| Group | Words | Example queries completed with the title |
 | --- | --- | --- |
-| Gift / occasion | hamper diwali corporate festive housewarming return pooja wedding employee client | *diwali gift box*, *corporate gift hamper*, *return gifts*, *employee diwali gift* |
-| Product form | whole combo assorted set pack | *whole spices combo*, *spices gift set*, *assorted spices pack* |
-| Origin | idukki | *idukki cardamom*, *idukki spices* (*kerala* is already in the title) |
-| Hindi names | elaichi ilaichi laung lavang dalchini kali mirch | *elaichi gift box*, *kali mirch*; both spellings of elaichi are common |
-| Malayalam names | elakka grambu kurumulaku | Kerala shoppers searching in Manglish |
-| Qualifiers | black green 8mm | *black pepper*, *green cardamom*, *8mm cardamom* |
-| Adjacent | sabut khada garam masala | *sabut garam masala*: these four spices are its core |
-| Substitute gift | dry fruit | *dry fruit gift box* shoppers, who buy at the same ₹500–800 gift price point |
+| Corporate / B2B | corporate employee client staff office bulk | *corporate diwali gift*, *gift for employees*, *client gift box*, *bulk diwali gifts* |
+| Festivals (now → Jan) | diwali deepavali dhanteras navratri christmas new year pongal | *diwali gift hamper*, *dhanteras gift*, *christmas gift box*, *new year gift* |
+| Life events | housewarming griha pravesh wedding anniversary | *housewarming gift*, *griha pravesh return gift*, *wedding return gift* |
+| Return gifts | return favour guests | *return gift for guests*, *wedding favour* |
+| Recipients | parents family friends | *gift for parents*, *diwali gift for family* |
+| Gift format | hamper basket festive gourmet edible food souvenir | *gourmet gift hamper*, *edible gift*, *food gift basket*, *kerala souvenir* |
 
-Rules followed: space-separated with no commas, no word repeated, no plurals of words already
-present (Amazon matches singular and plural), no competitor brands, and no unverifiable claims
-(no *organic*, *best* or *premium*).
+Rules followed: no title words, no repeats, no plurals (Amazon matches *hampers* from *hamper*),
+no competitor brands, and no unverifiable claims such as *luxury*, *premium* or *best*.
 
-**Check before pasting:**
-- **8mm:** keep it only if the cardamom really is 8 mm grade. Otherwise delete it.
-- **dry fruit:** this is a deliberate reach into the dry-fruit gift-box audience. If the
-  Sponsored Products search terms later show those clicks don't convert, swap it for *christmas*
-  ahead of December.
-- Seller Central counts **bytes**, not characters. This line is all ASCII, so 243 bytes equals
-  243 characters.
+**Rotate the festival words through the year.** Seller Central allows edits at any time, and
+past festivals waste bytes:
+
+| When | Remove | Add |
+| --- | --- | --- |
+| After Diwali (mid-Nov) | navratri dhanteras deepavali | sankranti thanksgiving secret santa |
+| After Pongal (late Jan) | christmas new year pongal | eid holi womens day |
+| Late July | (spring festivals) | rakhi raksha bandhan onam |
+| Late Sept | (Rakhi, Onam) | navratri dhanteras deepavali |
+
+Keep *diwali* in all year. It's the biggest gift query and still gets searched outside the season.
+
+**Note:** *souvenir* targets tourists looking for something to take home from Kerala. Idukki and
+Munnar are spice-tourism destinations, so it fits the product even though it isn't a festival.
 
 ## What would move conversion more than the title
 
