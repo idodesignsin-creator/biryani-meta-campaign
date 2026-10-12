@@ -178,3 +178,22 @@ These are safe as long as they match the pack:
 Do **not** enter: `Organic` (needs NPOP/Jaivik Bharat certification), `Gluten Free` (under
 FSSAI the claim needs lab testing), `Export Grade` (unverified), or anything about health or
 weight loss.
+
+---
+
+## 9. Live check — B0HKSXDW6S (12 Oct)
+
+The listing went live as **400 g**, not 450 g: title `Spiceto Kuttanadan Kudampuli 400g | Malabar Fish
+Tamarind, Smoked, Kerala`, ₹279 (MRP ₹399), ₹69.75/100 g, Fulfilled by Amazon, browse node
+Whole Spices › Tamarind. The ₹69.75/100 g figure shows the Unit Count field was left at 400,
+so §8's "change to 450" was not applied.
+
+**Open question: what does the pouch actually hold?**
+- If the pack is **400 g**: the live title and Unit Count are correct. The "450 g" in this sheet
+  was wrong. Change bullet 5 from "450G FAMILY PACK… more than twice our 200g pack" to **"400G
+  FAMILY PACK… twice our 200g pack"**.
+- If the pack is **450 g**: change the title and Unit Count to 450. Under-declaring the weight
+  understates the value and makes the per-100 g price look worse than it is.
+
+The net quantity printed on the pouch, the title, Unit Count and bullet 5 must all show the
+same number.
