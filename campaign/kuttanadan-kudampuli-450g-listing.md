@@ -197,3 +197,29 @@ so §8's "change to 450" was not applied.
 
 The net quantity printed on the pouch, the title, Unit Count and bullet 5 must all show the
 same number.
+
+---
+
+## 10. Added to ads — "Auto Kudam puli Campaign" (12 Oct)
+
+The new ASIN shows **Ineligible: "Your offer is not eligible for advertising"**, with "No Name Data
+Available / Price cannot be found". The ads system has not picked up the catalogue data yet.
+That is normal for a new ASIN, and for one edited the same day (the Item Highlight was being added).
+Allow 24–48 h. If it is still ineligible after that, check Manage Inventory for a suppressed or
+stranded listing and confirm the offer holds the Buy Box.
+
+**Every other ad in this ad group is paused**, so until the new ad becomes eligible the
+campaign serves nothing. 5–12 Oct: 210 impressions, 1 click, ₹13.64, all from the paused 350 g
+ad.
+
+**The new pack undercuts the existing pack sizes on price per 100 g:**
+
+| ASIN | Pack | Price | Per 100 g |
+| --- | --- | --- | --- |
+| B0G2Y1J457 | 200 g | ₹199 | ₹99.50 |
+| B0H9DK8PLZ | 350 g | ₹379 | ₹108.29 |
+| **B0HKSXDW6S** | **400 g** | **₹279** | **₹69.75** |
+
+A shopper who sees both will buy the 400 g, and the 350 g stops selling. Either the 350 g is a
+different product (origin or grade) and its listing says so, or its price needs to be brought
+into line.
