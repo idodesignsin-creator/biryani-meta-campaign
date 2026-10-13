@@ -223,3 +223,25 @@ ad.
 A shopper who sees both will buy the 400 g, and the 350 g stops selling. Either the 350 g is a
 different product (origin or grade) and its listing says so, or its price needs to be brought
 into line.
+
+---
+
+## 11. Backend keywords for the live listing, and an origin error (13 Oct)
+
+The live Item Highlight was shortened to end at "For Meen Curry", so `vevichathu` and
+`mulakittathu` are no longer indexed anywhere. They move to backend.
+
+**246 / 250 bytes, no word shared with the live title or highlight:**
+```
+kodampuli kudam puli kodumpuli kudampully gambooge gamboge cambodge garcinia cambogia gummi gutta brindleberry brindle berry souring agent ingredient sour dry vevichathu mulakittathu kottayam alleppey seafood prawn chemmeen mathi sardine karimeen
+```
+
+Dropped from the requested list because they are already indexed in the title or highlight:
+`fish curry smoked tamarind sun dried kudampuli kerala`. Dropped `natural` (a claim word, and
+weak for search) and `spices` (too broad).
+
+**Live Item details show Region of Origin = "Idukki kerala".** The title, highlight, Specialty
+and pack all say Kuttanad / Alappuzha. Change it to `Kuttanad, Alappuzha, Kerala`.
+
+**Cultivation Method Claim = "No Pesticides".** This is a claim that has to be substantiated.
+Keep it only with supplier or test evidence; otherwise leave the field blank.
