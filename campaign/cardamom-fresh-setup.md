@@ -47,8 +47,27 @@ Other rows in the sheet:
 | 100 g (other row) | ₹729 | ₹216.01 | 30% | ₹15.1 |
 | 200 g | ₹1,299 | ₹298.70 | 23% | ₹20.9 |
 
-The ₹599 100 g is the worst unit to advertise. The ₹729 price (and the 50 g / 75 g /
-200 g packs) leaves room for the CPCs Amazon actually charges.
+The ₹599 100 g is the worst unit to advertise.
+
+## Live listing and market (checked 27 Oct 2026)
+
+Listing prices are GST-inclusive: 50 g ₹395 · 75 g ₹490 · 100 g ₹599 · 200 g ₹1,399
+(₹736/100 g). Rating 4.3 from 29 ratings. The search-term sales figures are ex-GST:
+₹570.48 = ₹599, ₹475.24 = ₹499, ₹380 = ₹399, ₹1,332.38 = ₹1,399 — so at least one 200 g
+order exists, and the 100 g price has moved over time (₹646.67 and ₹665.72 match ₹679 and
+₹699).
+
+Competitor 100 g prices incl. GST: Go Vegan 8 mm ₹395, GreenFinity 8 mm ₹419, Kitchen
+Jungle ₹439 (8 mm ₹549), Idukki Spices ₹494, Vedaka ₹519 (3.4K ratings), Astree ₹649
+(1 rating). Spiceto 100 g at ₹599 is at the top of the range, so **do not raise the 100 g
+price** (the earlier ₹729 idea is withdrawn). Review counts (29 vs hundreds/thousands)
+limit conversion more than price does.
+
+The cost sheet row for 200 g used ₹1,299; the live price is ₹1,399, so profit is higher
+than the ₹298.70 shown (≈ ₹390 if fees scale). Break-even CPC ≈ ₹27 at 7% CVR.
+Caution: at ₹736/100 g the 200 g is the priciest per gram in the category; test, don't assume.
+Listing issues to fix: title says **190g**, size selector says **200 g**; MRP ₹1,999 with
+"30% off" draws ASCI scrutiny if the price never sells near MRP.
 
 ## Why not Exact-first
 
@@ -61,8 +80,8 @@ for the cheap conversions, Exact only as a late "graduate" layer.**
 
 **Bids are set from the ₹6 break-even CPC at ₹599, not from Amazon's ₹17–50
 suggestions.** Expect low impressions at these bids — the honest trade is volume for not
-losing money. To buy volume at ₹10+, first fix the unit: raise the price toward ₹729
-(sheet shows ₹216 profit) or lead with the 50 g / 200 g packs. Re-set bids from the new
+losing money. To buy volume at ₹10+, first fix the unit: advertise the 200 g child ASIN (profit ≈ ₹390)
+and/or a 2×100 g bundle, not the ₹599 100 g. Re-set bids from the new
 break-even CPC (profit × CVR) when the price changes.
 
 One ASIN per campaign. Start with B0FYY8TVNY. Bidding strategy **Down only** everywhere.
@@ -119,7 +138,7 @@ Add (negative phrase): `500gm`, `200gm`, `1000gm`, `1 kg`.
 
 ## Still needed
 
-Which listing is the ₹729 row, and whether a 200 g listing exists.
+The 200 g child ASIN (listing is a size variation family).
 
 Note: placement multipliers were on at max 25%, which explains the ₹13 recent CPC on a
 ₹10 bid; the older ₹16–18 means earlier bids were higher.
