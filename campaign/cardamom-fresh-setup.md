@@ -17,8 +17,38 @@ total ₹2,488 against ₹24,476 lifetime, so they are a recent slice. Confirm t
 | Negatives that don't work | `500g` phrase does not catch `500gm`; `1kg` / `1 kg` / `1000g` don't catch `elaichi 1 kg`-style variants reliably. |
 | Bid ₹10 vs CPC ₹16–18 lifetime | Dynamic bidding "up and down" or placement modifiers are lifting it. |
 
-Unit economics (assumption — replace with your margin): avg order ≈ ₹560, CVR ≈ 7% →
-CPC that holds 30% ACOS ≈ ₹11, 35% ≈ ₹13. Lifetime ACOS of 63% only works at >63% margin.
+## Profit check (from the cost sheet; CSV window = last 65 days)
+
+Live row: 100 g, 7 mm, sale ₹599. Cost ₹506.49 incl. GST → **profit ₹92.51 before ads**.
+
+| | |
+| --- | --- |
+| Break-even ACOS | 92.51 / 599 = **15.4%** |
+| Break-even CPC | 92.51 × CVR (6.2% lifetime, 7.3% recent) = **₹5.7–6.8** |
+| Actual CPC | ₹13.3 (65 days), ₹16.4 (lifetime) — 2–2.5× break-even |
+| Actual ACOS | 32% (65 days, main ASIN), 63% lifetime |
+| Ad cost per order | ≈ ₹190 (65 days), ≈ ₹263 lifetime — vs ₹92.5 profit |
+| Real net per order | **≈ −₹99** (65 days), **≈ −₹170** lifetime |
+
+The sheet's "ADV COST 30" (₹30 per order, ≈5% ACOS) is far below what the ads actually
+cost, so its net profit (₹62.51) is overstated. Last 65 days on the 100 g ad: 12 orders ×
+₹92.51 = ₹1,110 profit vs ₹2,181 ad spend → about **−₹1,070**. Lifetime (₹24.5k spend,
+93 orders) is roughly −₹15k on this basis (order values vary, so approximate).
+About 90% of lifetime spend was before the last 65 days; ROAS has already improved
+from 1.58 to ~3.1, but not to break-even (needs 6.5).
+
+Other rows in the sheet:
+
+| Pack | Sale | Profit | Break-even ACOS | Break-even CPC @7% |
+| --- | --- | --- | --- | --- |
+| 50 g | ₹399 | ₹109.01 | 27% | ₹7.6 |
+| 75 g | ₹499 | ₹120.01 | 24% | ₹8.4 |
+| 100 g | ₹599 | ₹92.51 | 15% | ₹6.5 |
+| 100 g (other row) | ₹729 | ₹216.01 | 30% | ₹15.1 |
+| 200 g | ₹1,299 | ₹298.70 | 23% | ₹20.9 |
+
+The ₹599 100 g is the worst unit to advertise. The ₹729 price (and the 50 g / 75 g /
+200 g packs) leaves room for the CPCs Amazon actually charges.
 
 ## Why not Exact-first
 
@@ -29,15 +59,21 @@ for the cheap conversions, Exact only as a late "graduate" layer.**
 
 ## Fresh structure
 
+**Bids are set from the ₹6 break-even CPC at ₹599, not from Amazon's ₹17–50
+suggestions.** Expect low impressions at these bids — the honest trade is volume for not
+losing money. To buy volume at ₹10+, first fix the unit: raise the price toward ₹729
+(sheet shows ₹216 profit) or lead with the 50 g / 200 g packs. Re-set bids from the new
+break-even CPC (profit × CVR) when the price changes.
+
 One ASIN per campaign. Start with B0FYY8TVNY. Bidding strategy **Down only** everywhere.
 No placement boosts until top-of-search share is measured (currently <5%).
 
 | # | Campaign | Targets | Bid | Budget share |
 | --- | --- | --- | --- | --- |
-| 1 | **Card-Auto-v2** | Close ₹11, Substitutes ₹9; Loose & Complements **off** | see left | 35% |
-| 2 | **Card-ASIN** | The 15 competitor ASINs from the search-term report (not `b0fyy8tvny` — own) as product targets; start with `b0fbj7k1w7`, `b0h98vdr7k` | ₹9–10 | 25% |
-| 3 | **Card-Phrase** | Phrase: `green elaichi`, `green cardamom`, `elaichi green 100g`, `cardamom 8mm`, `hari elaichi`, `cardamom in jar`, `idukki cardamom`; Hindi `इलायची` | ₹10–11 | 30% |
-| 4 | **Card-Brand** | `spiceto`, `spiceto cardamom` (Exact is fine here) | ₹6–8 | 10% |
+| 1 | **Card-Auto-v2** | Close ₹4.5, Substitutes ₹4; Loose & Complements **off** | see left | 35% |
+| 2 | **Card-ASIN** | The 15 competitor ASINs from the search-term report (not `b0fyy8tvny` — own) as product targets; start with `b0fbj7k1w7`, `b0h98vdr7k` | ₹4.5 | 25% |
+| 3 | **Card-Phrase** | Phrase: `green elaichi`, `green cardamom`, `elaichi green 100g`, `cardamom 8mm`, `hari elaichi`, `cardamom in jar`, `idukki cardamom`; Hindi `इलायची` | ₹5 | 30% |
+| 4 | **Card-Brand** | `spiceto`, `spiceto cardamom` (Exact is fine here) | ₹3–4 | 10% |
 
 Put the 8mm++ listing (B0HG3KYTWR) in its **own** campaign copy of #1 only if you want to
 test it: its CTR (1.27%) is the highest, but 15 clicks proves nothing. Leave the 50 g
@@ -73,6 +109,5 @@ Add (negative phrase): `500gm`, `200gm`, `1000gm`, `1 kg`.
 
 ## Still needed
 
-Report date range, your margin / break-even ACOS, daily budget, bidding strategy and
-placement settings on the current campaign, and whether the cardamom listing's price or
-stock changed recently.
+Daily budget, which listing is the ₹729 row, whether a 200 g listing exists, and the
+placement settings (CPC ₹13–18 on a ₹10 Down-only bid means a placement multiplier is on).
