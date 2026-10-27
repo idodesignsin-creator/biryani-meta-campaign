@@ -119,4 +119,7 @@ Add (negative phrase): `500gm`, `200gm`, `1000gm`, `1 kg`.
 
 ## Still needed
 
-Which listing is the ₹729 row, whether a 200 g listing exists, (placement multipliers are on at max 25%, which explains the ₹13 recent CPC on a ₹10 bid; older ₹16–18 means earlier bids were higher).
+Which listing is the ₹729 row, and whether a 200 g listing exists.
+
+Note: placement multipliers were on at max 25%, which explains the ₹13 recent CPC on a
+₹10 bid; the older ₹16–18 means earlier bids were higher.
