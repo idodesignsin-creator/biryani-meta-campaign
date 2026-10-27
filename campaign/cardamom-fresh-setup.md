@@ -187,3 +187,48 @@ searches appear in the report.
   with 1+ orders in Auto → add to Card-Manual as Phrase.
 - **Day 14:** Placement report, ACOS vs the 15% break-even (see Profit check). Pause the
   old CArdamom AUTO campaign if not already done.
+
+## Goal changed: temporary rank-push for the 100 g (supersedes profit-based bids)
+
+Context from the seller: ~2 months ago the 100 g listing sat on the second row and did
+10–20 orders/day. Ads were stopped, it held for a week, then stock ran low, the price was
+raised, sales fell and the listing slid to page 2. Ads are **not** meant to be permanent:
+they restart sales velocity on targeted searches, organic rank recovers, ads are tapered.
+
+So the ₹6 break-even CPC and the ₹4.5 bids no longer apply. Ads are an **investment with
+a cap**: ~₹100/order loss at today's CPCs. Expected cost of a 21-day push at ₹250/day
+≈ ₹2–3k net loss (plus any coupon). Judge it on rank and organic orders, not on ACOS.
+
+What actually moves organic rank for a keyword: orders on that keyword, conversion rate,
+price vs competitors, stock. Ad spend by itself does nothing; the **orders** it creates do.
+
+### Honest volume check
+₹250/day at ₹12 CPC ≈ 20 clicks ≈ 1.4 orders/day at 7% CVR. Previously 10–20/day. Ads
+alone will not rebuild that; they are the spark. Two ways to get more orders from the same
+money: raise conversion (coupon / price back near the old level) or raise the budget.
+A ₹50–100 Amazon **coupon** on the 100 g costs less per order than the ~₹190 ad cost
+per order, lifts CTR and CVR, and shows a badge in search.
+
+### Setup (₹250/day, 21 days, one ASIN B0FYY8TVNY, down only, placements 0%)
+
+| Campaign | Daily | Targets | Bid |
+| --- | --- | --- | --- |
+| **Rank-Push** | ₹150 | Exact **and** Phrase on the terms you want to rank for: `green cardamom`, `cardamom green`, `green elaichi`, `elaichi green 100g`, `hari elaichi`, `cardamom 8mm`, `idukki cardamom`, `cardamom in jar` | ₹12 |
+| **Auto** | ₹60 | Close ₹6, Substitutes ₹5; keep the junk negatives; add the rank terms as negative exact so they don't compete with Rank-Push | per group |
+| **ASIN** | ₹40 | `b0fbj7k1w7`, `b0h98vdr7k` (Exact) | ₹6 |
+
+- In Rank-Push, **do not** carry over the old negatives on `green cardamom`,
+  `cardamom green`, `green elaichi` — those are now the target terms.
+- Bids of ₹12 are what it takes to win impressions (Amazon suggests ₹17–50). Down only
+  means actual CPC stays ≤ bid.
+- Keep stock above ~14 days of sales. Running out again resets the rank.
+
+### Exit rule
+Search each target term logged-out, once a day, and note the 100 g's organic position.
+When it shows on page 1 organically for 3+ target terms **and** organic orders are 5+/day
+for 3 days, cut ad budgets 50% every 3 days to zero (not an abrupt stop). If after 14
+days orders from ads are under 1/day, the problem is conversion (price, reviews, images),
+not traffic — fix that before spending more.
+
+### Need from the seller
+Current stock and price, the price when it did 10–20/day, and the terms it ranked on then.
