@@ -232,3 +232,17 @@ not traffic — fix that before spending more.
 
 ### Need from the seller
 Current stock and price, the price when it did 10–20/day, and the terms it ranked on then.
+
+### Seller update (27 Oct 2026)
+Stock 20 kg ≈ 200 × 100 g units. Old price ₹499 (when it did 10–20 orders/day), now ₹599
+because raw cardamom cost rose (climate); price stays. Oct 2026 harvest, fresh; listing is
+non-returnable.
+
+- Stock cover: 10–20 orders/day = 10–20 days. Set a reorder trigger at ~5 kg left; a
+  stock-out resets the rank.
+- Bring the **effective** price back to ₹499 with a **₹100 Amazon coupon on the 100 g
+  only** (list price stays ₹599, no MRP/price-history damage). Coupon order ≈ break-even
+  (₹92.51 profit − ₹100 + small redemption fee) versus ≈ −₹100 per ad order. It also lifts
+  organic conversion, not just ad clicks. Run it for the same 21 days, then end it with
+  the ads.
+- Use "Oct 2026 Fresh Harvest" in the title/bullets (the pasted note says "2006" — typo).
