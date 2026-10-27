@@ -66,21 +66,31 @@ losing money. To buy volume at ₹10+, first fix the unit: raise the price towar
 break-even CPC (profit × CVR) when the price changes.
 
 One ASIN per campaign. Start with B0FYY8TVNY. Bidding strategy **Down only** everywhere.
-No placement boosts until top-of-search share is measured (currently <5%).
 
-| # | Campaign | Targets | Bid | Budget share |
+**Placements:** Top of search **0%**, Product pages **0%** (currently 25% max — remove).
+Amazon has no "second row" setting; low base bids plus 0% top-of-search keep you in
+Rest of search and out of the pricey top slots. Check the Placement report after 1–2
+weeks (CPC, orders, ACOS by placement) before adding any boost, and only on a
+campaign with 3+ orders at ACOS < 30%.
+
+**Total daily budget ₹250. Two campaigns, no Exact yet** (Exact starved in your account;
+add it later only for terms with 3+ orders). Four campaigns on ₹250 would each be too
+small to learn from.
+
+| # | Campaign | Daily | Targets | Bid |
 | --- | --- | --- | --- | --- |
-| 1 | **Card-Auto-v2** | Close ₹4.5, Substitutes ₹4; Loose & Complements **off** | see left | 35% |
-| 2 | **Card-ASIN** | The 15 competitor ASINs from the search-term report (not `b0fyy8tvny` — own) as product targets; start with `b0fbj7k1w7`, `b0h98vdr7k` | ₹4.5 | 25% |
-| 3 | **Card-Phrase** | Phrase: `green elaichi`, `green cardamom`, `elaichi green 100g`, `cardamom 8mm`, `hari elaichi`, `cardamom in jar`, `idukki cardamom`; Hindi `इलायची` | ₹5 | 30% |
-| 4 | **Card-Brand** | `spiceto`, `spiceto cardamom` (Exact is fine here) | ₹3–4 | 10% |
+| 1 | **Card-Auto-v2** | ₹130 | Close ₹4.5, Substitutes ₹4; Loose & Complements **off** | per group |
+| 2 | **Card-Manual** | ₹100 | Ad group *Phrase* (₹5): `green elaichi`, `green cardamom`, `elaichi green 100g`, `cardamom 8mm`, `hari elaichi`, `cardamom in jar`, `idukki cardamom`, `इलायची`. Ad group *ASIN* (₹4.5): the 15 competitor ASINs from the search-term report (not `b0fyy8tvny` — own); start with `b0fbj7k1w7`, `b0h98vdr7k` | per group |
+| 3 | **Card-Brand** (optional) | ₹20 | `spiceto`, `spiceto cardamom`, Exact. Skip until brand searches show in the report; then take the ₹20 from Auto. | ₹3–4 |
+
+At ₹4.5 bids, ₹250 ≈ 50–55 clicks/day ≈ 3–4 orders/day at 7% CVR, if impressions
+exist. If spend runs well under ₹250 the bids are too low, not the budget too high:
+raise ₹0.5 at a time, never above the ₹6 break-even CPC (₹5.6 effective if any placement
+boost is left on).
 
 Put the 8mm++ listing (B0HG3KYTWR) in its **own** campaign copy of #1 only if you want to
 test it: its CTR (1.27%) is the highest, but 15 clicks proves nothing. Leave the 50 g
 listing out until the 100 g listing is stable.
-
-Daily budget: not set here — I don't have your current daily spend or margin. Use the
-shares above against whatever total you're willing to risk.
 
 ## Negatives
 
@@ -109,5 +119,4 @@ Add (negative phrase): `500gm`, `200gm`, `1000gm`, `1 kg`.
 
 ## Still needed
 
-Daily budget, which listing is the ₹729 row, whether a 200 g listing exists, and the
-placement settings (CPC ₹13–18 on a ₹10 Down-only bid means a placement multiplier is on).
+Which listing is the ₹729 row, whether a 200 g listing exists, (placement multipliers are on at max 25%, which explains the ₹13 recent CPC on a ₹10 bid; older ₹16–18 means earlier bids were higher).
