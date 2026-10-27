@@ -246,3 +246,22 @@ non-returnable.
   organic conversion, not just ad clicks. Run it for the same 21 days, then end it with
   the ads.
 - Use "Oct 2026 Fresh Harvest" in the title/bullets (the pasted note says "2006" — typo).
+
+### Positioning: quality, not price (seller decision, 27 Oct 2026)
+Do not compete with Vedaka / ZOFF-type mixed-grade listings. Spiceto's differentiator:
+Idukki, 7–8 mm, Oct 2026 harvest, **black seeds inside the pods**, jar pack.
+
+- **Rank-Push terms (quality-led only):** `8mm cardamom`, `cardamom 8mm`, `bold green cardamom`,
+  `idukki cardamom`, `idukki elaichi`, `export quality cardamom`, `cardamom in jar`,
+  `elaichi green 100g`. Head terms (`green cardamom`, `cardamom`, `elaichi`) go to Auto only,
+  at the low bid, where price shoppers cost little.
+- **ASIN targets:** premium / 8 mm / Idukki competitors only (e.g. Astree, ArtOspices,
+  Idukki Spices, Orika, 8 mm jar brands). **Exclude Vedaka and ZOFF.** Keep
+  `b0fbj7k1w7` and `b0h98vdr7k` — they converted. Seller to paste the ASINs from the pages.
+- **Negatives:** keep `vedaka` (phrase); add `zoff`, `keya`, `choti`, `small`.
+- **Coupon is optional** under this positioning. If used, keep it small (₹50) and short, framed
+  as launch pricing; otherwise rely on the creative below.
+- **Creative (lifts conversion without a discount):** a macro image of a split pod showing
+  black seeds, with a short line stating what that means — only claims the seller can stand
+  behind (matured, fresh Oct 2026 harvest). Pod-size photo with a ruler (7–8 mm). Don't name
+  or disparage other brands in images or copy.
