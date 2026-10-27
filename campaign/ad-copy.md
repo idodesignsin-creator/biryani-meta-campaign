@@ -168,6 +168,53 @@ The value framing. Answers the "₹199 for masala?" objection before it forms.
 
 ---
 
+## Ad A5 — "Cardamom" (new)
+
+Leads on the first spice in the pack and the one buyers recognise by smell. Cardamom
+is the entry point; the payoff is still the ratio, so this ad sits in the same test
+family as A1 and keeps the claim to what the listing says. Pair with a close-up
+cardamom pod / mortar visual (see `creative-brief.md`, Round 4 item 3).
+
+Claims used: cardamom is one of the 12 spices, Idukki Kerala origin, hand-weighed,
+ratio developed with biryani experts, ready to grind, ₹199 / 90 g. **No** "highest
+grade", "bold green", potency or health claims — none are on the listing.
+
+### English
+
+> **Primary text**
+> One pod of cardamom can perfume a whole pot. Too many, and it overpowers.
+>
+> That's the thing about biryani masala — it's never one spice, it's the balance.
+> Spiceto's cardamom comes with 11 others (black pepper, cinnamon, cloves, mace and
+> more), hand-weighed from Idukki, Kerala in a ratio developed with biryani experts.
+>
+> Drop them whole into the dum, or grind fresh. No preservatives, no additives.
+>
+> ₹199 for 90g — 50+ servings. On Amazon.
+>
+> **Headline:** Start With Cardamom. Get 12.
+> **Description:** Hand-weighed, ready to grind
+> **CTA:** Shop Now
+
+### Hinglish
+
+> **Primary text**
+> Ek elaichi poori handi mehka deti hai. Zyada ho jaye toh sab dab jaata hai.
+>
+> Biryani masala mein ek masala nahi, santulan chalta hai. Spiceto ki elaichi ke saath
+> 11 aur masale — kali mirch, dalchini, laung, javitri aur bhi — Idukki, Kerala se,
+> haath se taule, biryani experts ke ratio par.
+>
+> Sabut daalo dum mein, ya taza peeso. Na preservative, na additive.
+>
+> ₹199 / 90g — 50+ servings. Amazon par.
+>
+> **Headline:** Elaichi Se Shuru, 12 Masale
+> **Description:** Haath se taule, ready to grind
+> **CTA:** Shop Now
+
+---
+
 ## Ad A4 — Social proof: HOLD
 
 **Do not run this yet.** The listing has **3 ratings**. A "5.0 stars!" ad that lands on a
