@@ -123,3 +123,48 @@ Which listing is the ₹729 row, and whether a 200 g listing exists.
 
 Note: placement multipliers were on at max 25%, which explains the ₹13 recent CPC on a
 ₹10 bid; the older ₹16–18 means earlier bids were higher.
+
+## Step-by-step setup (Amazon Ads console)
+
+**Before you start:** open the old campaign and note its negatives and settings. Don't
+delete it yet. Pause it only when the new Auto is live, so you don't double-pay on the
+same searches.
+
+### Campaign 1 — Card-Auto-v2 (₹130/day)
+1. Campaigns → **Create campaign** → Sponsored Products.
+2. Name `Card-Auto-v2`. Add **only B0FYY8TVNY** (not the 8mm++ or 50 g listings).
+3. Targeting: **Automatic targeting**. Daily budget **₹130**. Start date today, no end date.
+4. Bidding strategy: **Dynamic bids – down only**. Placement adjustments: Top of search
+   **0%**, Product pages **0%**.
+5. Ad group `Card-Auto`. Default bid ₹4.5. Set per group: Close match **₹4.5**,
+   Substitutes **₹4**, Loose match **off**, Complements **off**.
+6. Negative keywords: add the "Add" list from the **Negatives** section below
+   (exact and phrase as shown). Do **not** copy the old `green cardamom`, `cardamom green`,
+   `green elaichi`, `fresh`, or `spiceto` negatives.
+7. Negative product targeting: add your own other listings (`B0HG3KYTWR`, `B0HMFQ5M5Z`)
+   so you don't bid against yourself.
+8. Launch.
+
+### Campaign 2 — Card-Manual (₹100/day)
+1. Create campaign → Sponsored Products → name `Card-Manual`, product **B0FYY8TVNY**.
+2. Targeting: **Manual**. Daily budget **₹100**. Same bidding strategy and 0% placements as above.
+3. **Ad group 1 `Phrase`**: Keyword targeting → add manually, match type **Phrase**, bid ₹5:
+   `green elaichi`, `green cardamom`, `elaichi green 100g`, `cardamom 8mm`, `hari elaichi`,
+   `cardamom in jar`, `idukki cardamom`, `इलायची`.
+4. **Ad group 2 `ASIN`**: Product targeting → Individual products → paste the competitor
+   ASINs from the search-term report (`b0fbj7k1w7`, `b0h98vdr7k` first, then the rest;
+   skip `b0fyy8tvny`). Bid ₹4.5.
+5. Campaign negatives: copy the same "Add" list as Campaign 1.
+6. Launch.
+
+### Campaign 3 — Card-Brand (₹20/day, optional)
+Manual, Exact keywords `spiceto`, `spiceto cardamom`, bid ₹3–4. Skip until brand
+searches appear in the report.
+
+### After launch
+- **Day 1:** confirm all campaigns say Delivering; no policy flags; placements at 0%.
+- **Day 3:** if spend is far under budget, raise bids ₹0.5 (max ₹6). Don't judge ACOS yet.
+- **Day 7:** search-term report. Terms at 20+ clicks and 0 orders → negative exact. Terms
+  with 1+ orders in Auto → add to Card-Manual as Phrase.
+- **Day 14:** Placement report, ACOS vs the 15% break-even (see Profit check). Pause the
+  old CArdamom AUTO campaign if not already done.
