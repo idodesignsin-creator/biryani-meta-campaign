@@ -265,3 +265,21 @@ Idukki, 7–8 mm, Oct 2026 harvest, **black seeds inside the pods**, jar pack.
   black seeds, with a short line stating what that means — only claims the seller can stand
   behind (matured, fresh Oct 2026 harvest). Pod-size photo with a ruler (7–8 mm). Don't name
   or disparage other brands in images or copy.
+
+### The black-seed claim (seller, 27 Oct 2026)
+The seed inside the pod is the product. Fully matured pods have **black seeds**; less
+mature pods have golden/pale seeds. Spiceto's pods are black-seeded.
+
+Copy that stays accurate:
+- Image headline: **"BLACK SEEDS INSIDE = FULLY MATURED"** (or "Open one pod. Black seeds, not golden.")
+- Bullet: "Fully matured green pods — black, aromatic seeds inside, not pale or golden. Idukki,
+  7–8 mm, Oct 2026 harvest, aroma-sealed jar."
+- Image set: split pod macro (black seeds) beside a golden-seed pod from the mix, no brand
+  names; 7–8 mm ruler shot; jar shot.
+- Avoid "best cardamom in India" / "No. 1" (unprovable superlative, ASCI/Amazon risk) —
+  say "fully matured" instead.
+
+Keyword trap: **never target or say "black cardamom"**. That is badi elaichi, a different
+spice, and it is already (correctly) a negative. Keep the existing negatives `black`,
+`black cardamom`, `seed(s)`, `cardamom seeds` so ads don't serve to black-cardamom or
+loose-seed shoppers. Write it as "black seeds in green pods", never "black cardamom".
