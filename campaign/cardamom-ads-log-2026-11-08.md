@@ -98,3 +98,30 @@ Phrase ₹8 vs ₹2.71–4.83; elaichi green 100g Phrase ₹10 vs ₹5.10–8.58
 Exact ₹12 (₹6.66–15.02, 4 impr, 12.5% top of search); elaichi green 100g Exact ₹10.90
 (₹7.17–11.27). New keywords with no data yet: ilachi green 100 (₹12), elakkai green 100
 (₹8), elachi 100g green (₹8), bold green cardamom Exact (₹12).
+
+## Snapshot 3 — Rank-Push manual, 1–7 Nov only (last 7 days)
+
+Ad group total: 8,685 impressions, 45 clicks, ₹549.32, 1 order (elachi green 100 Exact).
+
+| Keyword | Match | Bid | Impr | Clicks | Cost | Orders |
+| --- | --- | --- | --- | --- | --- | --- |
+| elachi green 100 | Exact | ₹12 | 6,635 | 26 | ₹326.28 | 1 |
+| elachi green 100 | Phrase | ₹12 | 511 | 1 | ₹10.61 | 0 |
+| idukki cardamom | Exact | ₹12 | 327 | 4 | ₹45.55 | 0 |
+| cardamom 100gm | Exact | ₹13 | 289 | 5 | ₹58.26 | 0 |
+| kerala elaichi | Phrase | ₹12 | 146 | 2 | ₹26.11 | 0 |
+| 8mm cardamom | Exact | ₹12 | 139 | 2 | ₹17.65 | 0 |
+| cardamom 100g | Exact | ₹13 | 75 | 0 | – | 0 |
+| 8mm cardamom | Phrase | ₹12 | 22 | 1 | ₹14.11 | 0 |
+| elaichi green 100g | Exact | ₹12 | 18 | 1 | ₹13.02 | 0 |
+| idukki green cardamom | Exact | ₹12 | 16 | 2 | ₹24.94 | 0 |
+| cardamom 8mm | Exact | ₹12 | 15 | 1 | ₹12.79 | 0 |
+
+All other keywords: 0 clicks (impressions 56 or fewer each).
+
+- `elachi green 100` Exact: 4 orders in 36 clicks lifetime (about 11%), but only 1 in the
+  last 26 clicks (about 4%).
+- `cardamom 100g` Exact: 0 clicks this week (lifetime 24 clicks, ₹271.52, 0 orders).
+- Seller prefers lowering bids to pausing for weak keywords. Agreed: one batch of bid
+  cuts to about the middle of Amazon's range, then no more bid changes until 15 Nov;
+  stop-loss at 10 more clicks with no order.
