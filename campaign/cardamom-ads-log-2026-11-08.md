@@ -78,3 +78,23 @@ append new snapshots below, don't overwrite.
   impressions are still concentrated in 3–4 keywords.
 - Seller was not aware that frequent bid changes disturb results; agreed routine: review
   weekly, change by ₹0.5–1, one change per keyword per week.
+
+## Snapshot 2 — Rank-Push manual: placements and lower keyword rows (9 Oct – 7 Nov)
+
+Campaign bid strategy: Dynamic bidding (down only). **Placement boosts are on** (not 0%).
+
+| Placement | Boost | Impr | Clicks | CTR | Cost | CPC | Orders | Sales | ACOS |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Top of search | +10% | 14 | 1 | 7.14% | ₹10.27 | ₹10.27 | 1 | ₹570.48 | 1.8% |
+| Rest of search | +20% | 1,340 | 34 | 2.54% | ₹400.28 | ₹11.77 | 0 | – | – |
+| Product pages | +15% | 11,827 | 57 | 0.48% | ₹627.61 | ₹11.01 | 3 | ₹1,425.72 | 44% |
+
+- 90% of impressions are on product pages; search-result impressions total about 1,350.
+- Rest of search cost ₹400 for no orders. Top of search is a 1-click sample.
+
+Keyword rows visible in this snapshot (bid vs Amazon range): premium green cardamom Exact
+₹12 vs ₹3.06–5.10; cardamom whole from kerala Phrase ₹8 vs ₹2.67–4.45; idukki elaichi
+Phrase ₹8 vs ₹2.71–4.83; elaichi green 100g Phrase ₹10 vs ₹5.10–8.58; elachi green 100 gm
+Exact ₹12 (₹6.66–15.02, 4 impr, 12.5% top of search); elaichi green 100g Exact ₹10.90
+(₹7.17–11.27). New keywords with no data yet: ilachi green 100 (₹12), elakkai green 100
+(₹8), elachi 100g green (₹8), bold green cardamom Exact (₹12).
