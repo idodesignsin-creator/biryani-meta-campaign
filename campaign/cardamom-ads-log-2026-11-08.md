@@ -173,3 +173,38 @@ ROAS 3.56.
 - The four expanded rows (now flagged as negative products/keywords) cost ₹47.88 for 4
   clicks and no orders, as expected before the match-type fix.
 - CPC (₹10–12.50) runs above the ₹7–8 bids, so a placement boost is probably still on.
+
+## Snapshot 5 — Rank-Push Auto exports, 16 Nov (same window as Snapshot 4)
+
+Ad group `Card | Auto | Rank Push |`: Out of budget at export, default bid ₹6, 2 products
+(B0FYY8TVNY 100g and B0HG3KYTWR 8mm++), ₹376.98, 31 clicks, 1 order ₹551.43, ROAS 1.46.
+
+| Ad | Impr | Clicks | CPC | Cost | Orders |
+| --- | --- | --- | --- | --- | --- |
+| B0FYY8TVNY 100g | 4,734 | 28 | ₹12.18 | ₹341.09 | 1 (₹551.43, ACOS 61.9%) |
+| B0HG3KYTWR 8mm++ | 256 | 3 | ₹11.96 | ₹35.89 | 0 |
+
+Automatic targeting groups: close-match bid ₹12 — 3,536 impr, ₹286.02, 1 order; substitutes
+bid ₹9 — 1,454 impr, ₹90.96, 0 orders. Loose/complements not enabled. Amazon suggested
+₹45–55 for both.
+
+### Search terms (24 rows; 31 clicks, ₹376.98)
+
+| Term | Match group | Impr | Clicks | Cost | Orders |
+| --- | --- | --- | --- | --- | --- |
+| green cardamom whole | close | 331 | 5 | ₹68.02 | 0 |
+| elaichi | close | 749 | 2 | ₹28.59 | 0 |
+| b0ggjc3rgc | substitutes | 41 | 2 | ₹20.20 | 0 |
+| **green elaichi** | close | 129 | 1 | ₹14.90 | **1 (₹551.43)** |
+| spiceto | close | 18 | 2 | ₹5.86 | 0 |
+| 17 one-click terms (pepper, nutmeg whole, cardamom 250gm, elachi green 50, green cardamom whole 9mm/8mm, nutraj green cardamom, ilachi, eliche green, idukki cardamom 8mm, idukki prime spices, whole green cardamom, vaahe cardamom, cardamom 8.5mm, db signature silver elaichi, 5 competitor ASINs incl. b0f1v5kgsz) | | | 1 each | ₹6.79–15.00 | 0 |
+
+- Many clicks cost exactly **₹15.00** (bid ₹12 × 1.25) or **₹11.25** (bid ₹9 × 1.25): a +25%
+  placement boost is probably still on in this campaign.
+- Negatives: 116 rows (the shared lists plus recent additions: cardamom green, green
+  cardamom, green cardamom whole, highrange gold, elaichi green, nutmeg whole, elaichi).
+  `green elaichi` is **not** blocked (`elaichi green` is a different word order).
+- The ₹551.43 sale shows in both this campaign and the ASIN campaign; likely one order
+  credited twice.
+- No manual (Rank-Push M) target or search-term export in this batch; campaign level only
+  (₹163.42, 17 clicks, CPC ₹9.61, 0 orders).
