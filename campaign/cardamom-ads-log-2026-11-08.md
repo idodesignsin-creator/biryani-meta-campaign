@@ -125,3 +125,51 @@ All other keywords: 0 clicks (impressions 56 or fewer each).
 - Seller prefers lowering bids to pausing for weak keywords. Agreed: one batch of bid
   cuts to about the middle of Amazon's range, then no more bid changes until 15 Nov;
   stop-loss at 10 more clicks with no order.
+
+## Snapshot 4 — 16 Nov exports (date range not printed in the files)
+
+Spend levels suggest about a 7-day window (Brand ₹379 against a ₹50/day cap). More
+exports (targeting, negatives, Brand targets, per-ASIN Business Report) to follow.
+
+### Campaign list
+
+| Campaign | Status | Budget | Impr | Clicks | CPC | Cost | Orders | Sales (ex-GST) |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Card \| Rank-Push \| M (manual) | Delivering | ₹150 | 4,328 | 17 | ₹9.61 | ₹163.42 | 0 | – |
+| Card \| Rank-Push \| Auto | Delivering | ₹50 | 4,991 | 31 | ₹12.16 | ₹376.98 | 1 | ₹551.43 |
+| Card \| M \| ASIN \| 100g | Delivering | ₹50 | 696 | 15 | ₹10.33 | ₹154.89 | 1 | ₹551.43 |
+| Auto \| Card \| Short | Delivering | ₹50.10 | 574 | 2 | ₹7.13 | ₹14.25 | 0 | – |
+| Brand \| Card \| M (Sponsored Brands) | Out of budget | ₹50 | 6,269 | 28 | ₹13.54 | ₹379.10 | 1 | ₹284.76 |
+| Auto Raisins / Spices Gift Box (not cardamom) | Delivering | ₹50 each | 583 / 923 | 4 / 11 | | ₹43.66 / ₹71.46 | 0 | – |
+
+- Cardamom total: 93 clicks, ₹1,088.64, 3 orders listed (the ₹551.43 sale appears under
+  both Auto and ASIN — may be the same order credited to both).
+- ₹551.43 ex-GST × 1.05 = ₹579, so the 100g seems to have sold at **₹579** (it was ₹559
+  on 9 Nov) — confirm whether the price was changed. ₹284.76 × 1.05 = ₹299, which fits the
+  50g pack.
+- Brand: user reach 4,817, 136 detail page views (20 new to brand), 2 add to cart, 3
+  Brand store page views, top-of-search impression share 17.56%.
+- Rank-Push manual spend fell to ₹163 from ₹412 the week before.
+
+### ASIN campaign (Card-ASIN-100g): default bid ₹10, 14 targets, 1 product
+
+SP ad B0FYY8TVNY: 696 impr, 15 clicks (CTR 2.16%), ₹154.89, 1 order ₹551.43, ACOS 28.09%,
+ROAS 3.56.
+
+| Search term / matched product | Target | Bid | Impr | Clicks | Cost | Orders |
+| --- | --- | --- | --- | --- | --- | --- |
+| b0f1v5kgsz (ArtOspices page) | B0F1V5KGSZ, exact | ₹7 | 25 | 3 | ₹25.14 | **1 (₹551.43, ROAS 21.9)** |
+| cardamom 100gm | B07CZL3NVL (Emperor Akbar) | ₹8 | 36 | 4 | ₹39.70 | 0 |
+| b0cj9t15hs (Aashirvaad page) | B0CJ9T15HS | ₹8 | 31 | 1 | ₹10.00 | 0 |
+| elaichi 100gm | B07CZLVP3X (Emperor Akbar) | ₹8 | 21 | 1 | ₹12.17 | 0 |
+| ilaichi green 100g | B07CZLVP3X | ₹8 | 6 | 1 | ₹10.00 | 0 |
+| cardamom big | B07CZLVP3X | ₹8 | 2 | 1 | ₹10.00 | 0 |
+| b07bxnj327 (Vedaka 50g page) | expanded, ArtOspices | ₹8 | 92 | 1 | ₹12.50 | 0 |
+| b0gwmpl5v4 (Kitchen Jungle black) | expanded, ArtOspices | ₹8 | 11 | 1 | ₹12.50 | 0 |
+| green elaichi | expanded, B07CZLVP3X | ₹8 | 2 | 1 | ₹12.23 | 0 |
+| b0cjk23xjq (ZOFF page) | expanded, B07CZLVP3X | ₹8 | 2 | 1 | ₹10.65 | 0 |
+
+- The one order came from the exact ArtOspices target at ₹7.
+- The four expanded rows (now flagged as negative products/keywords) cost ₹47.88 for 4
+  clicks and no orders, as expected before the match-type fix.
+- CPC (₹10–12.50) runs above the ₹7–8 bids, so a placement boost is probably still on.
