@@ -208,3 +208,31 @@ bid ₹9 — 1,454 impr, ₹90.96, 0 orders. Loose/complements not enabled. Amaz
   credited twice.
 - No manual (Rank-Push M) target or search-term export in this batch; campaign level only
   (₹163.42, 17 clicks, CPC ₹9.61, 0 orders).
+
+## Snapshot 6 — Rank-Push manual (Card-Rank-Push), 16 Nov exports
+
+Window not printed (about 7 days, ending 15 Nov). Ad B0FYY8TVNY: 4,328 impr, 17 clicks,
+CTR 0.39%, ₹163.42, CPC ₹9.61, 0 orders. Ad group default bid ₹8, 53 targets, 1 product.
+Campaign budget ₹150; actual spend about ₹23/day.
+
+| Keyword | Match | Bid | Amazon median (range) | Impr | Cost | Orders |
+| --- | --- | --- | --- | --- | --- | --- |
+| elachi green 100 | Exact | ₹10 | 19.84 (17.56–24.31) | 3,291 | ₹128.90 (13 clicks) | 0 |
+| ilaichi green | Exact | ₹9 | 11.80 (8.47–15.96) | 457 | ₹8.13 (1 click) | 0 |
+| cardamom 8mm | Phrase | ₹10 | 10.74 | 148 | ₹10.45 (1 click) | 0 |
+| idukki cardamom | Phrase / Exact | ₹8 / ₹8 | 5.81 / 8.00 | 142 / 7 | 0 | 0 |
+| cardamom 100gm | Phrase / Exact | ₹8 / ₹8 | 6.41 / 8.20 | 67 / 29 | ₹7.94 / ₹8.00 | 0 |
+| all other keywords | | | | 23 or fewer each | 0 | 0 |
+
+Search terms (5 rows): elachi green 100 (13 clicks, ₹128.90), idukki prime spices green
+premium cardamom 8mm (via cardamom 8mm Phrase, ₹10.45), ilaichi green (₹8.13), cardamom
+100gm (2 clicks, ₹15.94).
+
+- `elachi green 100` Exact: lifetime about 5 orders in about 100 clicks (4 in the first 36;
+  none in the last 62). The last two weeks ₹364, 0 orders.
+- Amazon's suggested bid for `elachi green 100` rose to ₹17.56–24.31 (was ₹7–12 in early
+  Nov): competitors bid much higher now, so ₹10 buys fewer top slots.
+- Negatives: 80 rows — the shared lists; `elachi` Negative exact is present.
+  Rank-Push Exact terms not blocked (correct for this campaign).
+- Bid adjustments for this campaign not shown in this batch (the Auto campaign has +20% /
+  +25% / +25% on Top / Rest / Product pages).
