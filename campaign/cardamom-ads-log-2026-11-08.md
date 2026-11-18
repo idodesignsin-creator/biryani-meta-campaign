@@ -236,3 +236,38 @@ premium cardamom 8mm (via cardamom 8mm Phrase, ₹10.45), ilaichi green (₹8.13
   Rank-Push Exact terms not blocked (correct for this campaign).
 - Bid adjustments for this campaign not shown in this batch (the Auto campaign has +20% /
   +25% / +25% on Top / Rest / Product pages).
+
+## Snapshot 7 — Rank-Push manual, lifetime keyword report (exported 18 Nov, all 53 targets now Paused)
+
+Campaign and ad group were paused by the seller before export. The export covers the whole
+campaign life (from 27 Oct): 53 targets, 18,680 impressions, 115 clicks, **₹1,269.96 spent,
+4 orders, ₹1,996.20 sales ex-GST, ROAS 1.57**. All 4 orders came from one keyword.
+
+### Keywords with orders or clicks
+
+| Keyword | Match | Bid | Impr | Clicks | Cost | Orders | Sales |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **elachi green 100** | Exact | ₹10 | 14,186 | 51 | ₹580.91 | **4** | ₹1,996.20 (ROAS 3.44) |
+| cardamom 100g | Exact | ₹6 | 237 | 24 | ₹271.52 | 0 | – |
+| idukki cardamom | Exact | ₹8 | 676 | 12 | ₹119.83 | 0 | – |
+| cardamom 100gm | Exact | ₹8 | 334 | 7 | ₹81.66 | 0 | – |
+| cardamom 8mm | Phrase | ₹10 | 314 | 4 | ₹31.85 | 0 | – |
+| 8mm cardamom | Exact | ₹9 | 199 | 2 | ₹17.65 | 0 | – |
+| cardamom 8mm | Exact | ₹5 | 26 | 2 | ₹23.96 | 0 | – |
+| kerala elaichi | Phrase | ₹7 | 152 | 2 | ₹26.11 | 0 | – |
+| elachi green 100 | Phrase | ₹8 | 599 | 2 | ₹19.71 | 0 | – |
+| one click each (cost ₹6–18): 8mm cardamom Phrase, idukki cardamom Phrase, elaichi green 100g Exact, idukki green cardamom Exact, kerala elaichi Exact, cardamom kerala Exact, ilaichi green Exact, cardamom green 8mm Exact, cardamom 100gm Phrase | | | | | | 0 | – |
+
+- 17 keywords clicked without an order: 64 clicks, ₹689.05 (54% of all spend).
+- 9 keywords had zero impressions; about 26 had 0 clicks.
+- Amazon's suggested median for `elachi green 100` Exact was ₹10 on 18 Nov (range
+  ₹5.92–12.11), down from ₹19.84 on 16 Nov.
+- `elachi` Exact is the only keyword with State PAUSED before the campaign pause.
+
+### Takeaways (seller plan: pause these, run a fresh Auto)
+
+- Lifetime, `elachi green 100` Exact is the only keyword that converted: 4 orders in 51
+  clicks (7.8%). All 4 orders were in the first ~36 clicks; the last 15 clicks gave none.
+- Everything else cost ₹689 for no orders.
+- Auto campaigns have no keywords; the seller can reuse this list as targeting only in a
+  manual campaign. If a keyword is ever re-added, start with `elachi green 100` Exact at ₹7.
